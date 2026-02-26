@@ -4,21 +4,29 @@ set -e
 MAGE_ROOT=/var/www/html
 
 # -------------------------------------------------------
+# Global umask: new files are group-writable (664/775)
+# -------------------------------------------------------
+umask 002
+
+# -------------------------------------------------------
 # Create required Magento directories
 # -------------------------------------------------------
-for dir in var generated pub/static pub/media app/etc; do
+WRITABLE_DIRS="var generated pub/static pub/media app/etc"
+for dir in $WRITABLE_DIRS; do
     mkdir -p "$MAGE_ROOT/$dir"
 done
 
 # -------------------------------------------------------
-# Permissions
+# Permissions — setgid so BOTH root and www-data can write
+#   1. Group  → www-data on all writable dirs
+#   2. g+rwsX → group read/write + setgid on dirs (new
+#               files/dirs inherit www-data group)
 # -------------------------------------------------------
-chown -R www-data:www-data \
-    "$MAGE_ROOT/var" \
-    "$MAGE_ROOT/generated" \
-    "$MAGE_ROOT/pub/static" \
-    "$MAGE_ROOT/pub/media" \
-    "$MAGE_ROOT/app/etc"
+for dir in $WRITABLE_DIRS; do
+    chgrp -R www-data "$MAGE_ROOT/$dir"
+    chmod -R g+rwX    "$MAGE_ROOT/$dir"
+    find "$MAGE_ROOT/$dir" -type d -exec chmod g+s {} +
+done
 
 # -------------------------------------------------------
 # Composer install (if vendor is missing)
@@ -26,14 +34,9 @@ chown -R www-data:www-data \
 if [ -f "$MAGE_ROOT/composer.json" ] && [ ! -d "$MAGE_ROOT/vendor/magento" ]; then
     echo "[entrypoint] vendor/magento not found - running composer install..."
     cd "$MAGE_ROOT" && composer install --no-interaction --prefer-dist
-    chown -R www-data:www-data "$MAGE_ROOT/vendor"
+    chgrp -R www-data "$MAGE_ROOT/vendor"
+    chmod -R g+rX     "$MAGE_ROOT/vendor"
 fi
-
-# -------------------------------------------------------
-# Create log directory for cron
-# -------------------------------------------------------
-mkdir -p "$MAGE_ROOT/var/log"
-chown -R www-data:www-data "$MAGE_ROOT/var/log"
 
 echo "[entrypoint] Starting services via supervisor..."
 exec "$@"

@@ -130,6 +130,13 @@ COPY . /var/www/html
 RUN chown -R www-data:www-data /var/www/html
 
 # -------------------------------------------------------
+# Shared group: root joins www-data so both users can
+# read/write the same Magento directories via group perms
+# -------------------------------------------------------
+RUN usermod -aG www-data root
+RUN echo 'umask 002' >> /root/.bashrc
+
+# -------------------------------------------------------
 # Entrypoint
 # -------------------------------------------------------
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
