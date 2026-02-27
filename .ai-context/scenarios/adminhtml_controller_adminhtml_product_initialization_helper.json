@@ -1,0 +1,99 @@
+{
+    "\\$schema": "schemas/adminhtml_controller_adminhtml_product_initialization_helper.schema.json",
+    "affected_modules": {
+        "0": "unknown",
+        "1": "Magento_ConfigurableProduct",
+        "2": "Magento_Bundle",
+        "4": "Magento_Downloadable",
+        "6": "Magento_CatalogUrlRewrite",
+        "7": "Magento_Weee"
+    },
+    "dependency_slice": [],
+    "entry_point": {
+        "class": "Magento\\Catalog\\Controller\\Adminhtml\\Product\\Initialization\\Helper",
+        "method": "execute",
+        "module": "unknown",
+        "step_kind": "http_request",
+        "type": "controller"
+    },
+    "execution_chain": {
+        "complexity": [],
+        "di_resolution_chain": [],
+        "observer_triggers": [],
+        "plugin_stack": [
+            {
+                "module": "Magento_ConfigurableProduct",
+                "plugin_class": "Magento\\ConfigurableProduct\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\Plugin\\Configurable",
+                "plugin_name": "configurable",
+                "sort_order": 50
+            },
+            {
+                "module": "Magento_Bundle",
+                "plugin_class": "Magento\\Bundle\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\Plugin\\Bundle",
+                "plugin_name": "Bundle",
+                "sort_order": 60
+            },
+            {
+                "module": "Magento_ConfigurableProduct",
+                "plugin_class": "Magento\\ConfigurableProduct\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\Plugin\\UpdateConfigurations",
+                "plugin_name": "updateConfigurations",
+                "sort_order": 60
+            },
+            {
+                "module": "Magento_Downloadable",
+                "plugin_class": "Magento\\Downloadable\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\Plugin\\Downloadable",
+                "plugin_name": "Downloadable",
+                "sort_order": 70
+            },
+            {
+                "module": "Magento_ConfigurableProduct",
+                "plugin_class": "Magento\\ConfigurableProduct\\Plugin\\Product\\Initialization\\CleanConfigurationTmpImages",
+                "plugin_name": "cleanConfigurationTmpImages",
+                "sort_order": 999
+            },
+            {
+                "module": "Magento_CatalogUrlRewrite",
+                "plugin_class": "Magento\\CatalogUrlRewrite\\Plugin\\Catalog\\Controller\\Adminhtml\\Product\\Initialization\\Helper",
+                "plugin_name": "product_save_rewrites_history_plugin",
+                "sort_order": null
+            },
+            {
+                "module": "Magento_Weee",
+                "plugin_class": "Magento\\Weee\\Plugin\\Catalog\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\ProcessTaxAttribute",
+                "plugin_name": "weeeAttributeOptionsProcess",
+                "sort_order": null
+            }
+        ]
+    },
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "module_refs": [],
+    "qa_concerns": [
+        {
+            "message": "Multiple plugins in chain \u2014 verify sort_order is correct and test execution sequence",
+            "severity": "high",
+            "type": "plugin_ordering"
+        },
+        {
+            "message": "Execution spans 6 modules \u2014 test state consistency across module boundaries",
+            "severity": "medium",
+            "type": "cross_module_state"
+        }
+    ],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "risk": {
+        "affected_module_count": 6,
+        "level": "low",
+        "observer_count": 0,
+        "plugin_depth": 0,
+        "reasons": [
+            "Wide cross-module span (6 modules)",
+            "1 architectural debt item(s) in affected modules"
+        ],
+        "score": 0.2
+    },
+    "scenario": "adminhtml.controller.adminhtml.product.initialization.helper",
+    "scenario_id": "ee97d3f892749c9ae087e7d5ad85315537101c5f",
+    "scope": [
+        "vendor/magento"
+    ]
+}

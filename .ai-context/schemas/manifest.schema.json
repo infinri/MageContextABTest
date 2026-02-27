@@ -1,0 +1,139 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/manifest.schema.schema.json",
+    "description": "Build manifest with extractor results, capabilities, and validation status.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "build_hash": {
+            "type": "string"
+        },
+        "capabilities": {
+            "properties": {
+                "git_churn_hotspots": {
+                    "type": "boolean"
+                },
+                "has_allocation_view": {
+                    "type": "boolean"
+                },
+                "has_diff_support": {
+                    "type": "boolean"
+                },
+                "has_reverse_indexes": {
+                    "type": "boolean"
+                },
+                "has_scenarios": {
+                    "type": "boolean"
+                },
+                "has_symbol_index": {
+                    "type": "boolean"
+                },
+                "hotspot_ranking": {
+                    "type": "boolean"
+                }
+            },
+            "type": "object"
+        },
+        "churn_config": {
+            "properties": {
+                "cache": {
+                    "type": "boolean"
+                },
+                "enabled": {
+                    "type": "boolean"
+                },
+                "window_days": {
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        },
+        "compiler_version": {
+            "type": "string"
+        },
+        "duration_seconds": {
+            "type": "number"
+        },
+        "extractors": {
+            "additionalProperties": {
+                "properties": {
+                    "duration_ms": {
+                        "type": "number"
+                    },
+                    "item_count": {
+                        "type": "integer"
+                    },
+                    "output_files": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "reason": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "enum": [
+                            "ok",
+                            "error",
+                            "skipped"
+                        ],
+                        "type": "string"
+                    },
+                    "view": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "object"
+        },
+        "generated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "repo_commit": {
+            "type": "string"
+        },
+        "repo_path": {
+            "type": "string"
+        },
+        "scopes": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "target": {
+            "type": "string"
+        },
+        "validation": {
+            "properties": {
+                "errors": {
+                    "type": "array"
+                },
+                "passed": {
+                    "type": "boolean"
+                },
+                "warnings": {
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "compiler_version",
+        "generated_at",
+        "repo_path",
+        "target",
+        "build_hash",
+        "extractors",
+        "capabilities"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Context Compiler Manifest",
+    "type": "object"
+}

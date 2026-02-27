@@ -1,0 +1,56 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/hotspot_ranking.schema.schema.json",
+    "description": "Modules ranked by combined git churn and dependency graph centrality.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "analysis_integrity_score": {
+            "type": "number"
+        },
+        "degraded": {
+            "type": "boolean"
+        },
+        "rankings": {
+            "items": {
+                "properties": {
+                    "centrality_score": {
+                        "type": "number"
+                    },
+                    "churn_score": {
+                        "type": "number"
+                    },
+                    "final_score": {
+                        "type": "number"
+                    },
+                    "integrity_score_used": {
+                        "type": "number"
+                    },
+                    "module": {
+                        "type": "string"
+                    },
+                    "rank": {
+                        "type": "integer"
+                    },
+                    "raw_score": {
+                        "type": "number"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "summary": {
+            "type": "object"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "rankings",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Hotspot Ranking",
+    "type": "object"
+}

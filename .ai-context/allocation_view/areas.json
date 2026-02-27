@@ -1,0 +1,51 @@
+{
+    "\\$schema": "schemas/areas.schema.json",
+    "areas": {
+        "adminhtml": {
+            "area": "adminhtml",
+            "module_count": 0,
+            "modules": []
+        },
+        "crontab": {
+            "area": "crontab",
+            "module_count": 0,
+            "modules": []
+        },
+        "frontend": {
+            "area": "frontend",
+            "module_count": 0,
+            "modules": []
+        },
+        "global": {
+            "area": "global",
+            "module_count": 0,
+            "modules": []
+        },
+        "graphql": {
+            "area": "graphql",
+            "module_count": 0,
+            "modules": []
+        },
+        "webapi_rest": {
+            "area": "webapi_rest",
+            "module_count": 0,
+            "modules": []
+        },
+        "webapi_soap": {
+            "area": "webapi_soap",
+            "module_count": 0,
+            "modules": []
+        }
+    },
+    "generated_at": "2026-02-27T17:29:51+00:00",
+    "module_areas": [],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "scope": [
+        "vendor/magento"
+    ],
+    "summary": {
+        "multi_area_modules": 0,
+        "total_areas_active": 0,
+        "total_module_area_mappings": 0
+    }
+}

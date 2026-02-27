@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/dependencies.schema.schema.json",
+    "description": "Typed, directed dependency graph with evidence and split coupling metrics.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "analysis_integrity_score": {
+            "type": "number"
+        },
+        "coupling_metrics": {
+            "description": "Split coupling metrics: structural, code, runtime, composite",
+            "type": "object"
+        },
+        "degraded": {
+            "type": "boolean"
+        },
+        "edges": {
+            "items": {
+                "properties": {
+                    "edge_type": {
+                        "enum": [
+                            "module_sequence",
+                            "composer_require",
+                            "php_symbol_use",
+                            "di_preference",
+                            "di_virtual_type",
+                            "plugin_intercept",
+                            "event_observe"
+                        ],
+                        "type": "string"
+                    },
+                    "evidence": {
+                        "type": "array"
+                    },
+                    "from": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    },
+                    "weight": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "from",
+                    "to",
+                    "edge_type",
+                    "weight"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "summary": {
+            "type": "object"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "edges",
+        "coupling_metrics",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Dependency Graph",
+    "type": "object"
+}

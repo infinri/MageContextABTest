@@ -1,0 +1,44 @@
+{
+    "\\$schema": "schemas/crontab_cron_storesubmitsandboxfeed.schema.json",
+    "affected_modules": [
+        "unknown"
+    ],
+    "canonical_entry": {
+        "cron_id": "cron::submit_payment_services_store_sandbox_feed",
+        "group": "payment_services_data_export",
+        "type": "cron"
+    },
+    "dependency_slice": [],
+    "entry_point": {
+        "class": "Magento\\PaymentServicesSaaSExport\\Cron\\StoreSubmitSandboxFeed",
+        "method": "execute",
+        "module": "unknown",
+        "step_kind": "scheduled_task",
+        "type": "cron"
+    },
+    "execution_chain": {
+        "complexity": [],
+        "di_resolution_chain": [],
+        "observer_triggers": [],
+        "plugin_stack": []
+    },
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "module_refs": [],
+    "qa_concerns": [],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "risk": {
+        "affected_module_count": 1,
+        "level": "low",
+        "observer_count": 0,
+        "plugin_depth": 0,
+        "reasons": [
+            "1 architectural debt item(s) in affected modules"
+        ],
+        "score": 0.05
+    },
+    "scenario": "crontab.cron.storesubmitsandboxfeed",
+    "scenario_id": "cfb2140f7cb4f13bc083720e4c8c67f5a3572e12",
+    "scope": [
+        "vendor/magento"
+    ]
+}

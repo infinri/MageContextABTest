@@ -1,0 +1,43 @@
+{
+    "\\$schema": "schemas/cli_console_command_i18ncollectphrasescommand.schema.json",
+    "affected_modules": [
+        "unknown"
+    ],
+    "canonical_entry": {
+        "command_name": "i18n:collect-phrases",
+        "type": "cli"
+    },
+    "dependency_slice": [],
+    "entry_point": {
+        "class": "Magento\\Setup\\Console\\Command\\I18nCollectPhrasesCommand",
+        "method": "execute",
+        "module": "unknown",
+        "step_kind": "unknown",
+        "type": "cli_command"
+    },
+    "execution_chain": {
+        "complexity": [],
+        "di_resolution_chain": [],
+        "observer_triggers": [],
+        "plugin_stack": []
+    },
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "module_refs": [],
+    "qa_concerns": [],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "risk": {
+        "affected_module_count": 1,
+        "level": "low",
+        "observer_count": 0,
+        "plugin_depth": 0,
+        "reasons": [
+            "1 architectural debt item(s) in affected modules"
+        ],
+        "score": 0.05
+    },
+    "scenario": "cli.console.command.i18ncollectphrasescommand",
+    "scenario_id": "7e0f7bf996abb796e58db6a1f1db5d7e6c7ce95e",
+    "scope": [
+        "vendor/magento"
+    ]
+}

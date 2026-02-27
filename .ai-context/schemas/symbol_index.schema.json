@@ -1,0 +1,133 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/symbol_index.schema.schema.json",
+    "description": "Class\u2192file\u2192module mapping for O(1) lookups. Every PHP symbol (class, interface, trait, enum) in scope.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "summary": {
+            "properties": {
+                "by_type": {
+                    "additionalProperties": {
+                        "type": "integer"
+                    },
+                    "type": "object"
+                },
+                "parse_errors": {
+                    "type": "integer"
+                },
+                "total_files_scanned": {
+                    "type": "integer"
+                },
+                "total_symbols": {
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        },
+        "symbol_kinds": {
+            "properties": {
+                "emitted": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "not_indexed": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "note": {
+                    "type": "string"
+                },
+                "supported": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
+        "symbols": {
+            "items": {
+                "properties": {
+                    "class_id": {
+                        "description": "Canonical FQCN (lowercase)",
+                        "type": "string"
+                    },
+                    "extends": {
+                        "type": [
+                            "string",
+                            "null",
+                            "array"
+                        ]
+                    },
+                    "file_id": {
+                        "description": "Relative path from repo root",
+                        "type": "string"
+                    },
+                    "fqcn": {
+                        "description": "Original FQCN",
+                        "type": "string"
+                    },
+                    "implements": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "is_abstract": {
+                        "type": "boolean"
+                    },
+                    "is_final": {
+                        "type": "boolean"
+                    },
+                    "line": {
+                        "type": "integer"
+                    },
+                    "module_id": {
+                        "description": "Vendor_Module format",
+                        "type": "string"
+                    },
+                    "public_methods": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "symbol_type": {
+                        "enum": [
+                            "class",
+                            "interface",
+                            "trait",
+                            "enum"
+                        ],
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "class_id",
+                    "fqcn",
+                    "symbol_type",
+                    "file_id",
+                    "module_id"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "symbols",
+        "symbol_kinds",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Symbol Index",
+    "type": "object"
+}

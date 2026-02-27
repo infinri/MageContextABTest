@@ -1,0 +1,56 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/di_resolution_map.schema.schema.json",
+    "description": "Per-area DI resolution map with resolution chains and confidence.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "factories": {
+            "type": "array"
+        },
+        "proxies": {
+            "type": "array"
+        },
+        "resolutions": {
+            "items": {
+                "properties": {
+                    "area": {
+                        "type": "string"
+                    },
+                    "confidence": {
+                        "type": "number"
+                    },
+                    "evidence": {
+                        "type": "array"
+                    },
+                    "final_resolved_type": {
+                        "type": "string"
+                    },
+                    "interface": {
+                        "type": "string"
+                    },
+                    "resolution_chain": {
+                        "type": "array"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "summary": {
+            "type": "object"
+        },
+        "virtual_types": {
+            "type": "array"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "resolutions",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "DI Resolution Map",
+    "type": "object"
+}

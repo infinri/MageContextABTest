@@ -1,0 +1,72 @@
+{
+    "\\$schema": "schemas/hotspot_ranking.schema.json",
+    "analysis_integrity_score": 1,
+    "degraded": false,
+    "generated_at": "2026-02-27T17:29:51+00:00",
+    "rankings": [
+        {
+            "centrality": 2,
+            "churn_count": 0,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "churn=0 centrality=2",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "final_score": 1,
+            "integrity_score_used": 1,
+            "module": "Magento_SomeModule",
+            "normalized_centrality": 1,
+            "normalized_churn": 1,
+            "raw_score": 1
+        },
+        {
+            "centrality": 1,
+            "churn_count": 0,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "churn=0 centrality=1",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "final_score": 0.8667,
+            "integrity_score_used": 1,
+            "module": "Magento_Store",
+            "normalized_centrality": 0.6667,
+            "normalized_churn": 1,
+            "raw_score": 0.8667
+        },
+        {
+            "centrality": 1,
+            "churn_count": 0,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "churn=0 centrality=1",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "final_score": 0.8667,
+            "integrity_score_used": 1,
+            "module": "Magento_Framework",
+            "normalized_centrality": 0.6667,
+            "normalized_churn": 1,
+            "raw_score": 0.8667
+        }
+    ],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "scope": [
+        "vendor/magento"
+    ],
+    "summary": {
+        "high_risk_hotspots": 3,
+        "hotspot_formula": "0.6 \u00d7 percentile(churn) + 0.4 \u00d7 percentile(centrality)",
+        "normalization_method": "percentile_leq",
+        "total_modules_ranked": 3
+    }
+}

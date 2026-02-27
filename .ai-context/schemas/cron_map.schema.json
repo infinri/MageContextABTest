@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/cron_map.schema.schema.json",
+    "description": "Cron job declarations from crontab.xml.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "cron_jobs": {
+            "items": {
+                "properties": {
+                    "cron_id": {
+                        "type": "string"
+                    },
+                    "declared_by": {
+                        "type": "string"
+                    },
+                    "evidence": {
+                        "type": "array"
+                    },
+                    "group": {
+                        "type": "string"
+                    },
+                    "instance": {
+                        "type": "string"
+                    },
+                    "job_name": {
+                        "type": "string"
+                    },
+                    "method": {
+                        "type": "string"
+                    },
+                    "schedule": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "summary": {
+            "type": "object"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "cron_jobs",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Cron Map",
+    "type": "object"
+}

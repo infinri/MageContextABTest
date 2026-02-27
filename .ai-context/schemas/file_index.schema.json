@@ -1,0 +1,78 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/file_index.schema.schema.json",
+    "description": "File\u2192module\u2192layer mapping for O(1) lookups.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "files": {
+            "items": {
+                "properties": {
+                    "extension": {
+                        "type": "string"
+                    },
+                    "file_id": {
+                        "type": "string"
+                    },
+                    "file_type": {
+                        "type": "string"
+                    },
+                    "layer": {
+                        "enum": [
+                            "presentation",
+                            "service",
+                            "domain",
+                            "infrastructure",
+                            "framework",
+                            "unknown"
+                        ],
+                        "type": "string"
+                    },
+                    "module_id": {
+                        "type": "string"
+                    },
+                    "size_bytes": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "file_id",
+                    "module_id",
+                    "layer",
+                    "file_type"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "summary": {
+            "properties": {
+                "by_layer": {
+                    "additionalProperties": {
+                        "type": "integer"
+                    },
+                    "type": "object"
+                },
+                "by_type": {
+                    "additionalProperties": {
+                        "type": "integer"
+                    },
+                    "type": "object"
+                },
+                "total_files": {
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "files",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "File Index",
+    "type": "object"
+}

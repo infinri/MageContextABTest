@@ -1,0 +1,60 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/event_graph.schema.schema.json",
+    "description": "Event/observer graph with cross-module risk scoring.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "event_graph": {
+            "items": {
+                "properties": {
+                    "cross_module_listeners": {
+                        "type": "integer"
+                    },
+                    "declared_by": {
+                        "type": "string"
+                    },
+                    "event": {
+                        "type": "string"
+                    },
+                    "event_id": {
+                        "type": "string"
+                    },
+                    "listener_count": {
+                        "type": "integer"
+                    },
+                    "listeners": {
+                        "type": "array"
+                    },
+                    "risk_score": {
+                        "type": "number"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "high_risk_events": {
+            "type": "array"
+        },
+        "observers": {
+            "type": "array"
+        },
+        "summary": {
+            "type": "object"
+        },
+        "top_impacted_modules": {
+            "type": "array"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "event_graph",
+        "observers",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Event Graph",
+    "type": "object"
+}

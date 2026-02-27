@@ -1,0 +1,2002 @@
+{
+    "\\$schema": "schemas/cli_commands.schema.json",
+    "commands": [
+        {
+            "class": "Magento\\Setup\\Console\\Command\\for",
+            "command_name": "",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\for",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/AbstractDependenciesCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\AbstractModuleManageCommand",
+            "command_name": "",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\AbstractModuleManageCommand",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/AbstractModuleManageCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\AbstractCacheCommand",
+            "command_name": "",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Backend\\Console\\Command\\AbstractCacheCommand",
+                    "source_file": "vendor/magento/module-backend/Console/Command/AbstractCacheCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\AbstractCacheManageCommand",
+            "command_name": "",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Backend\\Console\\Command\\AbstractCacheManageCommand",
+                    "source_file": "vendor/magento/module-backend/Console/Command/AbstractCacheManageCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\AbstractMaintenanceCommand",
+            "command_name": "",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Backend\\Console\\Command\\AbstractMaintenanceCommand",
+                    "source_file": "vendor/magento/module-backend/Console/Command/AbstractMaintenanceCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\for",
+            "command_name": "",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Indexer\\Console\\Command\\for",
+                    "source_file": "vendor/magento/module-indexer/Console/Command/AbstractIndexerCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Indexer\\Test\\Unit\\Console\\Command\\AbstractIndexerCommandCommonSetup",
+            "command_name": "",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Indexer\\Test\\Unit\\Console\\Command\\AbstractIndexerCommandCommonSetup",
+                    "source_file": "vendor/magento/module-indexer/Test/Unit/Console/Command/AbstractIndexerCommandCommonSetup.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\User\\Console\\UnlockAdminAccountCommand",
+            "command_name": "UnlockAdminAccountCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'UnlockAdminAccountCommand' class=Magento\\User\\Console\\UnlockAdminAccountCommand",
+                    "source_file": "vendor/magento/module-user/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_User",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\PageCache\\Console\\Command\\GenerateVclCommand",
+            "command_name": "VarnishGenerateVclCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'VarnishGenerateVclCommand' class=Magento\\PageCache\\Console\\Command\\GenerateVclCommand",
+                    "source_file": "vendor/magento/module-page-cache/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_PageCache",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Downloadable\\Console\\Command\\DomainsAddCommand",
+            "command_name": "addDomainsCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'addDomainsCommand' class=Magento\\Downloadable\\Console\\Command\\DomainsAddCommand",
+                    "source_file": "vendor/magento/module-downloadable/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Downloadable",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\AdminUserCreateCommand",
+            "command_name": "admin:user:create",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\AdminUserCreateCommand name='admin:user:create'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/AdminUserCreateCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\AdminAdobeIms\\Console\\Command\\AdminAdobeImsDisableCommand",
+            "command_name": "adminAdobeDisableImsCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'adminAdobeDisableImsCommand' class=Magento\\AdminAdobeIms\\Console\\Command\\AdminAdobeImsDisableCommand",
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_AdminAdobeIms",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\AdminAdobeIms\\Console\\Command\\AdminAdobeImsEnableCommand",
+            "command_name": "adminAdobeEnableImsCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'adminAdobeEnableImsCommand' class=Magento\\AdminAdobeIms\\Console\\Command\\AdminAdobeImsEnableCommand",
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_AdminAdobeIms",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\AdminAdobeIms\\Console\\Command\\AdminAdobeImsInfoCommand",
+            "command_name": "adminAdobeInfoImsCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'adminAdobeInfoImsCommand' class=Magento\\AdminAdobeIms\\Console\\Command\\AdminAdobeImsInfoCommand",
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_AdminAdobeIms",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\AdminAdobeIms\\Console\\Command\\AdminAdobeImsStatusCommand",
+            "command_name": "adminAdobeStatusImsCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'adminAdobeStatusImsCommand' class=Magento\\AdminAdobeIms\\Console\\Command\\AdminAdobeImsStatusCommand",
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_AdminAdobeIms",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\CacheCleanCommand",
+            "command_name": "cacheCleanCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cacheCleanCommand' class=Magento\\Backend\\Console\\Command\\CacheCleanCommand",
+                    "source_file": "vendor/magento/module-backend/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\CacheDisableCommand",
+            "command_name": "cacheDisableCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cacheDisableCommand' class=Magento\\Backend\\Console\\Command\\CacheDisableCommand",
+                    "source_file": "vendor/magento/module-backend/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\CacheEnableCommand",
+            "command_name": "cacheEnableCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cacheEnableCommand' class=Magento\\Backend\\Console\\Command\\CacheEnableCommand",
+                    "source_file": "vendor/magento/module-backend/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\CacheFlushCommand",
+            "command_name": "cacheFlushCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cacheFlushCommand' class=Magento\\Backend\\Console\\Command\\CacheFlushCommand",
+                    "source_file": "vendor/magento/module-backend/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\CacheStatusCommand",
+            "command_name": "cacheStatusCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cacheStatusCommand' class=Magento\\Backend\\Console\\Command\\CacheStatusCommand",
+                    "source_file": "vendor/magento/module-backend/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\PaymentServicesPaypal\\Console\\Command\\CleanMerchantScopesCache",
+            "command_name": "cleanMerchantScopes",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cleanMerchantScopes' class=Magento\\PaymentServicesPaypal\\Console\\Command\\CleanMerchantScopesCache",
+                    "source_file": "vendor/magento/module-payment-services-paypal/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_PaymentServicesPaypal",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Cms\\Command\\WysiwygRestrictCommand",
+            "command_name": "cms_wysiwyg_restrict",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cms_wysiwyg_restrict' class=Magento\\Cms\\Command\\WysiwygRestrictCommand",
+                    "source_file": "vendor/magento/module-cms/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Cms",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Store\\Console\\Command\\StoreListCommand",
+            "command_name": "commandStoreList",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'commandStoreList' class=Magento\\Store\\Console\\Command\\StoreListCommand",
+                    "source_file": "vendor/magento/module-store/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Store",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Store\\Console\\Command\\WebsiteListCommand",
+            "command_name": "commandWebsiteList",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'commandWebsiteList' class=Magento\\Store\\Console\\Command\\WebsiteListCommand",
+                    "source_file": "vendor/magento/module-store/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Store",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Deploy\\Console\\Command\\App\\ConfigImportCommand",
+            "command_name": "configImportCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'configImportCommand' class=Magento\\Deploy\\Console\\Command\\App\\ConfigImportCommand",
+                    "source_file": "vendor/magento/module-deploy/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Deploy",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Config\\Console\\Command\\ConfigSetCommand",
+            "command_name": "configSetCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'configSetCommand' class=Magento\\Config\\Console\\Command\\ConfigSetCommand",
+                    "source_file": "vendor/magento/module-config/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Config",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Config\\Console\\Command\\ConfigShowCommand",
+            "command_name": "configShowCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'configShowCommand' class=Magento\\Config\\Console\\Command\\ConfigShowCommand",
+                    "source_file": "vendor/magento/module-config/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Config",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Deploy\\Console\\Command\\App\\ConfigStatusCommand",
+            "command_name": "configStatusCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'configStatusCommand' class=Magento\\Deploy\\Console\\Command\\App\\ConfigStatusCommand",
+                    "source_file": "vendor/magento/module-deploy/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Deploy",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\MessageQueue\\Console\\ConsumerListCommand\\Proxy",
+            "command_name": "consumerListCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'consumerListCommand' class=Magento\\MessageQueue\\Console\\ConsumerListCommand\\Proxy",
+                    "source_file": "vendor/magento/module-message-queue/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_MessageQueue",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Cron\\Console\\Command\\CronCommand",
+            "command_name": "cronCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cronCommand' class=Magento\\Cron\\Console\\Command\\CronCommand",
+                    "source_file": "vendor/magento/module-cron/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Cron",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Cron\\Console\\Command\\CronInstallCommand",
+            "command_name": "cronInstall",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cronInstall' class=Magento\\Cron\\Console\\Command\\CronInstallCommand",
+                    "source_file": "vendor/magento/module-cron/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Cron",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Cron\\Console\\Command\\CronRemoveCommand",
+            "command_name": "cronRemove",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'cronRemove' class=Magento\\Cron\\Console\\Command\\CronRemoveCommand",
+                    "source_file": "vendor/magento/module-cron/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Cron",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\DiInfoCommand",
+            "command_name": "dev_di_info",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_di_info' class=Magento\\Developer\\Console\\Command\\DiInfoCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\GeneratePatchCommand",
+            "command_name": "dev_generate_patch",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_generate_patch' class=Magento\\Developer\\Console\\Command\\GeneratePatchCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\ProfilerDisableCommand",
+            "command_name": "dev_profiler_disable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_profiler_disable' class=Magento\\Developer\\Console\\Command\\ProfilerDisableCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\ProfilerEnableCommand",
+            "command_name": "dev_profiler_enable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_profiler_enable' class=Magento\\Developer\\Console\\Command\\ProfilerEnableCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\QueryLogDisableCommand",
+            "command_name": "dev_query_log_disable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_query_log_disable' class=Magento\\Developer\\Console\\Command\\QueryLogDisableCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\QueryLogEnableCommand",
+            "command_name": "dev_query_log_enable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_query_log_enable' class=Magento\\Developer\\Console\\Command\\QueryLogEnableCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\SourceThemeDeployCommand",
+            "command_name": "dev_source_theme_deploy",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_source_theme_deploy' class=Magento\\Developer\\Console\\Command\\SourceThemeDeployCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\TemplateHintsDisableCommand",
+            "command_name": "dev_template_hints_disable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_template_hints_disable' class=Magento\\Developer\\Console\\Command\\TemplateHintsDisableCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\TemplateHintsEnableCommand",
+            "command_name": "dev_template_hints_enable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_template_hints_enable' class=Magento\\Developer\\Console\\Command\\TemplateHintsEnableCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\TemplateHintsStatusCommand",
+            "command_name": "dev_template_hints_status",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_template_hints_status' class=Magento\\Developer\\Console\\Command\\TemplateHintsStatusCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\DevTestsRunCommand",
+            "command_name": "dev_tests_run",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dev_tests_run' class=Magento\\Developer\\Console\\Command\\DevTestsRunCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\ReCaptchaUser\\Command\\DisableReCaptchaForUserForgotPasswordCommand",
+            "command_name": "disable_recaptcha_for_user_forgot_password",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'disable_recaptcha_for_user_forgot_password' class=Magento\\ReCaptchaUser\\Command\\DisableReCaptchaForUserForgotPasswordCommand",
+                    "source_file": "vendor/magento/module-re-captcha-user/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_ReCaptchaUser",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\ReCaptchaUser\\Command\\DisableReCaptchaForUserLoginCommand",
+            "command_name": "disable_recaptcha_for_user_login",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'disable_recaptcha_for_user_login' class=Magento\\ReCaptchaUser\\Command\\DisableReCaptchaForUserLoginCommand",
+                    "source_file": "vendor/magento/module-re-captcha-user/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_ReCaptchaUser",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Deploy\\Console\\Command\\App\\ApplicationDumpCommand",
+            "command_name": "dumpApplicationCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'dumpApplicationCommand' class=Magento\\Deploy\\Console\\Command\\App\\ApplicationDumpCommand",
+                    "source_file": "vendor/magento/module-deploy/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Deploy",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Email\\Console\\Command\\DatabaseTemplateCompatibilityCommand",
+            "command_name": "emailTemplateCheck",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'emailTemplateCheck' class=Magento\\Email\\Console\\Command\\DatabaseTemplateCompatibilityCommand",
+                    "source_file": "vendor/magento/module-email/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Email",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\EncryptionKey\\Console\\Command\\ListReEncryptorsCommand",
+            "command_name": "encryption_data_list-re-encryptors_command",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'encryption_data_list-re-encryptors_command' class=Magento\\EncryptionKey\\Console\\Command\\ListReEncryptorsCommand",
+                    "source_file": "vendor/magento/module-encryption-key/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_EncryptionKey",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\EncryptionKey\\Console\\Command\\ReEncryptDataCommand",
+            "command_name": "encryption_data_re-encrypt_command",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'encryption_data_re-encrypt_command' class=Magento\\EncryptionKey\\Console\\Command\\ReEncryptDataCommand",
+                    "source_file": "vendor/magento/module-encryption-key/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_EncryptionKey",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\EncryptionKey\\Console\\Command\\UpdateEncryptionKeyCommand",
+            "command_name": "encryption_update_key_command",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'encryption_update_key_command' class=Magento\\EncryptionKey\\Console\\Command\\UpdateEncryptionKeyCommand",
+                    "source_file": "vendor/magento/module-encryption-key/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_EncryptionKey",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Sales\\Console\\Command\\EncryptionPaymentDataUpdateCommand",
+            "command_name": "encyption_payment_data_update",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'encyption_payment_data_update' class=Magento\\Sales\\Console\\Command\\EncryptionPaymentDataUpdateCommand",
+                    "source_file": "vendor/magento/module-sales/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Sales",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\TwoFactorAuth\\Command\\GoogleSecret",
+            "command_name": "google_secret",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'google_secret' class=Magento\\TwoFactorAuth\\Command\\GoogleSecret",
+                    "source_file": "vendor/magento/module-two-factor-auth/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_TwoFactorAuth",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\I18nCollectPhrasesCommand",
+            "command_name": "i18n:collect-phrases",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\I18nCollectPhrasesCommand name='i18n:collect-phrases'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/I18nCollectPhrasesCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\I18nPackCommand",
+            "command_name": "i18n:pack",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\I18nPackCommand name='i18n:pack'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/I18nPackCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\MediaStorage\\Console\\Command\\ImagesResizeCommand",
+            "command_name": "imagesResizeCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'imagesResizeCommand' class=Magento\\MediaStorage\\Console\\Command\\ImagesResizeCommand",
+                    "source_file": "vendor/magento/module-media-storage/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_MediaStorage",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\InventoryDistanceBasedSourceSelection\\Console\\Command\\ImportGeoNamesCommand",
+            "command_name": "importGeoNames",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'importGeoNames' class=Magento\\InventoryDistanceBasedSourceSelection\\Console\\Command\\ImportGeoNamesCommand",
+                    "source_file": "vendor/magento/module-inventory-distance-based-source-selection/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_InventoryDistanceBasedSourceSelection",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\IndexerInfoCommand",
+            "command_name": "info",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'info' class=Magento\\Indexer\\Console\\Command\\IndexerInfoCommand",
+                    "source_file": "vendor/magento/module-indexer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\InfoAdminUriCommand",
+            "command_name": "info:adminuri",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\InfoAdminUriCommand name='info:adminuri'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/InfoAdminUriCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\InfoBackupsListCommand",
+            "command_name": "info:backups:list",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\InfoBackupsListCommand name='info:backups:list'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/InfoBackupsListCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\InfoCurrencyListCommand",
+            "command_name": "info:currency:list",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\InfoCurrencyListCommand name='info:currency:list'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/InfoCurrencyListCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\DependenciesShowFrameworkCommand",
+            "command_name": "info:dependencies:show-framework",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\DependenciesShowFrameworkCommand name='info:dependencies:show-framework'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/DependenciesShowFrameworkCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\DependenciesShowModulesCommand",
+            "command_name": "info:dependencies:show-modules",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\DependenciesShowModulesCommand name='info:dependencies:show-modules'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/DependenciesShowModulesCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\DependenciesShowModulesCircularCommand",
+            "command_name": "info:dependencies:show-modules-circular",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\DependenciesShowModulesCircularCommand name='info:dependencies:show-modules-circular'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/DependenciesShowModulesCircularCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\InfoLanguageListCommand",
+            "command_name": "info:language:list",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\InfoLanguageListCommand name='info:language:list'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/InfoLanguageListCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\InfoTimezoneListCommand",
+            "command_name": "info:timezone:list",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\InfoTimezoneListCommand name='info:timezone:list'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/InfoTimezoneListCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\InventoryReservationCli\\Command\\CreateCompensations",
+            "command_name": "inventory_salable_quantity_compensations",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'inventory_salable_quantity_compensations' class=Magento\\InventoryReservationCli\\Command\\CreateCompensations",
+                    "source_file": "vendor/magento/module-inventory-reservation-cli/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_InventoryReservationCli",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\InventoryReservationCli\\Command\\ShowInconsistencies",
+            "command_name": "inventory_salable_quantity_inconsistency",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'inventory_salable_quantity_inconsistency' class=Magento\\InventoryReservationCli\\Command\\ShowInconsistencies",
+                    "source_file": "vendor/magento/module-inventory-reservation-cli/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_InventoryReservationCli",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\MaintenanceEnableCommand",
+            "command_name": "maintenance:enable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Backend\\Console\\Command\\MaintenanceEnableCommand name='maintenance:enable'",
+                    "source_file": "vendor/magento/module-backend/Console/Command/MaintenanceEnableCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\MaintenanceAllowIpsCommand",
+            "command_name": "maintenanceAllowIps",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'maintenanceAllowIps' class=Magento\\Backend\\Console\\Command\\MaintenanceAllowIpsCommand",
+                    "source_file": "vendor/magento/module-backend/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\MaintenanceDisableCommand",
+            "command_name": "maintenanceDisable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'maintenanceDisable' class=Magento\\Backend\\Console\\Command\\MaintenanceDisableCommand",
+                    "source_file": "vendor/magento/module-backend/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\MaintenanceDisableCommand",
+            "command_name": "maintenanceEnableCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'maintenanceEnableCommand' class=Magento\\Backend\\Console\\Command\\MaintenanceDisableCommand",
+                    "source_file": "vendor/magento/module-backend/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Backend\\Console\\Command\\MaintenanceStatusCommand",
+            "command_name": "maintenanceStatusCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'maintenanceStatusCommand' class=Magento\\Backend\\Console\\Command\\MaintenanceStatusCommand",
+                    "source_file": "vendor/magento/module-backend/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Backend",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\MediaContentSynchronization\\Console\\Command\\Synchronize",
+            "command_name": "mediaContentSynchronization",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'mediaContentSynchronization' class=Magento\\MediaContentSynchronization\\Console\\Command\\Synchronize",
+                    "source_file": "vendor/magento/module-media-content-synchronization/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_MediaContentSynchronization",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\MediaGallerySynchronization\\Console\\Command\\Synchronize",
+            "command_name": "mediaGallerySynchronization",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'mediaGallerySynchronization' class=Magento\\MediaGallerySynchronization\\Console\\Command\\Synchronize",
+                    "source_file": "vendor/magento/module-media-gallery-synchronization/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_MediaGallerySynchronization",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\ModuleConfigStatusCommand",
+            "command_name": "module:config:status",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\ModuleConfigStatusCommand name='module:config:status'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/ModuleConfigStatusCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\ModuleDisableCommand",
+            "command_name": "module:disable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\ModuleDisableCommand name='module:disable'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/ModuleDisableCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\ModuleEnableCommand",
+            "command_name": "module:enable",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\ModuleEnableCommand name='module:enable'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/ModuleEnableCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\ModuleStatusCommand",
+            "command_name": "module:status",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\ModuleStatusCommand name='module:status'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/ModuleStatusCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\ModuleUninstallCommand",
+            "command_name": "module:uninstall",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\ModuleUninstallCommand name='module:uninstall'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/ModuleUninstallCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\NewRelicReporting\\Console\\Command\\DeployMarker",
+            "command_name": "newrelicreporting_deploy_marker",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'newrelicreporting_deploy_marker' class=Magento\\NewRelicReporting\\Console\\Command\\DeployMarker",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_NewRelicReporting",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Newsletter\\Console\\Command\\TemplateCheckCommand",
+            "command_name": "newsletterCompatibilityCheck",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'newsletterCompatibilityCheck' class=Magento\\Newsletter\\Console\\Command\\TemplateCheckCommand",
+                    "source_file": "vendor/magento/module-newsletter/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Newsletter",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Catalog\\Console\\Command\\ProductAttributesCleanUp",
+            "command_name": "productAttributesCleanUp",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'productAttributesCleanUp' class=Magento\\Catalog\\Console\\Command\\ProductAttributesCleanUp",
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Catalog",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\IndexerReindexCommand",
+            "command_name": "reindex",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'reindex' class=Magento\\Indexer\\Console\\Command\\IndexerReindexCommand",
+                    "source_file": "vendor/magento/module-indexer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\RemoteStorage\\Console\\Command\\RemoteStorageSynchronizeCommand",
+            "command_name": "remoteStorageSync",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'remoteStorageSync' class=Magento\\RemoteStorage\\Console\\Command\\RemoteStorageSynchronizeCommand",
+                    "source_file": "vendor/magento/module-remote-storage/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_RemoteStorage",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Downloadable\\Console\\Command\\DomainsRemoveCommand",
+            "command_name": "removeDomainsCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'removeDomainsCommand' class=Magento\\Downloadable\\Console\\Command\\DomainsRemoveCommand",
+                    "source_file": "vendor/magento/module-downloadable/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Downloadable",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\IndexerResetStateCommand",
+            "command_name": "reset",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'reset' class=Magento\\Indexer\\Console\\Command\\IndexerResetStateCommand",
+                    "source_file": "vendor/magento/module-indexer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\MessageQueue\\Console\\RestartConsumerCommand\\Proxy",
+            "command_name": "restartConsumerCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'restartConsumerCommand' class=Magento\\MessageQueue\\Console\\RestartConsumerCommand\\Proxy",
+                    "source_file": "vendor/magento/module-message-queue/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_MessageQueue",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\ServicesId\\Console\\Command\\InitializeProject",
+            "command_name": "saas_initialize_project",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'saas_initialize_project' class=Magento\\ServicesId\\Console\\Command\\InitializeProject",
+                    "source_file": "vendor/magento/module-services-id/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_ServicesId",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\ServicesId\\Console\\Command\\ListProjects",
+            "command_name": "saas_list_project",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'saas_list_project' class=Magento\\ServicesId\\Console\\Command\\ListProjects",
+                    "source_file": "vendor/magento/module-services-id/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_ServicesId",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\SaaSCommon\\Console\\Command\\Resync",
+            "command_name": "saas_resync",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'saas_resync' class=Magento\\SaaSCommon\\Console\\Command\\Resync",
+                    "source_file": "vendor/magento/module-saas-common/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_SaaSCommon",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\SampleData\\Console\\Command\\SampleDataDeployCommand",
+            "command_name": "sampleDataDeployCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'sampleDataDeployCommand' class=Magento\\SampleData\\Console\\Command\\SampleDataDeployCommand",
+                    "source_file": "vendor/magento/module-sample-data/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_SampleData",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\SampleData\\Console\\Command\\SampleDataRemoveCommand",
+            "command_name": "sampleDataRemoveCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'sampleDataRemoveCommand' class=Magento\\SampleData\\Console\\Command\\SampleDataRemoveCommand",
+                    "source_file": "vendor/magento/module-sample-data/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_SampleData",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\SampleData\\Console\\Command\\SampleDataResetCommand",
+            "command_name": "sampleDataResetCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'sampleDataResetCommand' class=Magento\\SampleData\\Console\\Command\\SampleDataResetCommand",
+                    "source_file": "vendor/magento/module-sample-data/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_SampleData",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Deploy\\Console\\Command\\App\\SensitiveConfigSetCommand",
+            "command_name": "sensitiveConfigSetCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'sensitiveConfigSetCommand' class=Magento\\Deploy\\Console\\Command\\App\\SensitiveConfigSetCommand",
+                    "source_file": "vendor/magento/module-deploy/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Deploy",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\IndexerSetDimensionsModeCommand",
+            "command_name": "set-dimensions-mode",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'set-dimensions-mode' class=Magento\\Indexer\\Console\\Command\\IndexerSetDimensionsModeCommand",
+                    "source_file": "vendor/magento/module-indexer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\IndexerSetModeCommand",
+            "command_name": "set-mode",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'set-mode' class=Magento\\Indexer\\Console\\Command\\IndexerSetModeCommand",
+                    "source_file": "vendor/magento/module-indexer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\IndexerSetStatusCommand",
+            "command_name": "set-status",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'set-status' class=Magento\\Indexer\\Console\\Command\\IndexerSetStatusCommand",
+                    "source_file": "vendor/magento/module-indexer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Deploy\\Console\\Command\\SetModeCommand",
+            "command_name": "setModeCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'setModeCommand' class=Magento\\Deploy\\Console\\Command\\SetModeCommand",
+                    "source_file": "vendor/magento/module-deploy/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Deploy",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\BackupCommand",
+            "command_name": "setup:backup",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\BackupCommand name='setup:backup'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/BackupCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\ConfigSetCommand",
+            "command_name": "setup:config:set",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\ConfigSetCommand name='setup:config:set'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/ConfigSetCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\DbDataUpgradeCommand",
+            "command_name": "setup:db-data:upgrade",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\DbDataUpgradeCommand name='setup:db-data:upgrade'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/DbDataUpgradeCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\DbSchemaUpgradeCommand",
+            "command_name": "setup:db-schema:upgrade",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\DbSchemaUpgradeCommand name='setup:db-schema:upgrade'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/DbSchemaUpgradeCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\DbStatusCommand",
+            "command_name": "setup:db:status",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\DbStatusCommand name='setup:db:status'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/DbStatusCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\DiCompileCommand",
+            "command_name": "setup:di:compile",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\DiCompileCommand name='setup:di:compile'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\InstallCommand",
+            "command_name": "setup:install",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\InstallCommand name='setup:install'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/InstallCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\GenerateFixturesCommand",
+            "command_name": "setup:performance:generate-fixtures",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\GenerateFixturesCommand name='setup:performance:generate-fixtures'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/GenerateFixturesCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\RollbackCommand",
+            "command_name": "setup:rollback",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\RollbackCommand name='setup:rollback'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/RollbackCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\DeployStaticContentCommand",
+            "command_name": "setup:static-content:deploy",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\DeployStaticContentCommand name='setup:static-content:deploy'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\InstallStoreConfigurationCommand",
+            "command_name": "setup:store-config:set",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\InstallStoreConfigurationCommand name='setup:store-config:set'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/InstallStoreConfigurationCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\UninstallCommand",
+            "command_name": "setup:uninstall",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\UninstallCommand name='setup:uninstall'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/UninstallCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Setup\\Console\\Command\\UpgradeCommand",
+            "command_name": "setup:upgrade",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command class Magento\\Setup\\Console\\Command\\UpgradeCommand name='setup:upgrade'",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Console/Command/UpgradeCommand.php",
+                    "source_span": {
+                        "line_start": 0
+                    },
+                    "type": "php_ast"
+                }
+            ],
+            "module": "Magento_Setup",
+            "source": "php_scan"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\IndexerShowDimensionsModeCommand",
+            "command_name": "show-dimensions-mode",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'show-dimensions-mode' class=Magento\\Indexer\\Console\\Command\\IndexerShowDimensionsModeCommand",
+                    "source_file": "vendor/magento/module-indexer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\IndexerShowModeCommand",
+            "command_name": "show-mode",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'show-mode' class=Magento\\Indexer\\Console\\Command\\IndexerShowModeCommand",
+                    "source_file": "vendor/magento/module-indexer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Downloadable\\Console\\Command\\DomainsShowCommand",
+            "command_name": "showDomainsCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'showDomainsCommand' class=Magento\\Downloadable\\Console\\Command\\DomainsShowCommand",
+                    "source_file": "vendor/magento/module-downloadable/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Downloadable",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Deploy\\Console\\Command\\ShowModeCommand",
+            "command_name": "showModeCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'showModeCommand' class=Magento\\Deploy\\Console\\Command\\ShowModeCommand",
+                    "source_file": "vendor/magento/module-deploy/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Deploy",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\MessageQueue\\Console\\StartConsumerCommand\\Proxy",
+            "command_name": "startConsumerCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'startConsumerCommand' class=Magento\\MessageQueue\\Console\\StartConsumerCommand\\Proxy",
+                    "source_file": "vendor/magento/module-message-queue/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_MessageQueue",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Indexer\\Console\\Command\\IndexerStatusCommand",
+            "command_name": "status",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'status' class=Magento\\Indexer\\Console\\Command\\IndexerStatusCommand",
+                    "source_file": "vendor/magento/module-indexer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Indexer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\TwoFactorAuth\\Command\\TfaProviders",
+            "command_name": "tfa_providers",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'tfa_providers' class=Magento\\TwoFactorAuth\\Command\\TfaProviders",
+                    "source_file": "vendor/magento/module-two-factor-auth/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_TwoFactorAuth",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\TwoFactorAuth\\Command\\TfaReset",
+            "command_name": "tfa_reset",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'tfa_reset' class=Magento\\TwoFactorAuth\\Command\\TfaReset",
+                    "source_file": "vendor/magento/module-two-factor-auth/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_TwoFactorAuth",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Theme\\Console\\Command\\ThemeUninstallCommand",
+            "command_name": "theme_uninstall",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'theme_uninstall' class=Magento\\Theme\\Console\\Command\\ThemeUninstallCommand",
+                    "source_file": "vendor/magento/module-theme/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Theme",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Translation\\Console\\Command\\UninstallLanguageCommand",
+            "command_name": "uninstall_language",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'uninstall_language' class=Magento\\Translation\\Console\\Command\\UninstallLanguageCommand",
+                    "source_file": "vendor/magento/module-translation/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Translation",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Customer\\Console\\Command\\UpgradeHashAlgorithmCommand",
+            "command_name": "upgradeHashAlgorithmCommand",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'upgradeHashAlgorithmCommand' class=Magento\\Customer\\Console\\Command\\UpgradeHashAlgorithmCommand",
+                    "source_file": "vendor/magento/module-customer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Customer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\TablesWhitelistGenerateCommand",
+            "command_name": "whitelist_generation",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'whitelist_generation' class=Magento\\Developer\\Console\\Command\\TablesWhitelistGenerateCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\XmlCatalogGenerateCommand",
+            "command_name": "xml_catalog_generator",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'xml_catalog_generator' class=Magento\\Developer\\Console\\Command\\XmlCatalogGenerateCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        },
+        {
+            "class": "Magento\\Developer\\Console\\Command\\XmlConverterCommand",
+            "command_name": "xml_converter",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "CLI command 'xml_converter' class=Magento\\Developer\\Console\\Command\\XmlConverterCommand",
+                    "source_file": "vendor/magento/module-developer/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "module": "Magento_Developer",
+            "source": "di_xml"
+        }
+    ],
+    "generated_at": "2026-02-27T17:29:09+00:00",
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "scope": [
+        "vendor/magento"
+    ],
+    "summary": {
+        "by_module": {
+            "unknown": 125
+        },
+        "total_commands": 125
+    }
+}

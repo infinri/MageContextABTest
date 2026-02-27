@@ -1,0 +1,47 @@
+{
+    "\\$schema": "schemas/frontend_controller_rest_requestvalidator.schema.json",
+    "affected_modules": [
+        "unknown",
+        "Magento_ReCaptchaWebapiRest"
+    ],
+    "dependency_slice": [],
+    "entry_point": {
+        "class": "Magento\\Webapi\\Controller\\Rest\\RequestValidator",
+        "method": "execute",
+        "module": "unknown",
+        "step_kind": "http_request",
+        "type": "controller"
+    },
+    "execution_chain": {
+        "complexity": [],
+        "di_resolution_chain": [],
+        "observer_triggers": [],
+        "plugin_stack": [
+            {
+                "module": "Magento_ReCaptchaWebapiRest",
+                "plugin_class": "Magento\\ReCaptchaWebapiRest\\Plugin\\RestValidationPlugin",
+                "plugin_name": "rest_webapi_recaptcha_validation",
+                "sort_order": null
+            }
+        ]
+    },
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "module_refs": [],
+    "qa_concerns": [],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "risk": {
+        "affected_module_count": 2,
+        "level": "low",
+        "observer_count": 0,
+        "plugin_depth": 0,
+        "reasons": [
+            "1 architectural debt item(s) in affected modules"
+        ],
+        "score": 0.05
+    },
+    "scenario": "frontend.controller.rest.requestvalidator",
+    "scenario_id": "340e6e745550c9f8dc58770d02419d6f0ade58d4",
+    "scope": [
+        "vendor/magento"
+    ]
+}

@@ -1,0 +1,185 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/reverse_index.schema.schema.json",
+    "description": "Given X, find all facts about X. Keyed by class_id, module_id, event_id, route_id.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "by_class": {
+            "additionalProperties": {
+                "properties": {
+                    "class_id": {
+                        "type": "string"
+                    },
+                    "di_resolutions": {
+                        "type": "array"
+                    },
+                    "events_observed": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "file_id": {
+                        "type": "string"
+                    },
+                    "fqcn": {
+                        "type": "string"
+                    },
+                    "module_id": {
+                        "type": "string"
+                    },
+                    "plugins_on": {
+                        "type": "array"
+                    },
+                    "symbol_type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "description": "class_id \u2192 {file_id, module_id, symbol_type, plugins_on[], di_resolutions[], events_observed[]}",
+            "type": "object"
+        },
+        "by_event": {
+            "additionalProperties": {
+                "properties": {
+                    "cross_module_count": {
+                        "type": "integer"
+                    },
+                    "event_id": {
+                        "type": "string"
+                    },
+                    "observer_count": {
+                        "type": "integer"
+                    },
+                    "observers": {
+                        "type": "array"
+                    },
+                    "risk_score": {
+                        "type": "number"
+                    }
+                },
+                "type": "object"
+            },
+            "description": "event_id \u2192 {observers[], cross_module_count, risk_score}",
+            "type": "object"
+        },
+        "by_module": {
+            "additionalProperties": {
+                "properties": {
+                    "classes": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "cli_commands": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "crons": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "debt_items": {
+                        "type": "array"
+                    },
+                    "deviations": {
+                        "type": "integer"
+                    },
+                    "events_observed": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "files": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "module_id": {
+                        "type": "string"
+                    },
+                    "plugins_declared": {
+                        "type": "array"
+                    },
+                    "routes": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    }
+                },
+                "type": "object"
+            },
+            "description": "module_id \u2192 {files[], classes[], plugins_declared[], events_observed[], routes[], crons[], debt_items[]}",
+            "type": "object"
+        },
+        "by_route": {
+            "additionalProperties": {
+                "properties": {
+                    "area": {
+                        "type": "string"
+                    },
+                    "controller": {
+                        "type": "string"
+                    },
+                    "method": {
+                        "type": "string"
+                    },
+                    "module_id": {
+                        "type": "string"
+                    },
+                    "path": {
+                        "type": "string"
+                    },
+                    "plugins_on_controller": {
+                        "type": "array"
+                    },
+                    "route_id": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "description": "route_id \u2192 {area, method, path, controller, module_id, plugins_on_controller[]}",
+            "type": "object"
+        },
+        "summary": {
+            "properties": {
+                "indexed_classes": {
+                    "type": "integer"
+                },
+                "indexed_events": {
+                    "type": "integer"
+                },
+                "indexed_modules": {
+                    "type": "integer"
+                },
+                "indexed_routes": {
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "by_class",
+        "by_module",
+        "by_event",
+        "by_route",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Reverse Index",
+    "type": "object"
+}

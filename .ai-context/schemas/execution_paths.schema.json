@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/execution_paths.schema.schema.json",
+    "description": "Reconstructed execution paths from entry points through DI, plugins, observers.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "paths": {
+            "items": {
+                "properties": {
+                    "area": {
+                        "type": "string"
+                    },
+                    "entry_point": {
+                        "type": "string"
+                    },
+                    "module": {
+                        "type": "string"
+                    },
+                    "observer_count": {
+                        "type": "integer"
+                    },
+                    "plugin_depth": {
+                        "type": "integer"
+                    },
+                    "plugin_stack": {
+                        "type": "array"
+                    },
+                    "scenario": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "summary": {
+            "type": "object"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "paths",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Execution Paths",
+    "type": "object"
+}

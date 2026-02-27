@@ -1,0 +1,3178 @@
+{
+    "\\$schema": "schemas/performance.schema.json",
+    "generated_at": "2026-02-27T17:29:47+00:00",
+    "indicators": [
+        {
+            "depth": 17,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "17 plugins on Magento\\Catalog\\Model\\ResourceModel\\Product",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\CatalogRule\\Plugin\\Indexer\\Product\\Save\\ApplyRules",
+                    "plugin_name": "apply_catalog_rules_after_product_save",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-rule/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Plugin\\Product",
+                    "plugin_name": "catalogsearchFulltextProduct",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Plugin\\Model\\ResourceModel\\Product",
+                    "plugin_name": "reload_attributes",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\DeleteSourceItemsPlugin",
+                    "plugin_name": "delete_source_items",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\ProcessSourceItemsPlugin",
+                    "plugin_name": "process_source_items_after_product_save",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\CreateSourceItemsPlugin",
+                    "plugin_name": "create_source_items",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\CreateSourceItemsPlugin",
+                    "plugin_name": "create_source_items",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryConfigurableProductIndexer\\Plugin\\InventoryIndexer\\Indexer\\SourceItem\\Strategy\\Sync\\APISourceItemIndexerPlugin",
+                    "plugin_name": "api_configurable_product_index",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-configurable-product-indexer/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryLowQuantityNotification\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\CreateSourceItemConfigurationPlugin",
+                    "plugin_name": "create_source_item_configurations",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-low-quantity-notification/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryLowQuantityNotification\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\ProcessDefaultSourceItemConfigurationPlugin",
+                    "plugin_name": "process_default_source_item_configuration_after_product_save",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-low-quantity-notification/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryLowQuantityNotification\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\CreateSourceItemConfigurationPlugin",
+                    "plugin_name": "create_source_item_configurations",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-low-quantity-notification/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryLowQuantityNotification\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\ProcessDefaultSourceItemConfigurationPlugin",
+                    "plugin_name": "process_default_source_item_configuration_after_product_save",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-low-quantity-notification/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventorySales\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\UpdateReservationsPlugin",
+                    "plugin_name": "process_reservations_after_product_save",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-sales/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventorySales\\Plugin\\Catalog\\Model\\ResourceModel\\Product\\DeleteReservationsPlugin",
+                    "plugin_name": "delete_reservations",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-sales/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Model\\Product\\Plugin\\RemoveQuoteItems",
+                    "plugin_name": "clean_quote_items_after_product_delete",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Model\\Product\\Plugin\\UpdateQuoteItems",
+                    "plugin_name": "update_quote_items_after_product_save",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Wishlist\\Plugin\\Model\\ResourceModel\\Product",
+                    "plugin_name": "cleanups_wishlist_item_after_product_delete",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-wishlist/etc/adminhtml/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Catalog\\Model\\ResourceModel\\Product",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (17 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "event": "sales_model_service_quote_submit_success",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "11 observers on event sales_model_service_quote_submit_success",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 11,
+            "observers": [
+                {
+                    "observer_class": "Magento\\CatalogInventory\\Observer\\ReindexQuoteInventoryObserver",
+                    "observer_name": "inventory",
+                    "source_file": "vendor/magento/module-catalog-inventory/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Downloadable\\Observer\\SetHasDownloadableProductsObserver",
+                    "observer_name": "checkout_type_onepage_save_order_after",
+                    "source_file": "vendor/magento/module-downloadable/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\PaymentServicesBase\\Observer\\UpdateOrder",
+                    "observer_name": "payment_services_update_order",
+                    "source_file": "vendor/magento/module-payment-services-base/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Quote\\Observer\\SubmitObserver",
+                    "observer_name": "sendEmail",
+                    "source_file": "vendor/magento/module-quote-graph-ql/etc/graphql/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Quote\\Observer\\SendInvoiceEmailObserver",
+                    "observer_name": "sendInvoiceEmail",
+                    "source_file": "vendor/magento/module-quote-graph-ql/etc/graphql/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Quote\\Observer\\SubmitObserver",
+                    "observer_name": "sendEmail",
+                    "source_file": "vendor/magento/module-quote/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Quote\\Observer\\SendInvoiceEmailObserver",
+                    "observer_name": "sendInvoiceEmail",
+                    "source_file": "vendor/magento/module-quote/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Quote\\Observer\\SubmitObserver",
+                    "observer_name": "sendEmail",
+                    "source_file": "vendor/magento/module-quote/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Quote\\Observer\\SendInvoiceEmailObserver",
+                    "observer_name": "sendInvoiceEmail",
+                    "source_file": "vendor/magento/module-quote/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Quote\\Observer\\SubmitObserver",
+                    "observer_name": "sendEmail",
+                    "source_file": "vendor/magento/module-quote/etc/webapi_soap/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Quote\\Observer\\SendInvoiceEmailObserver",
+                    "observer_name": "sendInvoiceEmail",
+                    "source_file": "vendor/magento/module-quote/etc/webapi_soap/events.xml"
+                }
+            ],
+            "severity": "high",
+            "type": "high_observer_count",
+            "why_risky": "Event 'sales_model_service_quote_submit_success' has 11 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "depth": 10,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "10 plugins on Magento\\Framework\\App\\FrontControllerInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Deploy\\Model\\Plugin\\ConfigChangeDetector",
+                    "plugin_name": "configHash",
+                    "sort_order": 50,
+                    "source_file": "vendor/magento/module-deploy/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\GraphQlCache\\Controller\\Plugin\\GraphQl",
+                    "plugin_name": "graphql-dispatch-plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-graph-ql-cache/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\App\\FrontController\\BuiltinPlugin",
+                    "plugin_name": "front-controller-builtin-cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-graph-ql-cache/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\App\\FrontController\\VarnishPlugin",
+                    "plugin_name": "front-controller-varnish-cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-graph-ql-cache/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\App\\FrontController\\BuiltinPlugin",
+                    "plugin_name": "front-controller-builtin-cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-page-cache/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\App\\FrontController\\VarnishPlugin",
+                    "plugin_name": "front-controller-varnish-cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-page-cache/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Plugin\\RegisterFormKeyFromCookie",
+                    "plugin_name": "page_cache_form_key_from_cookie",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-page-cache/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Plugin\\RegisterFormKeyFromCookie",
+                    "plugin_name": "page_cache_form_key_from_cookie",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-page-cache/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Plugin\\AppendNoStoreCacheHeader",
+                    "plugin_name": "append_no_store_cache_header",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-page-cache/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Plugin\\AppendNoStoreCacheHeader",
+                    "plugin_name": "append_no_store_cache_header",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-page-cache/etc/webapi_soap/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Framework\\App\\FrontControllerInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (10 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 9,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "9 plugins on Magento\\Bundle\\Api\\ProductLinkManagementInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Bundle\\Plugin\\Api\\ProductLinkManagement\\ReindexAfterAddChildBySkuPlugin",
+                    "plugin_name": "reindex_after_add_child_by_sku",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-bundle/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Bundle\\Plugin\\Api\\ProductLinkManagement\\ReindexAfterRemoveChildPlugin",
+                    "plugin_name": "reindex_after_remove_child",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-bundle/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Bundle\\Plugin\\Api\\ProductLinkManagement\\ReindexAfterAddChildBySkuPlugin",
+                    "plugin_name": "reindex_after_add_child_by_sku",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-bundle/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Bundle\\Plugin\\Api\\ProductLinkManagement\\ReindexAfterRemoveChildPlugin",
+                    "plugin_name": "reindex_after_remove_child",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-bundle/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryBundleProductIndexer\\Plugin\\Bundle\\Model\\LinkManagement\\ReindexSourceItemsAfterAddBundleSelectionPlugin",
+                    "plugin_name": "reindex_source_items_after_add_bundle_selection",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-bundle-product-indexer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryBundleProductIndexer\\Plugin\\Bundle\\Model\\LinkManagement\\ReindexSourceItemsAfterSaveBundleSelectionPlugin",
+                    "plugin_name": "reindex_source_items_after_save_bundle_selection",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-bundle-product-indexer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryBundleProductIndexer\\Plugin\\Bundle\\Model\\LinkManagement\\ReindexSourceItemsAfterRemoveBundleSelectionPlugin",
+                    "plugin_name": "reindex_source_items_after_remove_bundle_selection",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-bundle-product-indexer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryBundleProduct\\Plugin\\Bundle\\Model\\LinkManagement\\ValidateSourceItemsBeforeAddBundleSelectionPlugin",
+                    "plugin_name": "validate_source_items_before_add_bundle_selection",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-bundle-product/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryBundleProduct\\Plugin\\Bundle\\Model\\LinkManagement\\ValidateSourceItemsBeforeSaveBundleSelectionPlugin",
+                    "plugin_name": "validate_source_items_before_save_bundle_selection",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-bundle-product/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Bundle\\Api\\ProductLinkManagementInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (9 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 9,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "9 plugins on Magento\\Catalog\\Model\\ResourceModel\\Category",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Model\\Plugin\\Category",
+                    "plugin_name": "fulltext_search_indexer",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Plugin\\Category",
+                    "plugin_name": "catalogsearchFulltextCategory",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Model\\Plugin\\Category",
+                    "plugin_name": "fulltext_search_indexer",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Model\\Plugin\\Category",
+                    "plugin_name": "fulltext_search_indexer",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogUrlRewrite\\Model\\Category\\Plugin\\Category\\Move",
+                    "plugin_name": "category_move_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogUrlRewrite\\Model\\Category\\Plugin\\Category\\Remove",
+                    "plugin_name": "category_delete_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogUrlRewrite\\Model\\Category\\Plugin\\Category\\Move",
+                    "plugin_name": "category_move_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogUrlRewrite\\Model\\Category\\Plugin\\Category\\Remove",
+                    "plugin_name": "category_delete_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogUrlRewrite\\Model\\Category\\Plugin\\Category\\UpdateUrlPath",
+                    "plugin_name": "update_url_path_for_different_stores",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Catalog\\Model\\ResourceModel\\Category",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (9 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 8,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "8 plugins on Magento\\Framework\\View\\Layout",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\Layout\\DepersonalizePlugin",
+                    "plugin_name": "core-session-depersonalize",
+                    "sort_order": 1,
+                    "source_file": "vendor/magento/module-page-cache/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Layout\\DepersonalizePlugin",
+                    "plugin_name": "catalog-session-depersonalize",
+                    "sort_order": 10,
+                    "source_file": "vendor/magento/module-catalog/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Layout\\DepersonalizePlugin",
+                    "plugin_name": "customer-session-depersonalize",
+                    "sort_order": 10,
+                    "source_file": "vendor/magento/module-customer/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Persistent\\Model\\Layout\\DepersonalizePlugin",
+                    "plugin_name": "persistent-session-depersonalize",
+                    "sort_order": 10,
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Checkout\\Model\\Layout\\DepersonalizePlugin",
+                    "plugin_name": "checkout-session-depersonalize",
+                    "sort_order": 20,
+                    "source_file": "vendor/magento/module-checkout/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Tax\\Model\\Layout\\DepersonalizePlugin",
+                    "plugin_name": "tax-session-depersonalize",
+                    "sort_order": 20,
+                    "source_file": "vendor/magento/module-tax/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\Layout\\LayoutPlugin",
+                    "plugin_name": "layout-model-caching-unique-name",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-page-cache/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Persistent\\Plugin\\AddPersistentRememberMeInitPlugin",
+                    "plugin_name": "add_persistent_remember_me_init_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Framework\\View\\Layout",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (8 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 8,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "8 plugins on Magento\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\InventoryBundleProductIndexer\\Plugin\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync\\ReindexFullPlugin",
+                    "plugin_name": "bundle_product_index_full",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-bundle-product-indexer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryBundleProductIndexer\\Plugin\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync\\ReindexListPlugin",
+                    "plugin_name": "bundle_product_index_list",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-bundle-product-indexer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCache\\Plugin\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync\\CacheFlush",
+                    "plugin_name": "invalidate_products_cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-cache/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync\\PriceIndexUpdatePlugin",
+                    "plugin_name": "update_product_prices_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryConfigurableProductIndexer\\Plugin\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync\\ReindexFullPlugin",
+                    "plugin_name": "configurable_product_full_index",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-configurable-product-indexer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryConfigurableProductIndexer\\Plugin\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync\\ReindexListPlugin",
+                    "plugin_name": "configurable_product_index_list",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-configurable-product-indexer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryGroupedProductIndexer\\Plugin\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync\\ReindexListPlugin",
+                    "plugin_name": "grouped_product_index_list",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-grouped-product-indexer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryGroupedProductIndexer\\Plugin\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync\\ReindexFullPlugin",
+                    "plugin_name": "grouped_product_index_full",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-grouped-product-indexer/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\InventoryIndexer\\Indexer\\Stock\\Strategy\\Sync",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (8 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 7,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "7 plugins on Magento\\Catalog\\Controller\\Adminhtml\\Product\\Initialization\\Helper",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\Plugin\\Configurable",
+                    "plugin_name": "configurable",
+                    "sort_order": 50,
+                    "source_file": "vendor/magento/module-configurable-product/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Bundle\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\Plugin\\Bundle",
+                    "plugin_name": "Bundle",
+                    "sort_order": 60,
+                    "source_file": "vendor/magento/module-bundle/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\Plugin\\UpdateConfigurations",
+                    "plugin_name": "updateConfigurations",
+                    "sort_order": 60,
+                    "source_file": "vendor/magento/module-configurable-product/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Downloadable\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\Plugin\\Downloadable",
+                    "plugin_name": "Downloadable",
+                    "sort_order": 70,
+                    "source_file": "vendor/magento/module-downloadable/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Plugin\\Product\\Initialization\\CleanConfigurationTmpImages",
+                    "plugin_name": "cleanConfigurationTmpImages",
+                    "sort_order": 999,
+                    "source_file": "vendor/magento/module-configurable-product/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogUrlRewrite\\Plugin\\Catalog\\Controller\\Adminhtml\\Product\\Initialization\\Helper",
+                    "plugin_name": "product_save_rewrites_history_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Weee\\Plugin\\Catalog\\Controller\\Adminhtml\\Product\\Initialization\\Helper\\ProcessTaxAttribute",
+                    "plugin_name": "weeeAttributeOptionsProcess",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-weee/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Catalog\\Controller\\Adminhtml\\Product\\Initialization\\Helper",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (7 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 7,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "7 plugins on Magento\\Catalog\\Model\\Product",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Bundle\\Model\\Plugin\\ProductIdentitiesExtender",
+                    "plugin_name": "add_bundle_parent_identities",
+                    "sort_order": 100,
+                    "source_file": "vendor/magento/module-bundle/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Bundle\\Model\\Plugin\\Frontend\\ProductIdentitiesExtender",
+                    "plugin_name": "add_bundle_child_identities",
+                    "sort_order": 100,
+                    "source_file": "vendor/magento/module-bundle/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Cms\\Model\\Plugin\\Product",
+                    "plugin_name": "cms",
+                    "sort_order": 100,
+                    "source_file": "vendor/magento/module-cms/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogInventory\\Model\\Plugin\\AfterProductLoad",
+                    "plugin_name": "catalogInventoryAfterLoad",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-inventory/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogRule\\Plugin\\Indexer\\Product\\Save\\ApplyRulesAfterReindex",
+                    "plugin_name": "apply_catalog_rules_after_product_save_and_reindex",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-rule/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Model\\Plugin\\ProductIdentitiesExtender",
+                    "plugin_name": "product_identities_extender",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Swatches\\Model\\Plugin\\Product",
+                    "plugin_name": "exclude_swatch_attribute",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-swatches/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Catalog\\Model\\Product",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (7 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 7,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "7 plugins on Magento\\Store\\Model\\ResourceModel\\Store",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Plugin\\Store\\View",
+                    "plugin_name": "catalogsearchFulltextIndexerStoreView",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogUrlRewrite\\Model\\Category\\Plugin\\Store\\View",
+                    "plugin_name": "store_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Category\\Flat\\Plugin\\StoreView",
+                    "plugin_name": "storeViewResourceAroundSave",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Product\\Flat\\Plugin\\Store",
+                    "plugin_name": "catalogProductFlatIndexerStore",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Category\\Product\\Plugin\\StoreView",
+                    "plugin_name": "categoryStoreAroundSave",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Product\\Eav\\Plugin\\StoreView",
+                    "plugin_name": "productAttributesStoreViewSave",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CmsUrlRewrite\\Plugin\\Cms\\Model\\Store\\View",
+                    "plugin_name": "update_cms_url_rewrites_after_store_save",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-cms-url-rewrite/etc/adminhtml/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Store\\Model\\ResourceModel\\Store",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (7 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 7,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "7 plugins on Magento\\ConfigurableProduct\\Model\\ResourceModel\\Attribute\\OptionSelectBuilderInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Plugin\\Model\\ResourceModel\\Attribute\\InStockOptionSelectBuilder",
+                    "plugin_name": "Magento_ConfigurableProduct_Plugin_Model_ResourceModel_Attribute_InStockOptionSelectBuilder_GraphQl",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product-graph-ql/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Plugin\\Model\\ResourceModel\\Attribute\\ScopedOptionSelectBuilder",
+                    "plugin_name": "option_select_website_filter",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product-graph-ql/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Plugin\\Model\\ResourceModel\\Attribute\\InStockOptionSelectBuilder",
+                    "plugin_name": "Magento_ConfigurableProduct_Plugin_Model_ResourceModel_Attribute_InStockOptionSelectBuilder",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Plugin\\Model\\ResourceModel\\Attribute\\ScopedOptionSelectBuilder",
+                    "plugin_name": "option_select_website_filter",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryConfigurableProduct\\Plugin\\Model\\ResourceModel\\Attribute\\IsSalableOptionSelectBuilder",
+                    "plugin_name": "Magento_ConfigurableProduct_Plugin_Model_ResourceModel_Attribute_InStockOptionSelectBuilder",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-configurable-product/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryConfigurableProduct\\Plugin\\Model\\ResourceModel\\Attribute\\IsSalableOptionSelectBuilder",
+                    "plugin_name": "Magento_ConfigurableProduct_Plugin_Model_ResourceModel_Attribute_InStockOptionSelectBuilder_GraphQl",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-configurable-product/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryConfigurableProduct\\Plugin\\Model\\ResourceModel\\Attribute\\IsEnabledOptionSelectBuilder",
+                    "plugin_name": "Magento_ConfigurableProduct_Plugin_Model_ResourceModel_Attribute_EnabledOptionSelectBuilder_GraphQl",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-configurable-product/etc/graphql/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\ConfigurableProduct\\Model\\ResourceModel\\Attribute\\OptionSelectBuilderInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (7 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 7,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "7 plugins on Magento\\Framework\\App\\ActionInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\App\\Action\\ContextPlugin",
+                    "plugin_name": "customer-app-action-executeController-context-plugin",
+                    "sort_order": 10,
+                    "source_file": "vendor/magento/module-customer/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\CustomerNotification",
+                    "plugin_name": "customerNotification",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\LoginAsCustomerFrontendUi\\Plugin\\InvalidateExpiredSessionPlugin",
+                    "plugin_name": "invalidate_expired_session_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-login-as-customer-frontend-ui/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Store\\App\\Action\\Plugin\\StoreCheck",
+                    "plugin_name": "storeCheck",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-store/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Tax\\Model\\App\\Action\\ContextPlugin",
+                    "plugin_name": "tax-app-action-dispatchController-context-plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-tax/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Theme\\Plugin\\LoadDesignPlugin",
+                    "plugin_name": "designLoader",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-theme/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Weee\\Model\\App\\Action\\ContextPlugin",
+                    "plugin_name": "weee-app-action-dispatchController-context-plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-weee/etc/frontend/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Framework\\App\\ActionInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (7 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 6,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 plugins on Magento\\Store\\Model\\ResourceModel\\Group",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\CatalogInventory\\Model\\Indexer\\Stock\\Plugin\\StoreGroup",
+                    "plugin_name": "storeGroupResourceAroundBeforeSave",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-inventory/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Plugin\\Store\\Group",
+                    "plugin_name": "catalogsearchFulltextIndexerStoreGroup",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogUrlRewrite\\Model\\Category\\Plugin\\Store\\Group",
+                    "plugin_name": "group_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Category\\Flat\\Plugin\\StoreGroup",
+                    "plugin_name": "storeGroupResourceAroundSave",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Product\\Flat\\Plugin\\StoreGroup",
+                    "plugin_name": "catalogProductFlatIndexerStoreGroup",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Category\\Product\\Plugin\\StoreGroup",
+                    "plugin_name": "categoryStoreGroupAroundSave",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Store\\Model\\ResourceModel\\Group",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (6 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 6,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 plugins on Magento\\Catalog\\Model\\Product\\Action",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\CatalogInventory\\Model\\Plugin\\ReindexUpdatedProducts",
+                    "plugin_name": "ReindexUpdatedProducts",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-inventory/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogRule\\Plugin\\Model\\Product\\Action",
+                    "plugin_name": "price_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-rule/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Plugin\\Product\\Action",
+                    "plugin_name": "catalogsearchFulltextMassAction",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogUrlRewrite\\Plugin\\Catalog\\Model\\Product\\UpdateProductWebsiteUrlRewrites",
+                    "plugin_name": "update_url_rewrites_after_websites_update_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Plugin\\Model\\Product\\Action\\UpdateAttributesFlushCache",
+                    "plugin_name": "invalidate_pagecache_after_update_product_attributes",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Model\\Product\\Plugin\\MarkQuotesRecollectMassDisabled",
+                    "plugin_name": "quoteProductMassChange",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Catalog\\Model\\Product\\Action",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (6 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 6,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 plugins on Magento\\Framework\\App\\ResourceConnection",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Category\\Product\\Plugin\\TableResolver",
+                    "plugin_name": "get_catalog_category_product_index_table_name",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Product\\Price\\Plugin\\TableResolver",
+                    "plugin_name": "get_catalog_product_price_index_table_name",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Category\\Product\\Plugin\\TableResolver",
+                    "plugin_name": "get_catalog_category_product_index_table_name",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Product\\Price\\Plugin\\TableResolver",
+                    "plugin_name": "get_catalog_product_price_index_table_name",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Category\\Product\\Plugin\\TableResolver",
+                    "plugin_name": "get_catalog_category_product_index_table_name",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Product\\Price\\Plugin\\TableResolver",
+                    "plugin_name": "get_catalog_product_price_index_table_name",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_soap/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Framework\\App\\ResourceConnection",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (6 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 6,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 plugins on Magento\\Quote\\Model\\Quote",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Checkout\\Plugin\\Model\\Quote\\ResetQuoteAddresses",
+                    "plugin_name": "clear_addresses_after_product_delete",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-checkout/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProductGraphQl\\Plugin\\Quote\\UpdateCustomizedOptions",
+                    "plugin_name": "update_customized_options",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product-graph-ql/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Multishipping\\Plugin\\ResetShippingAssigment",
+                    "plugin_name": "multishipping_reset_shipping_assigment",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-multishipping/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Model\\Quote\\Plugin\\UpdateQuoteStoreId",
+                    "plugin_name": "updateQuoteStoreId",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Plugin\\QuoteAddress",
+                    "plugin_name": "validateQuoteAddress",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Model\\Quote\\Plugin\\UpdateQuoteStoreId",
+                    "plugin_name": "updateQuoteStoreId",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/webapi_soap/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Quote\\Model\\Quote",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (6 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 6,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 plugins on Magento\\Framework\\Controller\\ResultInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\GraphQlCache\\Controller\\Plugin\\GraphQl",
+                    "plugin_name": "graphql-result-plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-graph-ql-cache/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\Controller\\Result\\BuiltinPlugin",
+                    "plugin_name": "result-builtin-cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-graph-ql-cache/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\Controller\\Result\\VarnishPlugin",
+                    "plugin_name": "result-varnish-cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-graph-ql-cache/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\Controller\\Result\\BuiltinPlugin",
+                    "plugin_name": "result-builtin-cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-page-cache/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageCache\\Model\\Controller\\Result\\VarnishPlugin",
+                    "plugin_name": "result-varnish-cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-page-cache/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Theme\\Controller\\Result\\MessagePlugin",
+                    "plugin_name": "result-messages",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-theme/etc/frontend/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Framework\\Controller\\ResultInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (6 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 6,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 plugins on Magento\\InventoryApi\\Api\\StockRepositoryInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\InventorySalesAdminUi\\Plugin\\InventoryApi\\StockRepository\\AddNoticeForUnassignedSalesChannels",
+                    "plugin_name": "add_notice_for_unassigned_sales_channels",
+                    "sort_order": 10,
+                    "source_file": "vendor/magento/module-inventory-sales-admin-ui/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventorySales\\Plugin\\InventoryApi\\StockRepository\\SaveSalesChannelsLinksPlugin",
+                    "plugin_name": "save_sales_channels_links",
+                    "sort_order": 20,
+                    "source_file": "vendor/magento/module-inventory-sales/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\InventoryApi\\StockRepository\\PreventDeleting\\DefaultStockPlugin",
+                    "plugin_name": "prevent_default_stock_deleting",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventorySales\\Plugin\\InventoryApi\\StockRepository\\LoadSalesChannelsOnGetListPlugin",
+                    "plugin_name": "load_sales_channels_on_get_list",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-sales/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventorySales\\Plugin\\InventoryApi\\StockRepository\\LoadSalesChannelsOnGetPlugin",
+                    "plugin_name": "load_sales_channels_on_get",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-sales/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventorySales\\Plugin\\InventoryApi\\StockRepository\\PreventDeletingAssignedToSalesChannelsStockPlugin",
+                    "plugin_name": "prevent_deleting_assigned_to_sales_channels_stock",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-sales/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\InventoryApi\\Api\\StockRepositoryInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (6 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 6,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 plugins on Magento\\CatalogInventory\\Api\\StockRegistryInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\InventoryConfigurableProduct\\Plugin\\CatalogInventory\\Api\\StockRegistry\\SetQtyToLegacyStock",
+                    "plugin_name": "inventory_catalog_add_qty_to_legacy_stock_configurable",
+                    "sort_order": 100,
+                    "source_file": "vendor/magento/module-inventory-configurable-product/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\CatalogInventory\\Api\\StockRegistry\\AdaptGetStockStatusPlugin",
+                    "plugin_name": "adapt_get_stock_status",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\CatalogInventory\\Api\\StockRegistry\\AdaptGetStockStatusBySkuPlugin",
+                    "plugin_name": "adapt_get_stock_status_by_sku",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\CatalogInventory\\Api\\StockRegistry\\AdaptGetProductStockStatusPlugin",
+                    "plugin_name": "adapt_get_product_stock_status",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\CatalogInventory\\Api\\StockRegistry\\AdaptGetProductStockStatusBySkuPlugin",
+                    "plugin_name": "adapt_get_product_stock_status_by_sku",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\CatalogInventory\\Api\\StockRegistry\\SetQtyToLegacyStock",
+                    "plugin_name": "inventory_catalog_add_qty_to_legacy_stock",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\CatalogInventory\\Api\\StockRegistryInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (6 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 6,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 plugins on Magento\\Framework\\App\\Config\\Value",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\MediaGalleryRenditions\\Plugin\\UpdateRenditionsOnConfigChange",
+                    "plugin_name": "admin_system_config_media_gallery_renditions",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-media-gallery-renditions/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\MediaGallerySynchronization\\Plugin\\MediaGallerySyncTrigger",
+                    "plugin_name": "admin_system_config_adobe_stock_save_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-media-gallery-synchronization/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ServicesId\\Plugin\\SetCloudIdOnConfigImport",
+                    "plugin_name": "set_cloud_id_on_config_value_import",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-services-id/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ServicesId\\Plugin\\ProjectIdOnConfigImport",
+                    "plugin_name": "project_id_on_config_import",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-services-id/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ServicesId\\Plugin\\EnvironmentIdOnConfigImport",
+                    "plugin_name": "environment_id_on_config_import",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-services-id/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\WebapiSecurity\\Model\\Plugin\\CacheInvalidator",
+                    "plugin_name": "webapiResourceSecurityCacheInvalidate",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-webapi-security/etc/di.xml"
+                }
+            ],
+            "severity": "high",
+            "target": "Magento\\Framework\\App\\Config\\Value",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (6 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "event": "controller_action_predispatch",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "10 observers on event controller_action_predispatch",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 10,
+            "observers": [
+                {
+                    "observer_class": "Magento\\AdminNotification\\Observer\\PredispatchAdminActionControllerObserver",
+                    "observer_name": "adminnotification",
+                    "source_file": "vendor/magento/module-admin-notification/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\Visitor\\InitByRequestObserver",
+                    "observer_name": "customer_visitor",
+                    "source_file": "vendor/magento/module-customer/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\NewRelicReporting\\Model\\Observer\\ReportConcurrentUsers",
+                    "observer_name": "newrelicreporting_observer_report_concurrent_users",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\NewRelicReporting\\Model\\Observer\\ReportConcurrentUsersToNewRelic",
+                    "observer_name": "newrelicreporting_newrelic_report_concurrent_users",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\SynchronizePersistentInfoObserver",
+                    "observer_name": "persistent_synchronize",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\RenewCookieObserver",
+                    "observer_name": "persistent_session",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\CheckExpirePersistentQuoteObserver",
+                    "observer_name": "persistent_quote",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\EmulateCustomerObserver",
+                    "observer_name": "persistent_customer",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\TwoFactorAuth\\Observer\\ControllerActionPredispatch",
+                    "observer_name": "two_factor_auth_check",
+                    "source_file": "vendor/magento/module-two-factor-auth/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\User\\Observer\\Backend\\ForceAdminPasswordChangeObserver",
+                    "observer_name": "magento_user",
+                    "source_file": "vendor/magento/module-user/etc/adminhtml/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'controller_action_predispatch' has 10 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "customer_customer_authenticated",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "10 observers on event customer_customer_authenticated",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 10,
+            "observers": [
+                {
+                    "observer_class": "Magento\\Captcha\\Observer\\ResetAttemptForFrontendObserver",
+                    "observer_name": "captcha_reset_attempt",
+                    "source_file": "vendor/magento/module-captcha/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\CustomerLoginSuccessObserver",
+                    "observer_name": "customer_unlock",
+                    "source_file": "vendor/magento/module-customer-graph-ql/etc/graphql/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\CustomerGroupAuthenticate",
+                    "observer_name": "customerGroupAuthenticate",
+                    "source_file": "vendor/magento/module-customer/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\UpgradeCustomerPasswordObserver",
+                    "observer_name": "customer_password",
+                    "source_file": "vendor/magento/module-customer/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\CustomerLoginSuccessObserver",
+                    "observer_name": "customer_unlock",
+                    "source_file": "vendor/magento/module-customer/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\CustomerLoginSuccessObserver",
+                    "observer_name": "customer_unlock",
+                    "source_file": "vendor/magento/module-integration/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\CustomerLoginSuccessObserver",
+                    "observer_name": "customer_unlock",
+                    "source_file": "vendor/magento/module-integration/etc/webapi_soap/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\CustomerAuthenticatedEventObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\CustomerAuthenticatedEventObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\CustomerAuthenticatedEventObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/webapi_soap/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'customer_customer_authenticated' has 10 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "customer_logout",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "10 observers on event customer_logout",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 10,
+            "observers": [
+                {
+                    "observer_class": "Magento\\Catalog\\Observer\\Compare\\BindCustomerLogoutObserver",
+                    "observer_name": "catalog",
+                    "source_file": "vendor/magento/module-catalog/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Checkout\\Observer\\UnsetAllObserver",
+                    "observer_name": "unsetAll",
+                    "source_file": "vendor/magento/module-checkout/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\Visitor\\BindCustomerLogoutObserver",
+                    "observer_name": "customer_visitor",
+                    "source_file": "vendor/magento/module-customer/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\LogLastLogoutAtObserver",
+                    "observer_name": "customer_log_logout",
+                    "source_file": "vendor/magento/module-customer/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\PageCache\\Observer\\FlushFormKey",
+                    "observer_name": "FlushFormKey",
+                    "source_file": "vendor/magento/module-page-cache/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\SynchronizePersistentOnLogoutObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\SynchronizePersistentOnLogoutObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\SynchronizePersistentOnLogoutObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/webapi_soap/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Reports\\Observer\\CustomerLogoutObserver",
+                    "observer_name": "reports",
+                    "source_file": "vendor/magento/module-reports/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Wishlist\\Observer\\CustomerLogout",
+                    "observer_name": "wishlist",
+                    "source_file": "vendor/magento/module-wishlist/etc/frontend/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'customer_logout' has 10 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "customer_login",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "9 observers on event customer_login",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 9,
+            "observers": [
+                {
+                    "observer_class": "Magento\\Catalog\\Observer\\Compare\\BindCustomerLoginObserver",
+                    "observer_name": "catalog",
+                    "source_file": "vendor/magento/module-catalog/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Checkout\\Observer\\LoadCustomerQuoteObserver",
+                    "observer_name": "loadCustomerQuote",
+                    "source_file": "vendor/magento/module-checkout/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\LogLastLoginAtObserver",
+                    "observer_name": "customer_log_login",
+                    "source_file": "vendor/magento/module-customer-graph-ql/etc/graphql/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\LogLastLoginAtObserver",
+                    "observer_name": "customer_log_login",
+                    "source_file": "vendor/magento/module-customer/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\LogLastLoginAtObserver",
+                    "observer_name": "customer_log_login",
+                    "source_file": "vendor/magento/module-integration/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\LogLastLoginAtObserver",
+                    "observer_name": "customer_log_login",
+                    "source_file": "vendor/magento/module-integration/etc/webapi_soap/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\PageCache\\Observer\\FlushFormKey",
+                    "observer_name": "FlushFormKey",
+                    "source_file": "vendor/magento/module-page-cache/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Reports\\Observer\\CustomerLoginObserver",
+                    "observer_name": "reports",
+                    "source_file": "vendor/magento/module-reports/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Wishlist\\Observer\\CustomerLogin",
+                    "observer_name": "wishlist",
+                    "source_file": "vendor/magento/module-wishlist/etc/frontend/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'customer_login' has 9 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "sales_model_service_quote_submit_before",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 observers on event sales_model_service_quote_submit_before",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 6,
+            "observers": [
+                {
+                    "observer_class": "Magento\\CatalogInventory\\Observer\\SubtractQuoteInventoryObserver",
+                    "observer_name": "inventory",
+                    "source_file": "vendor/magento/module-catalog-inventory/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\GiftMessage\\Observer\\SalesEventQuoteSubmitBeforeObserver",
+                    "observer_name": "giftmessage",
+                    "source_file": "vendor/magento/module-gift-message-graph-ql/etc/graphql/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\GiftMessage\\Observer\\SalesEventQuoteSubmitBeforeObserver",
+                    "observer_name": "giftmessage",
+                    "source_file": "vendor/magento/module-gift-message/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\GiftMessage\\Observer\\SalesEventQuoteSubmitBeforeObserver",
+                    "observer_name": "giftmessage",
+                    "source_file": "vendor/magento/module-gift-message/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\GiftMessage\\Observer\\SalesEventQuoteSubmitBeforeObserver",
+                    "observer_name": "giftmessage",
+                    "source_file": "vendor/magento/module-gift-message/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\SalesRule\\Observer\\AddSalesRuleNameToOrderObserver",
+                    "observer_name": "salesrule",
+                    "source_file": "vendor/magento/module-sales-rule/etc/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'sales_model_service_quote_submit_before' has 6 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "customer_data_object_login",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "6 observers on event customer_data_object_login",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 6,
+            "observers": [
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\Visitor\\BindCustomerLoginObserver",
+                    "observer_name": "customer_visitor",
+                    "source_file": "vendor/magento/module-customer/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\SynchronizePersistentOnLoginObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\SynchronizePersistentOnLoginObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\SynchronizePersistentOnLoginObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/webapi_soap/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Tax\\Observer\\CustomerLoggedInObserver",
+                    "observer_name": "customer_tax_logged_in",
+                    "source_file": "vendor/magento/module-tax/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Weee\\Observer\\CustomerLoggedIn",
+                    "observer_name": "customer_weee_logged_in",
+                    "source_file": "vendor/magento/module-weee/etc/frontend/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'customer_data_object_login' has 6 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\User\\Model\\User",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\LoginAsCustomer\\Plugin\\User\\Model\\User",
+                    "plugin_name": "detectUserRoleUpdate",
+                    "sort_order": 1,
+                    "source_file": "vendor/magento/module-login-as-customer/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\AdminAdobeIms\\Plugin\\ReplaceVerifyIdentityWithImsPlugin",
+                    "plugin_name": "aroundVerifyIdentity",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\AdminAdobeIms\\Plugin\\UserSavePlugin",
+                    "plugin_name": "user_save",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\AdminAdobeIms\\Plugin\\PerformIdentityCheckMessagePlugin",
+                    "plugin_name": "change_perform_identity_check_message",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Integration\\Plugin\\Model\\AdminUser",
+                    "plugin_name": "revokeTokensFromInactiveAdmins",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-integration/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\User\\Model\\User",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\Backend\\Model\\Auth",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\PageBuilder\\Plugin\\ClearEditorConfigCache",
+                    "plugin_name": "pagebuilder_clear_editor_config_cache",
+                    "sort_order": 10,
+                    "source_file": "vendor/magento/module-page-builder/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\AdminAdobeIms\\Plugin\\DisableAdminLoginAuthPlugin",
+                    "plugin_name": "disable_admin_login_auth",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\LoginAsCustomer\\Plugin\\AdminLogoutPlugin",
+                    "plugin_name": "login_as_customer_admin_logout",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-login-as-customer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Security\\Model\\Plugin\\Auth",
+                    "plugin_name": "security_admin_sessions_login",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-security/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\TwoFactorAuth\\Plugin\\DeleteCookieOnLogout",
+                    "plugin_name": "delete_tfat_cookie",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-two-factor-auth/etc/adminhtml/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Backend\\Model\\Auth",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\Catalog\\Api\\ProductRepositoryInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Model\\Plugin\\ProductRepositorySave",
+                    "plugin_name": "configurableProductSaveOptions",
+                    "sort_order": 10,
+                    "source_file": "vendor/magento/module-configurable-product/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogGraphQl\\Plugin\\AvailableProductsFilter",
+                    "plugin_name": "availableProductsFilter",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-graph-ql/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Plugin\\RemoveImagesFromGalleryAfterRemovingProduct",
+                    "plugin_name": "remove_images_from_gallery_after_removing_product",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Plugin\\ProductAuthorization",
+                    "plugin_name": "product_authorization",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Plugin\\ProductAuthorization",
+                    "plugin_name": "product_authorization",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_soap/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Catalog\\Api\\ProductRepositoryInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\Store\\Model\\Website",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\CatalogRule\\Plugin\\Indexer\\Website",
+                    "plugin_name": "reindex_after_delete_website",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-rule/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\CustomerGridIndexAfterWebsiteDelete",
+                    "plugin_name": "reindex_customer_grid_after_website_remove",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\Website\\DeleteCustomerGroupExcludedWebsite",
+                    "plugin_name": "deleteCustomerGroupExcludedWebsiteAfterWebsiteDelete",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\StoreGraphQl\\Plugin\\Website",
+                    "plugin_name": "getWebsiteIdentities",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-store-graph-ql/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Theme\\Model\\Indexer\\Design\\Config\\Plugin\\Website",
+                    "plugin_name": "themeDesignConfigGridIndexerWebsite",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-theme/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Store\\Model\\Website",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\Store\\Model\\ResourceModel\\Website",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Product\\Price\\Plugin\\Website",
+                    "plugin_name": "invalidatePriceIndexerOnWebsite",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "\\Magento\\Catalog\\Model\\Indexer\\Category\\Product\\Plugin\\Website",
+                    "plugin_name": "categoryProductWebsiteAfterDelete",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventorySales\\Plugin\\Store\\Model\\ResourceModel\\Website\\AssignWebsiteToDefaultStockPlugin",
+                    "plugin_name": "assign_website_to_default_stock",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-sales/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventorySales\\Plugin\\Store\\Model\\ResourceModel\\Website\\DeleteWebsiteToStockLinkPlugin",
+                    "plugin_name": "delete_website_to_stock_link",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-sales/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventorySales\\Plugin\\Store\\Model\\ResourceModel\\Website\\UpdateSalesChannelWebsiteCodePlugin",
+                    "plugin_name": "update_sales_channel_website_code",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-sales/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Store\\Model\\ResourceModel\\Website",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\Customer\\Api\\GroupRepositoryInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Indexer\\Product\\Price\\Plugin\\CustomerGroup",
+                    "plugin_name": "invalidatePriceIndexerOnCustomerGroup",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\SaveCustomerGroupExcludedWebsite",
+                    "plugin_name": "saveCustomerGroupExcludedWebsite",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\DeleteCustomerGroupExcludedWebsite",
+                    "plugin_name": "deleteCustomerGroupExcludedWebsite",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\GetByIdCustomerGroupExcludedWebsite",
+                    "plugin_name": "getByIdCustomerGroupExcludedWebsite",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\GetListCustomerGroupExcludedWebsite",
+                    "plugin_name": "getListCustomerGroupExcludedWebsite",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Customer\\Api\\GroupRepositoryInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\ConfigurableProduct\\Model\\Product\\Type\\Configurable",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Model\\Plugin\\Frontend\\UsedProductsCache",
+                    "plugin_name": "used_products_cache_graphql",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product-graph-ql/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Model\\Plugin\\Frontend\\UsedProductsCache",
+                    "plugin_name": "used_products_cache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Model\\Plugin\\Frontend\\UsedProductsWebsiteFilter",
+                    "plugin_name": "used_products_website_filter",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-configurable-product/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryConfigurableProduct\\Plugin\\Model\\Product\\Type\\Configurable\\IsSalableOptionPlugin",
+                    "plugin_name": "is_option_salable",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-configurable-product/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Swatches\\Model\\Plugin\\Configurable",
+                    "plugin_name": "add_swatch_attributes_to_configurable",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-swatches/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\ConfigurableProduct\\Model\\Product\\Type\\Configurable",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\Sales\\Api\\OrderRepositoryInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\GiftMessage\\Model\\Plugin\\OrderSave",
+                    "plugin_name": "save_gift_message",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-gift-message/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\GiftMessage\\Model\\Plugin\\OrderGet",
+                    "plugin_name": "get_gift_message",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-gift-message/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryInStorePickupSales\\Plugin\\Sales\\Order\\GetPickupLocationForOrderPlugin",
+                    "plugin_name": "get_pickup_location_for_order",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup-sales/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryInStorePickupSales\\Plugin\\Sales\\Order\\SavePickupLocationForOrderPlugin",
+                    "plugin_name": "save_pickup_location_for_order",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup-sales/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Tax\\Model\\Plugin\\AddTaxesExtensionAttribute",
+                    "plugin_name": "add_taxes_extension_attributes",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-tax/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Sales\\Api\\OrderRepositoryInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\InventoryApi\\Api\\SourceRepositoryInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\InventoryDistanceBasedSourceSelection\\Plugin\\FillSourceLatitudeAndLongitude",
+                    "plugin_name": "updateSourceLatitudeAndLongitude",
+                    "sort_order": 10,
+                    "source_file": "vendor/magento/module-inventory-distance-based-source-selection/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryInStorePickup\\Plugin\\InventoryApi\\SourceRepository\\LoadInStorePickupOnGetListPlugin",
+                    "plugin_name": "load_in_store_pickup_on_get_list",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryInStorePickup\\Plugin\\InventoryApi\\SourceRepository\\LoadInStorePickupOnGetPlugin",
+                    "plugin_name": "load_in_store_pickup_on_get",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryInStorePickup\\Plugin\\InventoryApi\\SourceRepository\\SaveInStorePickupPlugin",
+                    "plugin_name": "save_in_store_pickup_links",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryIndexer\\Plugin\\InventoryApi\\InvalidateAfterEnablingOrDisablingSourcePlugin",
+                    "plugin_name": "invalidate_after_enabling_or_disabling_source",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-indexer/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\InventoryApi\\Api\\SourceRepositoryInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\Sales\\Api\\ShipmentRepositoryInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\InventoryInStorePickupSales\\Plugin\\Sales\\Order\\ShipmentRepository\\AdaptShipmentPlugin",
+                    "plugin_name": "adapt_store_pickup_shipment",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup-sales/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryInStorePickupSales\\Plugin\\Sales\\Order\\ShipmentRepository\\AdaptShipmentPlugin",
+                    "plugin_name": "adapt_store_pickup_shipment",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup-sales/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryShipping\\Plugin\\Sales\\Model\\Order\\GetListShipmentRepositoryPlugin",
+                    "plugin_name": "GetListShipmentRepository",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-shipping/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Sales\\Plugin\\ShippingLabelConverter",
+                    "plugin_name": "convert_blob_to_string",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-sales/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Sales\\Plugin\\ShippingLabelConverter",
+                    "plugin_name": "convert_blob_to_string",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-sales/etc/webapi_soap/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Sales\\Api\\ShipmentRepositoryInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 5,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 plugins on Magento\\Quote\\Model\\QuoteRepository",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Multishipping\\Plugin\\MultishippingQuoteRepository",
+                    "plugin_name": "multishipping_quote_repository",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-multishipping/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Model\\QuoteRepository\\Plugin\\AccessChangeQuoteControl",
+                    "plugin_name": "accessControl",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Model\\QuoteRepository\\Plugin\\Authorization",
+                    "plugin_name": "authorization",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Model\\QuoteRepository\\Plugin\\AccessChangeQuoteControl",
+                    "plugin_name": "accessControl",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Quote\\Model\\QuoteRepository\\Plugin\\Authorization",
+                    "plugin_name": "authorization",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-quote/etc/webapi_soap/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Quote\\Model\\QuoteRepository",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (5 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "event": "catalog_product_save_before",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 observers on event catalog_product_save_before",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 5,
+            "observers": [
+                {
+                    "observer_class": "Magento\\CatalogInventory\\Observer\\ProcessInventoryDataObserver",
+                    "observer_name": "process_inventory_data",
+                    "source_file": "vendor/magento/module-catalog-inventory/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\CatalogUrlRewrite\\Observer\\ProductUrlKeyAutogeneratorObserver",
+                    "observer_name": "product_url_key_autogeneration",
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Catalog\\Observer\\SetSpecialPriceStartDate",
+                    "observer_name": "set_special_price_start_date",
+                    "source_file": "vendor/magento/module-catalog/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\NewRelicReporting\\Model\\Observer\\ReportProductSaved",
+                    "observer_name": "newrelicreporting_observer_report_product_save",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\NewRelicReporting\\Model\\Observer\\ReportProductSavedToNewRelic",
+                    "observer_name": "newrelicreporting_newrelic_report_product_save",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/adminhtml/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'catalog_product_save_before' has 5 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "catalog_product_save_after",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 observers on event catalog_product_save_after",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 5,
+            "observers": [
+                {
+                    "observer_class": "Magento\\CatalogInventory\\Observer\\SaveInventoryDataObserver",
+                    "observer_name": "inventory",
+                    "source_file": "vendor/magento/module-catalog-inventory/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\CatalogUrlRewrite\\Observer\\ProductProcessUrlRewriteSavingObserver",
+                    "observer_name": "process_url_rewrite_saving",
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\GoogleOptimizer\\Observer\\Product\\SaveGoogleExperimentScriptObserver",
+                    "observer_name": "googleoptimizer_observer",
+                    "source_file": "vendor/magento/module-google-optimizer/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\MediaContentCatalog\\Observer\\Product",
+                    "observer_name": "media_content_catalog_product_save_after",
+                    "source_file": "vendor/magento/module-media-content-catalog/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Sales\\Observer\\Backend\\CatalogProductSaveAfterObserver",
+                    "observer_name": "sales_quote",
+                    "source_file": "vendor/magento/module-sales/etc/adminhtml/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'catalog_product_save_after' has 5 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "config_data_sales_email_general_async_sending_disabled",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "5 observers on event config_data_sales_email_general_async_sending_disabled",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 5,
+            "observers": [
+                {
+                    "observer_class": "Magento\\InventoryInStorePickupSales\\Observer\\NotifyOrdersAreReadyForPickupSendEmailObserver",
+                    "observer_name": "notify_order_send_emails",
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup-sales/etc/events.xml"
+                },
+                {
+                    "observer_class": "SalesOrderSendEmailsObserver",
+                    "observer_name": "sales_send_order_emails",
+                    "source_file": "vendor/magento/module-sales/etc/events.xml"
+                },
+                {
+                    "observer_class": "SalesOrderInvoiceSendEmailsObserver",
+                    "observer_name": "sales_send_order_invoice_emails",
+                    "source_file": "vendor/magento/module-sales/etc/events.xml"
+                },
+                {
+                    "observer_class": "SalesOrderShipmentSendEmailsObserver",
+                    "observer_name": "sales_send_order_shipment_emails",
+                    "source_file": "vendor/magento/module-sales/etc/events.xml"
+                },
+                {
+                    "observer_class": "SalesOrderCreditmemoSendEmailsObserver",
+                    "observer_name": "sales_send_order_creditmemo_emails",
+                    "source_file": "vendor/magento/module-sales/etc/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'config_data_sales_email_general_async_sending_disabled' has 5 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\Backend\\App\\AbstractAction",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Backend\\App\\Action\\Plugin\\MassactionKey",
+                    "plugin_name": "adminMassactionKey",
+                    "sort_order": 11,
+                    "source_file": "vendor/magento/module-backend/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Backend\\App\\Action\\Plugin\\Authentication",
+                    "plugin_name": "adminAuthentication",
+                    "sort_order": 100,
+                    "source_file": "vendor/magento/module-backend/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Backend\\App\\Action\\Plugin\\LoadDesignPlugin",
+                    "plugin_name": "adminLoadDesign",
+                    "sort_order": 101,
+                    "source_file": "vendor/magento/module-backend/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Theme\\Model\\Theme\\Plugin\\Registration",
+                    "plugin_name": "themeRegistrationFromFilesystem",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-theme/etc/adminhtml/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Backend\\App\\AbstractAction",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\Quote\\Model\\Quote\\Item\\ToOrderItem",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Bundle\\Model\\Plugin\\QuoteItem",
+                    "plugin_name": "append_bundle_data_to_order",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-bundle/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Model\\Plugin\\QuoteItemProductOption",
+                    "plugin_name": "copy_quote_files_to_order",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\GiftMessage\\Model\\Plugin\\QuoteItem",
+                    "plugin_name": "gift_message_quote_item_conversion",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-gift-message/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\GiftMessage\\Model\\Plugin\\QuoteItem",
+                    "plugin_name": "gift_message_quote_item_conversion",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-gift-message/etc/frontend/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Quote\\Model\\Quote\\Item\\ToOrderItem",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\ImportExport\\Model\\Import",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\ImportExport\\Plugin\\DeferCacheCleaningUntilImportIsComplete",
+                    "plugin_name": "import_defer_cache",
+                    "sort_order": 1,
+                    "source_file": "vendor/magento/module-import-export/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogImportExport\\Model\\Indexer\\Product\\Flat\\Plugin\\Import",
+                    "plugin_name": "catalogProductFlatIndexerImport",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-import-export/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogImportExport\\Model\\Indexer\\Product\\Eav\\Plugin\\Import",
+                    "plugin_name": "invalidateEavIndexerOnImport",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-import-export/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogRule\\Plugin\\Indexer\\ImportExport",
+                    "plugin_name": "reindex_after_import",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-rule/etc/adminhtml/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\ImportExport\\Model\\Import",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\CatalogRule\\Model\\Rule",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\CatalogRuleConfigurable\\Plugin\\CatalogRule\\Model\\Rule\\ConfigurableProductHandler",
+                    "plugin_name": "addVariationsToProductRule",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-rule-configurable/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogRuleConfigurable\\Plugin\\CatalogRule\\Model\\Rule\\Validation",
+                    "plugin_name": "configurableChildValidation",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-rule-configurable/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogRuleConfigurable\\Plugin\\CatalogRule\\Model\\Rule\\ConfigurableProductHandler",
+                    "plugin_name": "addVariationsToProductRule",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-rule-configurable/etc/crontab/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogRuleConfigurable\\Plugin\\CatalogRule\\Model\\Rule\\Validation",
+                    "plugin_name": "configurableChildValidation",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-rule-configurable/etc/crontab/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\CatalogRule\\Model\\Rule",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\Catalog\\Model\\ResourceModel\\Attribute",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Plugin\\Attribute",
+                    "plugin_name": "catalogsearchFulltextIndexerAttribute",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\CatalogSearch\\Model\\Attribute\\SearchWeight",
+                    "plugin_name": "catalogsearchAttributeSearchWeightCache",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog-search/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Plugin\\Model\\ResourceModel\\Attribute\\Save",
+                    "plugin_name": "invalidate_pagecache_after_attribute_save",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Elasticsearch\\Model\\Indexer\\Fulltext\\Plugin\\Category\\Product\\Attribute",
+                    "plugin_name": "updateElasticsearchIndexerMapping",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-elasticsearch/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Catalog\\Model\\ResourceModel\\Attribute",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\Catalog\\Api\\ProductLinkRepositoryInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Catalog\\Plugin\\Api\\ProductLinkRepositoryInterface\\ReindexAfterSaveProductLinksPlugin",
+                    "plugin_name": "reindex_after_save_product_links",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Plugin\\Api\\ProductLinkRepositoryInterface\\ReindexAfterDeleteByIdProductLinksPlugin",
+                    "plugin_name": "reindex_after_delete_by_id_product_links",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Plugin\\Api\\ProductLinkRepositoryInterface\\ReindexAfterSaveProductLinksPlugin",
+                    "plugin_name": "reindex_after_save_product_links",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Catalog\\Plugin\\Api\\ProductLinkRepositoryInterface\\ReindexAfterDeleteByIdProductLinksPlugin",
+                    "plugin_name": "reindex_after_delete_by_id_product_links",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-catalog/etc/webapi_soap/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Catalog\\Api\\ProductLinkRepositoryInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\CatalogWidget\\Block\\Product\\ProductsList",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\PageBuilder\\Plugin\\Catalog\\Block\\Product\\ProductsListPlugin",
+                    "plugin_name": "pagebuilder_product_list",
+                    "sort_order": 1,
+                    "source_file": "vendor/magento/module-page-builder/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\PageBuilder\\Plugin\\Catalog\\Block\\Product\\ProductsListPlugin",
+                    "plugin_name": "pagebuilder_product_list",
+                    "sort_order": 1,
+                    "source_file": "vendor/magento/module-page-builder/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Plugin\\CatalogWidget\\Block\\Product\\ProductsListPlugin",
+                    "plugin_name": "configurable_product_widget_product_list",
+                    "sort_order": 2,
+                    "source_file": "vendor/magento/module-configurable-product/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ConfigurableProduct\\Plugin\\CatalogWidget\\Block\\Product\\ProductsListPlugin",
+                    "plugin_name": "configurable_product_widget_product_list",
+                    "sort_order": 2,
+                    "source_file": "vendor/magento/module-configurable-product/etc/frontend/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\CatalogWidget\\Block\\Product\\ProductsList",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\Customer\\Api\\CustomerRepositoryInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\CustomerRepository\\TransactionWrapper",
+                    "plugin_name": "transactionWrapper",
+                    "sort_order": -1,
+                    "source_file": "vendor/magento/module-customer/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\UpdateCustomer",
+                    "plugin_name": "updateCustomerByIdFromRequest",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\LoginAsCustomerAssistance\\Plugin\\CustomerPlugin",
+                    "plugin_name": "login_as_customer_customer_repository_plugin",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-login-as-customer-assistance/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Newsletter\\Model\\Plugin\\CustomerPlugin",
+                    "plugin_name": "update_newsletter_subscription_on_customer_update",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-newsletter/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Customer\\Api\\CustomerRepositoryInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\Framework\\Authorization",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\CustomerAuthorization",
+                    "plugin_name": "customerAuthorization",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Customer\\Model\\Plugin\\CustomerAuthorization",
+                    "plugin_name": "customerAuthorization",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-customer/etc/webapi_soap/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Webapi\\Model\\Plugin\\GuestAuthorization",
+                    "plugin_name": "guestAuthorization",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-webapi/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Webapi\\Model\\Plugin\\GuestAuthorization",
+                    "plugin_name": "guestAuthorization",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-webapi/etc/webapi_soap/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Framework\\Authorization",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\Framework\\GraphQl\\Query\\ResolverInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\QuoteGraphQl\\Plugin\\ResetStoredTotalsBeforeTopResolver",
+                    "plugin_name": "reset-totals",
+                    "sort_order": 1,
+                    "source_file": "vendor/magento/module-quote-graph-ql/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\GraphQlCache\\Model\\Plugin\\Query\\Resolver",
+                    "plugin_name": "cache",
+                    "sort_order": 10,
+                    "source_file": "vendor/magento/module-graph-ql-cache/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\GraphQlResolverCache\\Model\\Plugin\\Resolver\\Cache",
+                    "plugin_name": "cacheResolverResult",
+                    "sort_order": 20,
+                    "source_file": "vendor/magento/module-graph-ql-resolver-cache/etc/graphql/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\ReCaptchaWebapiGraphQl\\Plugin\\GraphQlValidator",
+                    "plugin_name": "graphql_recaptcha_validation",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-re-captcha-webapi-graph-ql/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Framework\\GraphQl\\Query\\ResolverInterface",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\CatalogInventory\\Helper\\Stock",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\CatalogInventory\\Helper\\Stock\\AdaptAddInStockFilterToCollectionPlugin",
+                    "plugin_name": "adapt_add_in_stock_filter_to_collection",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\CatalogInventory\\Helper\\Stock\\AdaptAddStockStatusToProductsPlugin",
+                    "plugin_name": "adapt_add_stock_status_to_products",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryCatalog\\Plugin\\CatalogInventory\\Helper\\Stock\\AdaptAssignStatusToProductPlugin",
+                    "plugin_name": "adapt_assign_status_to_product",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-catalog/etc/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\InventoryConfigurableProduct\\Plugin\\CatalogInventory\\Helper\\Stock\\AdaptAssignStatusToProductPlugin",
+                    "plugin_name": "adapt_assign_stock_status_to_configurable_product",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-inventory-configurable-product/etc/frontend/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\CatalogInventory\\Helper\\Stock",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "depth": 4,
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 plugins on Magento\\Sales\\Model\\Order",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "plugins": [
+                {
+                    "plugin_class": "Magento\\LoginAsCustomerSales\\Plugin\\AdminAddCommentOnOrderPlacementPlugin",
+                    "plugin_name": "admin-order-placement-comment",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-login-as-customer-sales/etc/adminhtml/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\LoginAsCustomerSales\\Plugin\\FrontAddCommentOnOrderPlacementPlugin",
+                    "plugin_name": "front-order-placement-comment",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-login-as-customer-sales/etc/frontend/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\LoginAsCustomerSales\\Plugin\\FrontAddCommentOnOrderPlacementPlugin",
+                    "plugin_name": "rest-order-placement-comment",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-login-as-customer-sales/etc/webapi_rest/di.xml"
+                },
+                {
+                    "plugin_class": "Magento\\Paypal\\Plugin\\OrderCanInvoice",
+                    "plugin_name": "express_order_invoice",
+                    "sort_order": null,
+                    "source_file": "vendor/magento/module-paypal/etc/di.xml"
+                }
+            ],
+            "severity": "medium",
+            "target": "Magento\\Sales\\Model\\Order",
+            "type": "deep_plugin_stack",
+            "why_risky": "Deep plugin stack (4 plugins) on same target creates cumulative latency and unpredictable execution order."
+        },
+        {
+            "event": "sales_quote_collect_totals_after",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event sales_quote_collect_totals_after",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\TestModuleQuoteTotalsObserver\\Observer\\AfterCollectTotals",
+                    "observer_name": "test_module_quote_totals_observer_after_collect_totals",
+                    "source_file": "vendor/magento/magento2-base/dev/tests/integration/_files/Magento/TestModuleQuoteTotalsObserver/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Msrp\\Observer\\Frontend\\Quote\\SetCanApplyMsrpObserver",
+                    "observer_name": "catalog_msrp",
+                    "source_file": "vendor/magento/module-msrp/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Msrp\\Observer\\Frontend\\Quote\\SetCanApplyMsrpObserver",
+                    "observer_name": "catalog_msrp",
+                    "source_file": "vendor/magento/module-msrp/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Msrp\\Observer\\Frontend\\Quote\\SetCanApplyMsrpObserver",
+                    "observer_name": "catalog_msrp",
+                    "source_file": "vendor/magento/module-msrp/etc/webapi_soap/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'sales_quote_collect_totals_after' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "admin_user_save_after",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event admin_user_save_after",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\AdminAdobeIms\\Observer\\AdminAccountCreatedObserver",
+                    "observer_name": "new_admin_user_created",
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Security\\Observer\\AfterAdminUserSave",
+                    "observer_name": "add_user_expiration",
+                    "source_file": "vendor/magento/module-security/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\TwoFactorAuth\\Observer\\AdminUserSaveAfter",
+                    "observer_name": "two_factor_auth_admin_user_save_after",
+                    "source_file": "vendor/magento/module-two-factor-auth/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\User\\Observer\\Backend\\TrackAdminNewPasswordObserver",
+                    "observer_name": "magento_user",
+                    "source_file": "vendor/magento/module-user/etc/adminhtml/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'admin_user_save_after' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "clean_cache_by_tags",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event clean_cache_by_tags",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\CacheInvalidate\\Observer\\InvalidateVarnishObserver",
+                    "observer_name": "invalidate_varnish",
+                    "source_file": "vendor/magento/module-cache-invalidate/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\GraphQlResolverCache\\Observer\\InvalidateGraphQlResolverCacheObserver",
+                    "observer_name": "invalidate_graphql_resolver_cache",
+                    "source_file": "vendor/magento/module-graph-ql-resolver-cache/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\PageCache\\Observer\\FlushCacheByTags",
+                    "observer_name": "invalidate_builtin",
+                    "source_file": "vendor/magento/module-page-cache/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Theme\\Observer\\InvalidateLayoutCacheObserver",
+                    "observer_name": "invalidate_layout_cache",
+                    "source_file": "vendor/magento/module-theme/etc/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'clean_cache_by_tags' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "adminhtml_cache_flush_system",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event adminhtml_cache_flush_system",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\CacheInvalidate\\Observer\\FlushAllCacheObserver",
+                    "observer_name": "flush_varnish_pagecache",
+                    "source_file": "vendor/magento/module-cache-invalidate/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\NewRelicReporting\\Model\\Observer\\ReportSystemCacheFlush",
+                    "observer_name": "newrelicreporting_observer_report_system_cache_flush",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\NewRelicReporting\\Model\\Observer\\ReportSystemCacheFlushToNewRelic",
+                    "observer_name": "newrelicreporting_newrelic_report_system_cache_flush",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\PageCache\\Observer\\FlushAllCache",
+                    "observer_name": "flush_system_pagecache",
+                    "source_file": "vendor/magento/module-page-cache/etc/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'adminhtml_cache_flush_system' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "controller_action_predispatch_customer_account_createpost",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event controller_action_predispatch_customer_account_createpost",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\Captcha\\Observer\\CheckUserCreateObserver",
+                    "observer_name": "captcha",
+                    "source_file": "vendor/magento/module-captcha/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\SetRememberMeCheckedStatusObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\CustomerAuthenticatedEventObserver",
+                    "observer_name": "persistent_authenticate",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\ReCaptchaCustomer\\Observer\\CreateCustomerObserver",
+                    "observer_name": "recaptcha_on_create_user",
+                    "source_file": "vendor/magento/module-re-captcha-customer/etc/frontend/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'controller_action_predispatch_customer_account_createpost' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "catalog_product_import_bunch_delete_after",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event catalog_product_import_bunch_delete_after",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\CatalogGraphQl\\Observer\\AfterImportDataObserver",
+                    "observer_name": "invalidate_media_gallery_resolver_cache",
+                    "source_file": "vendor/magento/module-catalog-graph-ql/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\CatalogUrlRewrite\\Observer\\ClearProductUrlsObserver",
+                    "observer_name": "catalog_product_import_rewrites_delete",
+                    "source_file": "vendor/magento/module-catalog-url-rewrite/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\InventoryImportExport\\Observer\\DeleteSourceItemsAfterProductDeleteObserver",
+                    "observer_name": "delete_source_items_observer",
+                    "source_file": "vendor/magento/module-inventory-import-export/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\InventoryImportExport\\Observer\\ProcessReservationsAfterProductImportObserver",
+                    "observer_name": "process_reservations",
+                    "source_file": "vendor/magento/module-inventory-import-export/etc/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'catalog_product_import_bunch_delete_after' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "controller_front_send_response_before",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event controller_front_send_response_before",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\Csp\\Observer\\Render",
+                    "observer_name": "csp_render",
+                    "source_file": "vendor/magento/module-csp/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Csp\\Observer\\Render",
+                    "observer_name": "csp_render",
+                    "source_file": "vendor/magento/module-csp/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\NewRelicReporting\\Observer\\DisableBrowserMonitoringAutomaticInjection",
+                    "observer_name": "newrelicreporting_observer_controller_front_send_response_before",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\NewRelicReporting\\Observer\\DisableBrowserMonitoringAutomaticInjection",
+                    "observer_name": "newrelicreporting_observer_controller_front_send_response_before",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/frontend/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'controller_front_send_response_before' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "customer_save_after_data_object",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event customer_save_after_data_object",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\UpgradeOrderCustomerEmailObserver",
+                    "observer_name": "upgrade_order_customer_email",
+                    "source_file": "vendor/magento/module-customer/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Customer\\Observer\\UpgradeQuoteCustomerEmailObserver",
+                    "observer_name": "upgrade_quote_customer_email",
+                    "source_file": "vendor/magento/module-customer/etc/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Quote\\Observer\\Backend\\CustomerQuoteObserver",
+                    "observer_name": "customer",
+                    "source_file": "vendor/magento/module-quote/etc/adminhtml/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Sales\\Observer\\AssignOrderToCustomerObserver",
+                    "observer_name": "sales_assign_order_to_customer",
+                    "source_file": "vendor/magento/module-sales/etc/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'customer_save_after_data_object' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "checkout_allow_guest",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event checkout_allow_guest",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\Downloadable\\Observer\\IsAllowedGuestCheckoutObserver",
+                    "observer_name": "checkout_allow_guest",
+                    "source_file": "vendor/magento/module-downloadable/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Downloadable\\Observer\\IsAllowedGuestCheckoutObserver",
+                    "observer_name": "checkout_allow_guest",
+                    "source_file": "vendor/magento/module-downloadable/etc/graphql/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Downloadable\\Observer\\IsAllowedGuestCheckoutObserver",
+                    "observer_name": "checkout_allow_guest",
+                    "source_file": "vendor/magento/module-downloadable/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Downloadable\\Observer\\IsAllowedGuestCheckoutObserver",
+                    "observer_name": "checkout_allow_guest",
+                    "source_file": "vendor/magento/module-downloadable/etc/webapi_soap/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'checkout_allow_guest' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "layout_generate_blocks_after",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event layout_generate_blocks_after",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\ApplyPersistentDataObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\AddPersistentRememberMeInitObserver",
+                    "observer_name": "persistent_add_remember_me_init",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\ApplyPersistentDataObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/webapi_rest/events.xml"
+                },
+                {
+                    "observer_class": "Magento\\Persistent\\Observer\\ApplyPersistentDataObserver",
+                    "observer_name": "persistent",
+                    "source_file": "vendor/magento/module-persistent/etc/webapi_soap/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'layout_generate_blocks_after' has 4 observers. Each observer runs synchronously, compounding latency."
+        },
+        {
+            "event": "config_data_dev_grid_async_indexing_disabled",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "4 observers on event config_data_dev_grid_async_indexing_disabled",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "observer_count": 4,
+            "observers": [
+                {
+                    "observer_class": "SalesOrderIndexGridAsyncInsertObserver",
+                    "observer_name": "sales_grid_order_async_insert",
+                    "source_file": "vendor/magento/module-sales/etc/events.xml"
+                },
+                {
+                    "observer_class": "SalesInvoiceIndexGridAsyncInsertObserver",
+                    "observer_name": "sales_grid_order_invoice_async_insert",
+                    "source_file": "vendor/magento/module-sales/etc/events.xml"
+                },
+                {
+                    "observer_class": "SalesShipmentIndexGridAsyncInsertObserver",
+                    "observer_name": "sales_grid_order_shipment_async_insert",
+                    "source_file": "vendor/magento/module-sales/etc/events.xml"
+                },
+                {
+                    "observer_class": "SalesCreditmemoIndexGridAsyncInsertObserver",
+                    "observer_name": "sales_grid_order_creditmemo_async_insert",
+                    "source_file": "vendor/magento/module-sales/etc/events.xml"
+                }
+            ],
+            "severity": "medium",
+            "type": "high_observer_count",
+            "why_risky": "Event 'config_data_dev_grid_async_indexing_disabled' has 4 observers. Each observer runs synchronously, compounding latency."
+        }
+    ],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "scope": [
+        "vendor/magento"
+    ],
+    "summary": {
+        "by_severity": {
+            "high": 20,
+            "medium": 43
+        },
+        "deep_plugin_stacks": 42,
+        "high_observer_events": 21,
+        "layout_merge_concerns": 0,
+        "total_indicators": 63
+    }
+}

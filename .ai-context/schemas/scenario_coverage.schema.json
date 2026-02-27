@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/scenario_coverage.schema.schema.json",
+    "description": "Scenario seed matching report: which execution paths matched canonical seeds, which did not, and why.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "matched": {
+            "description": "Scenarios that matched a canonical seed",
+            "type": "integer"
+        },
+        "total_scenarios": {
+            "description": "Unique scenarios from execution paths",
+            "type": "integer"
+        },
+        "total_seeds": {
+            "description": "Seeds from ScenarioSeedResolver (routes + crons + cli + api)",
+            "type": "integer"
+        },
+        "unmatched": {
+            "description": "Scenarios with no canonical seed match",
+            "type": "integer"
+        },
+        "unmatched_by_type": {
+            "additionalProperties": {
+                "type": "integer"
+            },
+            "description": "Unmatched count by entry type",
+            "type": "object"
+        },
+        "unmatched_details": {
+            "items": {
+                "properties": {
+                    "entry_type": {
+                        "type": "string"
+                    },
+                    "reason_code": {
+                        "enum": [
+                            "no_matching_route_id",
+                            "cron_class_not_in_crontab_xml",
+                            "cli_class_not_in_di_xml",
+                            "missing_entry_class",
+                            "unsupported_entry_type"
+                        ],
+                        "type": "string"
+                    },
+                    "scenario_id": {
+                        "type": "string"
+                    },
+                    "scenario_name": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "total_seeds",
+        "total_scenarios",
+        "matched",
+        "unmatched"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Scenario Coverage",
+    "type": "object"
+}

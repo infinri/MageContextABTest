@@ -1,0 +1,43 @@
+{
+    "\\$schema": "schemas/cli_console_command_sourcethemedeploycommand.schema.json",
+    "affected_modules": [
+        "unknown"
+    ],
+    "canonical_entry": {
+        "command_name": "dev_source_theme_deploy",
+        "type": "cli"
+    },
+    "dependency_slice": [],
+    "entry_point": {
+        "class": "Magento\\Developer\\Console\\Command\\SourceThemeDeployCommand",
+        "method": "execute",
+        "module": "unknown",
+        "step_kind": "unknown",
+        "type": "cli_command"
+    },
+    "execution_chain": {
+        "complexity": [],
+        "di_resolution_chain": [],
+        "observer_triggers": [],
+        "plugin_stack": []
+    },
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "module_refs": [],
+    "qa_concerns": [],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "risk": {
+        "affected_module_count": 1,
+        "level": "low",
+        "observer_count": 0,
+        "plugin_depth": 0,
+        "reasons": [
+            "1 architectural debt item(s) in affected modules"
+        ],
+        "score": 0.05
+    },
+    "scenario": "cli.console.command.sourcethemedeploycommand",
+    "scenario_id": "eb763ed832822f1581d9d3f0b19fee4a99a39f4d",
+    "scope": [
+        "vendor/magento"
+    ]
+}

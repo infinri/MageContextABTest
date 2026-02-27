@@ -1,0 +1,63 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/areas.schema.schema.json",
+    "description": "Per-area module allocation: which modules are active in which Magento areas.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "areas": {
+            "additionalProperties": {
+                "properties": {
+                    "area": {
+                        "type": "string"
+                    },
+                    "module_count": {
+                        "type": "integer"
+                    },
+                    "modules": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "object"
+        },
+        "module_areas": {
+            "additionalProperties": {
+                "items": {
+                    "type": "string"
+                },
+                "type": "array"
+            },
+            "description": "module_id \u2192 [areas]",
+            "type": "object"
+        },
+        "summary": {
+            "properties": {
+                "multi_area_modules": {
+                    "type": "integer"
+                },
+                "total_areas_active": {
+                    "type": "integer"
+                },
+                "total_module_area_mappings": {
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "areas",
+        "module_areas",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Area Allocation",
+    "type": "object"
+}

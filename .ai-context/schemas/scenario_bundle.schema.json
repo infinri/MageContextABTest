@@ -1,0 +1,132 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/scenario_bundle.schema.schema.json",
+    "description": "Self-contained slice for a single entry point: execution chain, affected modules, risk, QA concerns.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "affected_modules": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "canonical_entry": {
+            "description": "Frozen-shape entry from ScenarioSeedResolver (present only if matched)",
+            "type": "object"
+        },
+        "dependency_slice": {
+            "type": "array"
+        },
+        "entry_point": {
+            "properties": {
+                "class": {
+                    "type": "string"
+                },
+                "method": {
+                    "type": "string"
+                },
+                "module": {
+                    "type": "string"
+                },
+                "step_kind": {
+                    "enum": [
+                        "http_request",
+                        "scheduled_task",
+                        "cli_command",
+                        "api_call",
+                        "unknown"
+                    ],
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "execution_chain": {
+            "properties": {
+                "complexity": {
+                    "type": "object"
+                },
+                "di_resolution_chain": {
+                    "type": "array"
+                },
+                "observer_triggers": {
+                    "type": "array"
+                },
+                "plugin_stack": {
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
+        "module_refs": {
+            "additionalProperties": {
+                "properties": {
+                    "class_count": {
+                        "type": "integer"
+                    },
+                    "debt_count": {
+                        "type": "integer"
+                    },
+                    "deviations": {
+                        "type": "integer"
+                    },
+                    "route_count": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            },
+            "description": "Per-module summary from reverse_index",
+            "type": "object"
+        },
+        "qa_concerns": {
+            "type": "array"
+        },
+        "risk": {
+            "properties": {
+                "level": {
+                    "enum": [
+                        "low",
+                        "medium",
+                        "high"
+                    ],
+                    "type": "string"
+                },
+                "reasons": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "score": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "scenario": {
+            "type": "string"
+        },
+        "scenario_id": {
+            "description": "Deterministic SHA1 from canonical entry",
+            "type": "string"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "scenario",
+        "scenario_id",
+        "entry_point",
+        "execution_chain",
+        "affected_modules",
+        "risk"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Scenario Bundle",
+    "type": "object"
+}

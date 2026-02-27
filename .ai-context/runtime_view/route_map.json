@@ -1,0 +1,2802 @@
+{
+    "\\$schema": "schemas/route_map.schema.json",
+    "generated_at": "2026-02-27T17:29:08+00:00",
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "routes": [
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=InventoryLowQuantityNotification frontName=InventoryLowQuantityNotification router=admin",
+                    "source_file": "vendor/magento/module-inventory-low-quantity-notification-admin-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "InventoryLowQuantityNotification",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_InventoryLowQuantityNotificationAdminUi"
+                }
+            ],
+            "route_id": "adminhtml/InventoryLowQuantityNotification/InventoryLowQuantityNotification",
+            "router": "admin",
+            "xml_id": "InventoryLowQuantityNotification"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName=admin router=admin",
+                    "source_file": "vendor/magento/module-backend/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "admin",
+            "modules": [
+                {
+                    "name": "Magento_Backend"
+                }
+            ],
+            "route_id": "adminhtml/admin/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminAnalytics frontName=adminAnalytics router=admin",
+                    "source_file": "vendor/magento/module-admin-analytics/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "adminAnalytics",
+            "modules": [
+                {
+                    "name": "Magento_AdminAnalytics"
+                }
+            ],
+            "route_id": "adminhtml/adminAnalytics/adminAnalytics",
+            "router": "admin",
+            "xml_id": "adminAnalytics"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-admin-notification/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_AdminNotification"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-advanced-pricing-import-export/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_ImportExport",
+                    "name": "Magento_AdvancedPricingImportExport"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-bundle/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Bundle"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-captcha/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "name": "Magento_Captcha"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-config/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "name": "Magento_Config"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-currency-symbol/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "name": "Magento_CurrencySymbol"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-downloadable/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Downloadable"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-email/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Email"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-encryption-key/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_EncryptionKey"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-import-export/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_ImportExport"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-integration/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Integration"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-media-storage/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "name": "Magento_MediaStorage"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-offline-shipping/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_OfflineShipping"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-page-cache/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_PageCache"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-shipping/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Shipping"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-sitemap/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Sitemap"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-theme/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "name": "Magento_Theme"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-url-rewrite/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_UrlRewrite"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-user/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_User"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-variable/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Variable"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName= router=admin",
+                    "source_file": "vendor/magento/module-widget/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Widget"
+                }
+            ],
+            "route_id": "adminhtml/adminhtml/adminhtml",
+            "router": "admin",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adobe_ims frontName=adobe_ims router=admin",
+                    "source_file": "vendor/magento/module-adobe-ims/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "adobe_ims",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_AdobeIms"
+                }
+            ],
+            "route_id": "adminhtml/adobe_ims/adobe_ims",
+            "router": "admin",
+            "xml_id": "adobe_ims"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adobe_ims_auth frontName=adobe_ims_auth router=admin",
+                    "source_file": "vendor/magento/module-admin-adobe-ims/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "adobe_ims_auth",
+            "modules": [
+                {
+                    "name": "Magento_AdminAdobeIms"
+                }
+            ],
+            "route_id": "adminhtml/adobe_ims_auth/adobe_ims_auth",
+            "router": "admin",
+            "xml_id": "adobe_ims_auth"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adobe_stock frontName=adobe_stock router=admin",
+                    "source_file": "vendor/magento/module-adobe-stock-admin-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "adobe_stock",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_AdobeStockAdminUi"
+                }
+            ],
+            "route_id": "adminhtml/adobe_stock/adobe_stock",
+            "router": "admin",
+            "xml_id": "adobe_stock"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adobe_stock frontName=adobe_stock router=admin",
+                    "source_file": "vendor/magento/module-adobe-stock-image-admin-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "adobe_stock",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_AdobeStockImageAdminUi"
+                }
+            ],
+            "route_id": "adminhtml/adobe_stock/adobe_stock",
+            "router": "admin",
+            "xml_id": "adobe_stock"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=analytics frontName=analytics router=admin",
+                    "source_file": "vendor/magento/module-analytics/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "analytics",
+            "modules": [
+                {
+                    "name": "Magento_Analytics"
+                }
+            ],
+            "route_id": "adminhtml/analytics/analytics",
+            "router": "admin",
+            "xml_id": "analytics"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=backup frontName=backup router=admin",
+                    "source_file": "vendor/magento/module-backup/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "backup",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Backup"
+                }
+            ],
+            "route_id": "adminhtml/backup/backup",
+            "router": "admin",
+            "xml_id": "backup"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=bulk frontName=bulk router=admin",
+                    "source_file": "vendor/magento/module-asynchronous-operations/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "bulk",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_AsynchronousOperations"
+                }
+            ],
+            "route_id": "adminhtml/bulk/bulk",
+            "router": "admin",
+            "xml_id": "bulk"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=catalog frontName= router=admin",
+                    "source_file": "vendor/magento/module-advanced-search/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Catalog",
+                    "name": "Magento_AdvancedSearch"
+                }
+            ],
+            "route_id": "adminhtml/catalog/catalog",
+            "router": "admin",
+            "xml_id": "catalog"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=catalog frontName=catalog router=admin",
+                    "source_file": "vendor/magento/module-catalog/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "catalog",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Catalog"
+                }
+            ],
+            "route_id": "adminhtml/catalog/catalog",
+            "router": "admin",
+            "xml_id": "catalog"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=catalog frontName=catalog router=admin",
+                    "source_file": "vendor/magento/module-configurable-product/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "catalog",
+            "modules": [
+                {
+                    "name": "Magento_ConfigurableProduct"
+                }
+            ],
+            "route_id": "adminhtml/catalog/catalog",
+            "router": "admin",
+            "xml_id": "catalog"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=catalog_rule frontName=catalog_rule router=admin",
+                    "source_file": "vendor/magento/module-catalog-rule/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "catalog_rule",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_CatalogRule"
+                }
+            ],
+            "route_id": "adminhtml/catalog_rule/catalog_rule",
+            "router": "admin",
+            "xml_id": "catalog_rule"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=catalog_widget frontName=catalog_widget router=admin",
+                    "source_file": "vendor/magento/module-catalog-widget/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "catalog_widget",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_CatalogWidget"
+                }
+            ],
+            "route_id": "adminhtml/catalog_widget/catalog_widget",
+            "router": "admin",
+            "xml_id": "catalog_widget"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=checkout frontName= router=admin",
+                    "source_file": "vendor/magento/module-checkout-agreements/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_CheckoutAgreements"
+                }
+            ],
+            "route_id": "adminhtml/checkout/checkout",
+            "router": "admin",
+            "xml_id": "checkout"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=checkout frontName=checkout router=admin",
+                    "source_file": "vendor/magento/module-checkout/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "checkout",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Checkout"
+                }
+            ],
+            "route_id": "adminhtml/checkout/checkout",
+            "router": "admin",
+            "xml_id": "checkout"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=cms frontName=cms router=admin",
+                    "source_file": "vendor/magento/module-cms/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "cms",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Cms"
+                }
+            ],
+            "route_id": "adminhtml/cms/cms",
+            "router": "admin",
+            "xml_id": "cms"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=customer frontName=customer router=admin",
+                    "source_file": "vendor/magento/module-customer/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "customer",
+            "modules": [
+                {
+                    "name": "Magento_Customer"
+                }
+            ],
+            "route_id": "adminhtml/customer/customer",
+            "router": "admin",
+            "xml_id": "customer"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=customer_import_export frontName=customer_import_export router=admin",
+                    "source_file": "vendor/magento/module-customer-import-export/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "customer_import_export",
+            "modules": [
+                {
+                    "name": "Magento_CustomerImportExport"
+                }
+            ],
+            "route_id": "adminhtml/customer_import_export/customer_import_export",
+            "router": "admin",
+            "xml_id": "customer_import_export"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=directory frontName=directory router=admin",
+                    "source_file": "vendor/magento/module-directory/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "directory",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Directory"
+                }
+            ],
+            "route_id": "adminhtml/directory/directory",
+            "router": "admin",
+            "xml_id": "directory"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=graphqls frontName=graphqls router=admin",
+                    "source_file": "vendor/magento/module-graph-ql-server/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "graphqls",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_GraphQlServer"
+                }
+            ],
+            "route_id": "adminhtml/graphqls/graphqls",
+            "router": "admin",
+            "xml_id": "graphqls"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=groupedProduct frontName=groupedProduct router=admin",
+                    "source_file": "vendor/magento/module-grouped-product/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "groupedProduct",
+            "modules": [
+                {
+                    "name": "Magento_GroupedProduct"
+                }
+            ],
+            "route_id": "adminhtml/groupedProduct/groupedProduct",
+            "router": "admin",
+            "xml_id": "groupedProduct"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=indexer frontName=indexer router=admin",
+                    "source_file": "vendor/magento/module-indexer/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "indexer",
+            "modules": [
+                {
+                    "name": "Magento_Indexer"
+                }
+            ],
+            "route_id": "adminhtml/indexer/indexer",
+            "router": "admin",
+            "xml_id": "indexer"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=inventory frontName=inventory router=admin",
+                    "source_file": "vendor/magento/module-inventory-admin-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "inventory",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_InventoryAdminUi"
+                }
+            ],
+            "route_id": "adminhtml/inventory/inventory",
+            "router": "admin",
+            "xml_id": "inventory"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=inventorycatalog frontName=inventorycatalog router=admin",
+                    "source_file": "vendor/magento/module-inventory-catalog-admin-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "inventorycatalog",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_InventoryCatalogAdminUi"
+                }
+            ],
+            "route_id": "adminhtml/inventorycatalog/inventorycatalog",
+            "router": "admin",
+            "xml_id": "inventorycatalog"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=inventoryshipping frontName=inventoryshipping router=admin",
+                    "source_file": "vendor/magento/module-inventory-shipping-admin-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "inventoryshipping",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_InventoryShippingAdminUi"
+                }
+            ],
+            "route_id": "adminhtml/inventoryshipping/inventoryshipping",
+            "router": "admin",
+            "xml_id": "inventoryshipping"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=loginascustomer frontName=loginascustomer router=admin",
+                    "source_file": "vendor/magento/module-login-as-customer-admin-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "loginascustomer",
+            "modules": [
+                {
+                    "name": "Magento_LoginAsCustomerAdminUi"
+                }
+            ],
+            "route_id": "adminhtml/loginascustomer/loginascustomer",
+            "router": "admin",
+            "xml_id": "loginascustomer"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=loginascustomer_log frontName=loginascustomer_log router=admin",
+                    "source_file": "vendor/magento/module-login-as-customer-log/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "loginascustomer_log",
+            "modules": [
+                {
+                    "name": "Magento_LoginAsCustomerLog"
+                }
+            ],
+            "route_id": "adminhtml/loginascustomer_log/loginascustomer_log",
+            "router": "admin",
+            "xml_id": "loginascustomer_log"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=marketplace frontName=marketplace router=admin",
+                    "source_file": "vendor/magento/module-marketplace/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "marketplace",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Marketplace"
+                }
+            ],
+            "route_id": "adminhtml/marketplace/marketplace",
+            "router": "admin",
+            "xml_id": "marketplace"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=media_gallery frontName=media_gallery router=admin",
+                    "source_file": "vendor/magento/module-media-gallery-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "media_gallery",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_MediaGalleryUi"
+                }
+            ],
+            "route_id": "adminhtml/media_gallery/media_gallery",
+            "router": "admin",
+            "xml_id": "media_gallery"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=media_gallery_catalog frontName=media_gallery_catalog router=admin",
+                    "source_file": "vendor/magento/module-media-gallery-catalog-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "media_gallery_catalog",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_MediaGalleryCatalogUi"
+                }
+            ],
+            "route_id": "adminhtml/media_gallery_catalog/media_gallery_catalog",
+            "router": "admin",
+            "xml_id": "media_gallery_catalog"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=media_gallery_cms frontName=media_gallery_cms router=admin",
+                    "source_file": "vendor/magento/module-media-gallery-cms-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "media_gallery_cms",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_MediaGalleryCmsUi"
+                }
+            ],
+            "route_id": "adminhtml/media_gallery_cms/media_gallery_cms",
+            "router": "admin",
+            "xml_id": "media_gallery_cms"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=mui frontName=mui router=admin",
+                    "source_file": "vendor/magento/module-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "mui",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Ui"
+                }
+            ],
+            "route_id": "adminhtml/mui/mui",
+            "router": "admin",
+            "xml_id": "mui"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=newsletter frontName=newsletter router=admin",
+                    "source_file": "vendor/magento/module-newsletter/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "newsletter",
+            "modules": [
+                {
+                    "name": "Magento_Newsletter"
+                }
+            ],
+            "route_id": "adminhtml/newsletter/newsletter",
+            "router": "admin",
+            "xml_id": "newsletter"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=pagebuilder frontName=pagebuilder router=admin",
+                    "source_file": "vendor/magento/module-page-builder/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "pagebuilder",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_PageBuilder"
+                }
+            ],
+            "route_id": "adminhtml/pagebuilder/pagebuilder",
+            "router": "admin",
+            "xml_id": "pagebuilder"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=paymentservicesbase frontName=paymentservicesbase router=admin",
+                    "source_file": "vendor/magento/module-payment-services-base/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "paymentservicesbase",
+            "modules": [
+                {
+                    "name": "Magento_PaymentServicesBase"
+                }
+            ],
+            "route_id": "adminhtml/paymentservicesbase/paymentservicesbase",
+            "router": "admin",
+            "xml_id": "paymentservicesbase"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=paymentservicesdashboard frontName=paymentservicesdashboard router=admin",
+                    "source_file": "vendor/magento/module-payment-services-dashboard/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "paymentservicesdashboard",
+            "modules": [
+                {
+                    "name": "Magento_PaymentServicesDashboard"
+                }
+            ],
+            "route_id": "adminhtml/paymentservicesdashboard/paymentservicesdashboard",
+            "router": "admin",
+            "xml_id": "paymentservicesdashboard"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=paymentservicespaypal frontName=paymentservicespaypal router=admin",
+                    "source_file": "vendor/magento/module-payment-services-paypal/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "paymentservicespaypal",
+            "modules": [
+                {
+                    "name": "Magento_PaymentServicesPaypal"
+                }
+            ],
+            "route_id": "adminhtml/paymentservicespaypal/paymentservicespaypal",
+            "router": "admin",
+            "xml_id": "paymentservicespaypal"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=paypal frontName=paypal router=admin",
+                    "source_file": "vendor/magento/module-paypal/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "paypal",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Paypal"
+                }
+            ],
+            "route_id": "adminhtml/paypal/paypal",
+            "router": "admin",
+            "xml_id": "paypal"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=product_video frontName=product_video router=admin",
+                    "source_file": "vendor/magento/module-product-video/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "product_video",
+            "modules": [
+                {
+                    "name": "Magento_ProductVideo"
+                }
+            ],
+            "route_id": "adminhtml/product_video/product_video",
+            "router": "admin",
+            "xml_id": "product_video"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=releaseNotification frontName=releaseNotification router=admin",
+                    "source_file": "vendor/magento/module-release-notification/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "releaseNotification",
+            "modules": [
+                {
+                    "name": "Magento_ReleaseNotification"
+                }
+            ],
+            "route_id": "adminhtml/releaseNotification/releaseNotification",
+            "router": "admin",
+            "xml_id": "releaseNotification"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=reports frontName=reports router=admin",
+                    "source_file": "vendor/magento/module-reports/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "reports",
+            "modules": [
+                {
+                    "before": "Magento_Reports",
+                    "name": "Magento_Reports"
+                }
+            ],
+            "route_id": "adminhtml/reports/reports",
+            "router": "admin",
+            "xml_id": "reports"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=review frontName=review router=admin",
+                    "source_file": "vendor/magento/module-review/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "review",
+            "modules": [
+                {
+                    "name": "Magento_Review"
+                }
+            ],
+            "route_id": "adminhtml/review/review",
+            "router": "admin",
+            "xml_id": "review"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=rss frontName=rss router=admin",
+                    "source_file": "vendor/magento/module-rss/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "rss",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Rss"
+                }
+            ],
+            "route_id": "adminhtml/rss/rss",
+            "router": "admin",
+            "xml_id": "rss"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=sales frontName=sales router=admin",
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup-sales-admin-ui/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "sales",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_InventoryInStorePickupSalesAdminUi"
+                }
+            ],
+            "route_id": "adminhtml/sales/sales",
+            "router": "admin",
+            "xml_id": "sales"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=sales frontName=sales router=admin",
+                    "source_file": "vendor/magento/module-sales/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "sales",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Sales"
+                }
+            ],
+            "route_id": "adminhtml/sales/sales",
+            "router": "admin",
+            "xml_id": "sales"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=sales_rule frontName=sales_rule router=admin",
+                    "source_file": "vendor/magento/module-sales-rule/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "sales_rule",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_SalesRule"
+                }
+            ],
+            "route_id": "adminhtml/sales_rule/sales_rule",
+            "router": "admin",
+            "xml_id": "sales_rule"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=search frontName=search router=admin",
+                    "source_file": "vendor/magento/module-search/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "search",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Search"
+                }
+            ],
+            "route_id": "adminhtml/search/search",
+            "router": "admin",
+            "xml_id": "search"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=security frontName=security router=admin",
+                    "source_file": "vendor/magento/module-security/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "security",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Security"
+                }
+            ],
+            "route_id": "adminhtml/security/security",
+            "router": "admin",
+            "xml_id": "security"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=services frontName=services router=admin",
+                    "source_file": "vendor/magento/module-service-proxy/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "services",
+            "modules": [
+                {
+                    "name": "Magento_ServiceProxy"
+                }
+            ],
+            "route_id": "adminhtml/services/services",
+            "router": "admin",
+            "xml_id": "services"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=services_id frontName=services_id router=admin",
+                    "source_file": "vendor/magento/module-services-id-layout/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "services_id",
+            "modules": [
+                {
+                    "name": "Magento_ServicesIdLayout"
+                }
+            ],
+            "route_id": "adminhtml/services_id/services_id",
+            "router": "admin",
+            "xml_id": "services_id"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=swatches frontName=swatches router=admin",
+                    "source_file": "vendor/magento/module-swatches/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "swatches",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_Swatches"
+                }
+            ],
+            "route_id": "adminhtml/swatches/swatches",
+            "router": "admin",
+            "xml_id": "swatches"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=tax frontName= router=admin",
+                    "source_file": "vendor/magento/module-tax-import-export/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "",
+            "modules": [
+                {
+                    "name": "Magento_TaxImportExport"
+                }
+            ],
+            "route_id": "adminhtml/tax/tax",
+            "router": "admin",
+            "xml_id": "tax"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=tax frontName=tax router=admin",
+                    "source_file": "vendor/magento/module-tax/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "tax",
+            "modules": [
+                {
+                    "name": "Magento_Tax"
+                }
+            ],
+            "route_id": "adminhtml/tax/tax",
+            "router": "admin",
+            "xml_id": "tax"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=tfa frontName=tfa router=admin",
+                    "source_file": "vendor/magento/module-two-factor-auth/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "tfa",
+            "modules": [
+                {
+                    "before": "Magento_Backend",
+                    "name": "Magento_TwoFactorAuth"
+                }
+            ],
+            "route_id": "adminhtml/tfa/tfa",
+            "router": "admin",
+            "xml_id": "tfa"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=theme frontName=theme router=admin",
+                    "source_file": "vendor/magento/module-theme/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "theme",
+            "modules": [
+                {
+                    "name": "Magento_Theme"
+                }
+            ],
+            "route_id": "adminhtml/theme/theme",
+            "router": "admin",
+            "xml_id": "theme"
+        },
+        {
+            "area": "adminhtml",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=translation frontName=translation router=admin",
+                    "source_file": "vendor/magento/module-translation/etc/adminhtml/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "translation",
+            "modules": [
+                {
+                    "name": "Magento_Translation"
+                }
+            ],
+            "route_id": "adminhtml/translation/translation",
+            "router": "admin",
+            "xml_id": "translation"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=api frontName=api router=standard",
+                    "source_file": "vendor/magento/module-webapi/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "api",
+            "modules": [
+                {
+                    "name": "Magento_Webapi"
+                }
+            ],
+            "route_id": "frontend/api/api",
+            "router": "standard",
+            "xml_id": "api"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=captcha frontName=captcha router=standard",
+                    "source_file": "vendor/magento/module-captcha/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "captcha",
+            "modules": [
+                {
+                    "name": "Magento_Captcha"
+                }
+            ],
+            "route_id": "frontend/captcha/captcha",
+            "router": "standard",
+            "xml_id": "captcha"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=catalog frontName=catalog router=standard",
+                    "source_file": "vendor/magento/module-catalog/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "catalog",
+            "modules": [
+                {
+                    "name": "Magento_Catalog"
+                }
+            ],
+            "route_id": "frontend/catalog/catalog",
+            "router": "standard",
+            "xml_id": "catalog"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=catalogsearch frontName=catalogsearch router=standard",
+                    "source_file": "vendor/magento/module-catalog-search/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "catalogsearch",
+            "modules": [
+                {
+                    "name": "Magento_CatalogSearch"
+                }
+            ],
+            "route_id": "frontend/catalogsearch/catalogsearch",
+            "router": "standard",
+            "xml_id": "catalogsearch"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=checkout frontName=checkout router=standard",
+                    "source_file": "vendor/magento/module-checkout/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "checkout",
+            "modules": [
+                {
+                    "name": "Magento_Checkout"
+                }
+            ],
+            "route_id": "frontend/checkout/checkout",
+            "router": "standard",
+            "xml_id": "checkout"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=cms frontName=cms router=standard",
+                    "source_file": "vendor/magento/module-cms/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "cms",
+            "modules": [
+                {
+                    "name": "Magento_Cms"
+                }
+            ],
+            "route_id": "frontend/cms/cms",
+            "router": "standard",
+            "xml_id": "cms"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=contact frontName=contact router=standard",
+                    "source_file": "vendor/magento/module-contact/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "contact",
+            "modules": [
+                {
+                    "name": "Magento_Contact"
+                }
+            ],
+            "route_id": "frontend/contact/contact",
+            "router": "standard",
+            "xml_id": "contact"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=cookie frontName=cookie router=standard",
+                    "source_file": "vendor/magento/module-cookie/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "cookie",
+            "modules": [
+                {
+                    "name": "Magento_Cookie"
+                }
+            ],
+            "route_id": "frontend/cookie/cookie",
+            "router": "standard",
+            "xml_id": "cookie"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=csputil frontName=csputil router=standard",
+                    "source_file": "vendor/magento/magento2-base/dev/tests/integration/_files/Magento/TestModuleCspUtil/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "csputil",
+            "modules": [
+                {
+                    "name": "Magento_TestModuleCspUtil"
+                }
+            ],
+            "route_id": "frontend/csputil/csputil",
+            "router": "standard",
+            "xml_id": "csputil"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=customer frontName=customer router=standard",
+                    "source_file": "vendor/magento/module-customer/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "customer",
+            "modules": [
+                {
+                    "name": "Magento_Customer"
+                }
+            ],
+            "route_id": "frontend/customer/customer",
+            "router": "standard",
+            "xml_id": "customer"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=directory frontName=directory router=standard",
+                    "source_file": "vendor/magento/module-directory/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "directory",
+            "modules": [
+                {
+                    "name": "Magento_Directory"
+                }
+            ],
+            "route_id": "frontend/directory/directory",
+            "router": "standard",
+            "xml_id": "directory"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=downloadable frontName=downloadable router=standard",
+                    "source_file": "vendor/magento/module-downloadable/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "downloadable",
+            "modules": [
+                {
+                    "name": "Magento_Downloadable"
+                }
+            ],
+            "route_id": "frontend/downloadable/downloadable",
+            "router": "standard",
+            "xml_id": "downloadable"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=giftmessage frontName=giftmessage router=standard",
+                    "source_file": "vendor/magento/module-gift-message/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "giftmessage",
+            "modules": [
+                {
+                    "name": "Magento_GiftMessage"
+                }
+            ],
+            "route_id": "frontend/giftmessage/giftmessage",
+            "router": "standard",
+            "xml_id": "giftmessage"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=instantpurchase frontName=instantpurchase router=standard",
+                    "source_file": "vendor/magento/module-instant-purchase/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "instantpurchase",
+            "modules": [
+                {
+                    "name": "Magento_InstantPurchase"
+                }
+            ],
+            "route_id": "frontend/instantpurchase/instantpurchase",
+            "router": "standard",
+            "xml_id": "instantpurchase"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=inventory_catalog frontName=inventory_catalog router=standard",
+                    "source_file": "vendor/magento/module-inventory-catalog-frontend-ui/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "inventory_catalog",
+            "modules": [
+                {
+                    "name": "Magento_InventoryCatalogFrontendUi"
+                }
+            ],
+            "route_id": "frontend/inventory_catalog/inventory_catalog",
+            "router": "standard",
+            "xml_id": "inventory_catalog"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=loginascustomer frontName=loginascustomer router=standard",
+                    "source_file": "vendor/magento/module-login-as-customer-frontend-ui/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "loginascustomer",
+            "modules": [
+                {
+                    "name": "Magento_LoginAsCustomerFrontendUi"
+                }
+            ],
+            "route_id": "frontend/loginascustomer/loginascustomer",
+            "router": "standard",
+            "xml_id": "loginascustomer"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=magento_version frontName=magento_version router=standard",
+                    "source_file": "vendor/magento/module-version/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "magento_version",
+            "modules": [
+                {
+                    "name": "Magento_Version"
+                }
+            ],
+            "route_id": "frontend/magento_version/magento_version",
+            "router": "standard",
+            "xml_id": "magento_version"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=mui frontName=mui router=standard",
+                    "source_file": "vendor/magento/module-ui/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "mui",
+            "modules": [
+                {
+                    "name": "Magento_Ui"
+                }
+            ],
+            "route_id": "frontend/mui/mui",
+            "router": "standard",
+            "xml_id": "mui"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=multishipping frontName=multishipping router=standard",
+                    "source_file": "vendor/magento/module-multishipping/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "multishipping",
+            "modules": [
+                {
+                    "name": "Magento_Multishipping"
+                }
+            ],
+            "route_id": "frontend/multishipping/multishipping",
+            "router": "standard",
+            "xml_id": "multishipping"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=newsletter frontName=newsletter router=standard",
+                    "source_file": "vendor/magento/module-newsletter/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "newsletter",
+            "modules": [
+                {
+                    "name": "Magento_Newsletter"
+                }
+            ],
+            "route_id": "frontend/newsletter/newsletter",
+            "router": "standard",
+            "xml_id": "newsletter"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=oauth frontName=oauth router=standard",
+                    "source_file": "vendor/magento/module-integration/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "oauth",
+            "modules": [
+                {
+                    "name": "Magento_Integration"
+                }
+            ],
+            "route_id": "frontend/oauth/oauth",
+            "router": "standard",
+            "xml_id": "oauth"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=magento_pagecache frontName=page_cache router=standard",
+                    "source_file": "vendor/magento/module-page-cache/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "page_cache",
+            "modules": [
+                {
+                    "name": "Magento_PageCache"
+                }
+            ],
+            "route_id": "frontend/page_cache/magento_pagecache",
+            "router": "standard",
+            "xml_id": "magento_pagecache"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=pagebuilder frontName=pagebuilder router=standard",
+                    "source_file": "vendor/magento/module-page-builder/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "pagebuilder",
+            "modules": [
+                {
+                    "name": "Magento_PageBuilder"
+                }
+            ],
+            "route_id": "frontend/pagebuilder/pagebuilder",
+            "router": "standard",
+            "xml_id": "pagebuilder"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=paymentservicesbase frontName=paymentservicesbase router=standard",
+                    "source_file": "vendor/magento/module-payment-services-base/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "paymentservicesbase",
+            "modules": [
+                {
+                    "name": "Magento_PaymentServicesBase"
+                }
+            ],
+            "route_id": "frontend/paymentservicesbase/paymentservicesbase",
+            "router": "standard",
+            "xml_id": "paymentservicesbase"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=paymentservicespaypal frontName=paymentservicespaypal router=standard",
+                    "source_file": "vendor/magento/module-payment-services-paypal/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "paymentservicespaypal",
+            "modules": [
+                {
+                    "name": "Magento_PaymentServicesPaypal"
+                }
+            ],
+            "route_id": "frontend/paymentservicespaypal/paymentservicespaypal",
+            "router": "standard",
+            "xml_id": "paymentservicespaypal"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=paypal frontName=paypal router=standard",
+                    "source_file": "vendor/magento/module-paypal/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "paypal",
+            "modules": [
+                {
+                    "name": "Magento_Paypal"
+                }
+            ],
+            "route_id": "frontend/paypal/paypal",
+            "router": "standard",
+            "xml_id": "paypal"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=persistent frontName=persistent router=standard",
+                    "source_file": "vendor/magento/module-persistent/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "persistent",
+            "modules": [
+                {
+                    "name": "Magento_Persistent"
+                }
+            ],
+            "route_id": "frontend/persistent/persistent",
+            "router": "standard",
+            "xml_id": "persistent"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=productalert frontName=productalert router=standard",
+                    "source_file": "vendor/magento/module-product-alert/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "productalert",
+            "modules": [
+                {
+                    "name": "Magento_ProductAlert"
+                }
+            ],
+            "route_id": "frontend/productalert/productalert",
+            "router": "standard",
+            "xml_id": "productalert"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=review frontName=review router=standard",
+                    "source_file": "vendor/magento/module-review/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "review",
+            "modules": [
+                {
+                    "name": "Magento_Review"
+                }
+            ],
+            "route_id": "frontend/review/review",
+            "router": "standard",
+            "xml_id": "review"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=robots frontName=robots router=standard",
+                    "source_file": "vendor/magento/module-robots/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "robots",
+            "modules": [
+                {
+                    "name": "Magento_Robots"
+                }
+            ],
+            "route_id": "frontend/robots/robots",
+            "router": "standard",
+            "xml_id": "robots"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=rss frontName=rss router=standard",
+                    "source_file": "vendor/magento/module-rss/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "rss",
+            "modules": [
+                {
+                    "name": "Magento_Rss"
+                }
+            ],
+            "route_id": "frontend/rss/rss",
+            "router": "standard",
+            "xml_id": "rss"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=sales frontName=sales router=standard",
+                    "source_file": "vendor/magento/module-sales/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "sales",
+            "modules": [
+                {
+                    "name": "Magento_Sales"
+                }
+            ],
+            "route_id": "frontend/sales/sales",
+            "router": "standard",
+            "xml_id": "sales"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=search frontName=search router=standard",
+                    "source_file": "vendor/magento/module-search/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "search",
+            "modules": [
+                {
+                    "name": "Magento_Search"
+                }
+            ],
+            "route_id": "frontend/search/search",
+            "router": "standard",
+            "xml_id": "search"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=securehtml frontName=securehtml router=standard",
+                    "source_file": "vendor/magento/magento2-base/dev/tests/integration/_files/Magento/TestModuleSecureHtmlRenderer/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "securehtml",
+            "modules": [
+                {
+                    "name": "Magento_TestModuleSecureHtmlRenderer"
+                }
+            ],
+            "route_id": "frontend/securehtml/securehtml",
+            "router": "standard",
+            "xml_id": "securehtml"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=securitytxt frontName=securitytxt router=standard",
+                    "source_file": "vendor/magento/module-securitytxt/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "securitytxt",
+            "modules": [
+                {
+                    "name": "Magento_Securitytxt"
+                }
+            ],
+            "route_id": "frontend/securitytxt/securitytxt",
+            "router": "standard",
+            "xml_id": "securitytxt"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=sendfriend frontName=sendfriend router=standard",
+                    "source_file": "vendor/magento/module-send-friend/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "sendfriend",
+            "modules": [
+                {
+                    "name": "Magento_SendFriend"
+                }
+            ],
+            "route_id": "frontend/sendfriend/sendfriend",
+            "router": "standard",
+            "xml_id": "sendfriend"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=shipping frontName=shipping router=standard",
+                    "source_file": "vendor/magento/module-shipping/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "shipping",
+            "modules": [
+                {
+                    "name": "Magento_Shipping"
+                }
+            ],
+            "route_id": "frontend/shipping/shipping",
+            "router": "standard",
+            "xml_id": "shipping"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=stores frontName=stores router=standard",
+                    "source_file": "vendor/magento/module-store/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "stores",
+            "modules": [
+                {
+                    "name": "Magento_Store"
+                }
+            ],
+            "route_id": "frontend/stores/stores",
+            "router": "standard",
+            "xml_id": "stores"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=swagger frontName=swagger router=standard",
+                    "source_file": "vendor/magento/module-swagger/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "swagger",
+            "modules": [
+                {
+                    "name": "Magento_Swagger"
+                }
+            ],
+            "route_id": "frontend/swagger/swagger",
+            "router": "standard",
+            "xml_id": "swagger"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=swatches frontName=swatches router=standard",
+                    "source_file": "vendor/magento/module-swatches/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "swatches",
+            "modules": [
+                {
+                    "name": "Magento_Swatches"
+                }
+            ],
+            "route_id": "frontend/swatches/swatches",
+            "router": "standard",
+            "xml_id": "swatches"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=testbackpressure frontName=testbackpressure router=standard",
+                    "source_file": "vendor/magento/magento2-base/dev/tests/integration/_files/Magento/TestModuleControllerBackpressure/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "testbackpressure",
+            "modules": [
+                {
+                    "name": "Magento_TestModuleControllerBackpressure"
+                }
+            ],
+            "route_id": "frontend/testbackpressure/testbackpressure",
+            "router": "standard",
+            "xml_id": "testbackpressure"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=testmoduleone frontName=testmoduleone router=standard",
+                    "source_file": "vendor/magento/magento2-base/dev/tests/api-functional/_files/Magento/TestModule1/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "testmoduleone",
+            "modules": [
+                {
+                    "name": "Magento_TestModule1"
+                }
+            ],
+            "route_id": "frontend/testmoduleone/testmoduleone",
+            "router": "standard",
+            "xml_id": "testmoduleone"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=translation frontName=translation router=standard",
+                    "source_file": "vendor/magento/module-translation/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "translation",
+            "modules": [
+                {
+                    "name": "Magento_Translation"
+                }
+            ],
+            "route_id": "frontend/translation/translation",
+            "router": "standard",
+            "xml_id": "translation"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=vault frontName=vault router=standard",
+                    "source_file": "vendor/magento/module-vault/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "vault",
+            "modules": [
+                {
+                    "name": "Magento_Vault"
+                }
+            ],
+            "route_id": "frontend/vault/vault",
+            "router": "standard",
+            "xml_id": "vault"
+        },
+        {
+            "area": "frontend",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=wishlist frontName=wishlist router=standard",
+                    "source_file": "vendor/magento/module-wishlist/etc/frontend/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "wishlist",
+            "modules": [
+                {
+                    "name": "Magento_Wishlist"
+                }
+            ],
+            "route_id": "frontend/wishlist/wishlist",
+            "router": "standard",
+            "xml_id": "wishlist"
+        },
+        {
+            "area": "global",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=adminhtml frontName=admin router=backend",
+                    "source_file": "vendor/magento/framework/App/Test/Unit/Route/Config/_files/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "admin",
+            "modules": [
+                {
+                    "name": "Magento_ModuleD"
+                },
+                {
+                    "before": "Magento_ModuleD",
+                    "name": "Magento_ModuleB"
+                },
+                {
+                    "before": "Magento_ModuleD",
+                    "name": "Magento_ModuleC"
+                },
+                {
+                    "before": "Magento_ModuleB",
+                    "name": "Magento_ModuleA"
+                },
+                {
+                    "name": "Magento_ModuleE"
+                },
+                {
+                    "after": "Magento_ModuleE",
+                    "name": "Magento_ModuleF"
+                }
+            ],
+            "route_id": "global/admin/adminhtml",
+            "router": "backend",
+            "xml_id": "adminhtml"
+        },
+        {
+            "area": "global",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=customer frontName=customer router=backend",
+                    "source_file": "vendor/magento/framework/App/Test/Unit/Route/Config/_files/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "customer",
+            "modules": [
+                {
+                    "before": "Magento_ModuleC",
+                    "name": "Magento_ModuleE"
+                }
+            ],
+            "route_id": "global/customer/customer",
+            "router": "backend",
+            "xml_id": "customer"
+        },
+        {
+            "area": "global",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=moduletestgraphqlback frontName=moduletestgraphqlback router=standard",
+                    "source_file": "vendor/magento/magento2-base/dev/tests/integration/_files/Magento/TestModuleGraphQlBackpressure/etc/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "moduletestgraphqlback",
+            "modules": [
+                {
+                    "name": "Magento_TestModuleGraphQlBackpressure"
+                }
+            ],
+            "route_id": "global/moduletestgraphqlback/moduletestgraphqlback",
+            "router": "standard",
+            "xml_id": "moduletestgraphqlback"
+        },
+        {
+            "area": "global",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=moduletestwebapiback frontName=moduletestwebapiback router=standard",
+                    "source_file": "vendor/magento/magento2-base/dev/tests/integration/_files/Magento/TestModuleWebapiBackpressure/etc/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "moduletestwebapiback",
+            "modules": [
+                {
+                    "name": "Magento_TestModuleWebapiBackpressure"
+                }
+            ],
+            "route_id": "global/moduletestwebapiback/moduletestwebapiback",
+            "router": "standard",
+            "xml_id": "moduletestwebapiback"
+        },
+        {
+            "area": "global",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "route id=wishlist frontName=wishlist router=backend",
+                    "source_file": "vendor/magento/framework/App/Test/Unit/Route/Config/_files/routes.xml",
+                    "type": "xml"
+                }
+            ],
+            "front_name": "wishlist",
+            "modules": [
+                {
+                    "name": "Magento_ModuleC"
+                }
+            ],
+            "route_id": "global/wishlist/wishlist",
+            "router": "backend",
+            "xml_id": "wishlist"
+        }
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "summary": {
+        "by_area": {
+            "adminhtml": 79,
+            "frontend": 45,
+            "global": 5
+        },
+        "by_router": {
+            "admin": 79,
+            "backend": 3,
+            "standard": 47
+        },
+        "total_routes": 129
+    }
+}

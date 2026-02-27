@@ -1,0 +1,69 @@
+{
+    "\\$schema": "schemas/architectural_debt.schema.json",
+    "centrality": [
+        {
+            "in_degree": 0,
+            "module": "Magento_SomeModule",
+            "out_degree": 2,
+            "total_connections": 2
+        },
+        {
+            "in_degree": 1,
+            "module": "Magento_Store",
+            "out_degree": 0,
+            "total_connections": 1
+        },
+        {
+            "in_degree": 1,
+            "module": "Magento_Framework",
+            "out_degree": 0,
+            "total_connections": 1
+        }
+    ],
+    "cycles": [],
+    "debt_items": [
+        {
+            "description": "Class Magento\\Framework\\App\\CacheInterface overridden by 2 modules",
+            "evidence": [
+                {
+                    "confidence": 0.5,
+                    "notes": "2 modules override Magento\\Framework\\App\\CacheInterface",
+                    "source_file": "",
+                    "type": "inference"
+                }
+            ],
+            "modules": [
+                "unknown",
+                "Magento_SomeModule"
+            ],
+            "severity": "medium",
+            "type": "multiple_override",
+            "why_risky": "Multiple modules overriding the same class creates unpredictable load-order conflicts. Only one preference can win."
+        }
+    ],
+    "generated_at": "2026-02-27T17:29:49+00:00",
+    "god_modules": [],
+    "multiple_overrides": [
+        {
+            "class": "Magento\\Framework\\App\\CacheInterface",
+            "modules": [
+                "unknown",
+                "Magento_SomeModule"
+            ],
+            "override_count": 2
+        }
+    ],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "scope": [
+        "vendor/magento"
+    ],
+    "summary": {
+        "by_severity": {
+            "medium": 1
+        },
+        "circular_dependencies": 0,
+        "god_modules": 0,
+        "multiple_overrides": 1,
+        "total_debt_items": 1
+    }
+}

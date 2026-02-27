@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Custom\CouponValidation\Api\VipValidatorInterface"
+                type="Custom\CouponValidation\Model\VipValidator"/>
+
+    <type name="Magento\Quote\Api\CouponManagementInterface">
+        <plugin name="custom_coupon_apply_validation"
+                type="Custom\CouponValidation\Plugin\CouponApplyValidationPlugin"
+                sortOrder="10"/>
+    </type>
+
+    <type name="Custom\CouponValidation\Logger\Handler">
+        <arguments>
+            <argument name="fileName" xsi:type="string">/var/log/custom_coupon_validation.log</argument>
+        </arguments>
+    </type>
+
+    <type name="Custom\CouponValidation\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">custom_coupon_validation</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="system" xsi:type="object">Custom\CouponValidation\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>

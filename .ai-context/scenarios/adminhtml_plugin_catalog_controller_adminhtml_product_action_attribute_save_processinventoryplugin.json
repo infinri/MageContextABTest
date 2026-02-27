@@ -1,0 +1,39 @@
+{
+    "\\$schema": "schemas/adminhtml_plugin_catalog_controller_adminhtml_product_action_attribute_save_processinventoryplugin.schema.json",
+    "affected_modules": [
+        "unknown"
+    ],
+    "dependency_slice": [],
+    "entry_point": {
+        "class": "Magento\\InventoryCatalog\\Plugin\\Catalog\\Controller\\Adminhtml\\Product\\Action\\Attribute\\Save\\ProcessInventoryPlugin",
+        "method": "execute",
+        "module": "unknown",
+        "step_kind": "http_request",
+        "type": "controller"
+    },
+    "execution_chain": {
+        "complexity": [],
+        "di_resolution_chain": [],
+        "observer_triggers": [],
+        "plugin_stack": []
+    },
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "module_refs": [],
+    "qa_concerns": [],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "risk": {
+        "affected_module_count": 1,
+        "level": "low",
+        "observer_count": 0,
+        "plugin_depth": 0,
+        "reasons": [
+            "1 architectural debt item(s) in affected modules"
+        ],
+        "score": 0.05
+    },
+    "scenario": "adminhtml.plugin.catalog.controller.adminhtml.product.action.attribute.save.processinventoryplugin",
+    "scenario_id": "8b4a7e9edc38caa0283d0365f619ff4300d17e0f",
+    "scope": [
+        "vendor/magento"
+    ]
+}

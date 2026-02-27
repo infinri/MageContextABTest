@@ -1,0 +1,1201 @@
+{
+    "\\$schema": "schemas/cron_map.schema.json",
+    "cron_jobs": [
+        {
+            "config_path": "",
+            "cron_id": "cron::aggregate_sales_report_bestsellers_data",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=aggregate_sales_report_bestsellers_data instance=Magento\\Sales\\Model\\CronJob\\AggregateSalesReportBestsellersData method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Sales\\Model\\CronJob\\AggregateSalesReportBestsellersData",
+            "job_name": "aggregate_sales_report_bestsellers_data",
+            "method": "execute",
+            "module": "Magento_Sales",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::aggregate_sales_report_coupons_data",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=aggregate_sales_report_coupons_data instance=Magento\\SalesRule\\Cron\\AggregateSalesReportCouponsData method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-sales-rule/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\SalesRule\\Cron\\AggregateSalesReportCouponsData",
+            "job_name": "aggregate_sales_report_coupons_data",
+            "method": "execute",
+            "module": "Magento_SalesRule",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::aggregate_sales_report_invoiced_data",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=aggregate_sales_report_invoiced_data instance=Magento\\Sales\\Model\\CronJob\\AggregateSalesReportInvoicedData method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Sales\\Model\\CronJob\\AggregateSalesReportInvoicedData",
+            "job_name": "aggregate_sales_report_invoiced_data",
+            "method": "execute",
+            "module": "Magento_Sales",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::aggregate_sales_report_order_data",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=aggregate_sales_report_order_data instance=Magento\\Sales\\Model\\CronJob\\AggregateSalesReportOrderData method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Sales\\Model\\CronJob\\AggregateSalesReportOrderData",
+            "job_name": "aggregate_sales_report_order_data",
+            "method": "execute",
+            "module": "Magento_Sales",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::aggregate_sales_report_refunded_data",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=aggregate_sales_report_refunded_data instance=Magento\\Sales\\Model\\CronJob\\AggregateSalesReportRefundedData method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Sales\\Model\\CronJob\\AggregateSalesReportRefundedData",
+            "job_name": "aggregate_sales_report_refunded_data",
+            "method": "execute",
+            "module": "Magento_Sales",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::aggregate_sales_report_shipment_data",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=aggregate_sales_report_shipment_data instance=Magento\\Shipping\\Model\\Observer method=aggregateSalesReportShipmentData schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-shipping/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Shipping\\Model\\Observer",
+            "job_name": "aggregate_sales_report_shipment_data",
+            "method": "aggregateSalesReportShipmentData",
+            "module": "Magento_Shipping",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::aggregate_sales_report_tax_data",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=aggregate_sales_report_tax_data instance=Magento\\Tax\\Model\\AggregateSalesReportTaxData method=invoke schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-tax/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Tax\\Model\\AggregateSalesReportTaxData",
+            "job_name": "aggregate_sales_report_tax_data",
+            "method": "invoke",
+            "module": "Magento_Tax",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::analytics_collect_data",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=analytics_collect_data instance=Magento\\Analytics\\Cron\\CollectData method=execute schedule=",
+                    "source_file": "vendor/magento/module-analytics/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Analytics\\Cron\\CollectData",
+            "job_name": "analytics_collect_data",
+            "method": "execute",
+            "module": "Magento_Analytics",
+            "schedule": ""
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::analytics_subscribe",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=analytics_subscribe instance=Magento\\Analytics\\Cron\\SignUp method=execute schedule=",
+                    "source_file": "vendor/magento/module-analytics/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Analytics\\Cron\\SignUp",
+            "job_name": "analytics_subscribe",
+            "method": "execute",
+            "module": "Magento_Analytics",
+            "schedule": ""
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::analytics_update",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=analytics_update instance=Magento\\Analytics\\Cron\\Update method=execute schedule=",
+                    "source_file": "vendor/magento/module-analytics/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Analytics\\Cron\\Update",
+            "job_name": "analytics_update",
+            "method": "execute",
+            "module": "Magento_Analytics",
+            "schedule": ""
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::backend_clean_cache",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=backend_clean_cache instance=Magento\\Backend\\Cron\\CleanCache method=execute schedule=30 2 * * *",
+                    "source_file": "vendor/magento/module-backend/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Backend\\Cron\\CleanCache",
+            "job_name": "backend_clean_cache",
+            "method": "execute",
+            "module": "Magento_Backend",
+            "schedule": "30 2 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::bulk_cleanup",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=bulk_cleanup instance=Magento\\AsynchronousOperations\\Cron\\BulkCleanup method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-asynchronous-operations/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\AsynchronousOperations\\Cron\\BulkCleanup",
+            "job_name": "bulk_cleanup",
+            "method": "execute",
+            "module": "Magento_AsynchronousOperations",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::bulk_mark_incomplete_operations_as_failed",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=bulk_mark_incomplete_operations_as_failed instance=Magento\\AsynchronousOperations\\Cron\\MarkIncompleteOperationsAsFailed method=execute schedule=*/10 * * * *",
+                    "source_file": "vendor/magento/module-asynchronous-operations/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\AsynchronousOperations\\Cron\\MarkIncompleteOperationsAsFailed",
+            "job_name": "bulk_mark_incomplete_operations_as_failed",
+            "method": "execute",
+            "module": "Magento_AsynchronousOperations",
+            "schedule": "*/10 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::captcha_delete_expired_images",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=captcha_delete_expired_images instance=Magento\\Captcha\\Cron\\DeleteExpiredImages method=execute schedule=*/10 * * * *",
+                    "source_file": "vendor/magento/module-captcha/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Captcha\\Cron\\DeleteExpiredImages",
+            "job_name": "captcha_delete_expired_images",
+            "method": "execute",
+            "module": "Magento_Captcha",
+            "schedule": "*/10 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::captcha_delete_old_attempts",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=captcha_delete_old_attempts instance=Magento\\Captcha\\Cron\\DeleteOldAttempts method=execute schedule=*/30 * * * *",
+                    "source_file": "vendor/magento/module-captcha/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Captcha\\Cron\\DeleteOldAttempts",
+            "job_name": "captcha_delete_old_attempts",
+            "method": "execute",
+            "module": "Magento_Captcha",
+            "schedule": "*/30 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::catalog_index_refresh_price",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=catalog_index_refresh_price instance=Magento\\Catalog\\Cron\\RefreshSpecialPrices method=execute schedule=0 * * * *",
+                    "source_file": "vendor/magento/module-catalog/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Catalog\\Cron\\RefreshSpecialPrices",
+            "job_name": "catalog_index_refresh_price",
+            "method": "execute",
+            "module": "Magento_Catalog",
+            "schedule": "0 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::catalog_product_attribute_value_synchronize",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=catalog_product_attribute_value_synchronize instance=Magento\\Catalog\\Cron\\SynchronizeWebsiteAttributes method=execute schedule=*/5 * * * *",
+                    "source_file": "vendor/magento/module-catalog/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Catalog\\Cron\\SynchronizeWebsiteAttributes",
+            "job_name": "catalog_product_attribute_value_synchronize",
+            "method": "execute",
+            "module": "Magento_Catalog",
+            "schedule": "*/5 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::catalog_product_flat_indexer_store_cleanup",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=catalog_product_flat_indexer_store_cleanup instance=Magento\\Catalog\\Cron\\DeleteAbandonedStoreFlatTables method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-catalog/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Catalog\\Cron\\DeleteAbandonedStoreFlatTables",
+            "job_name": "catalog_product_flat_indexer_store_cleanup",
+            "method": "execute",
+            "module": "Magento_Catalog",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::catalog_product_frontend_actions_flush",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=catalog_product_frontend_actions_flush instance=Magento\\Catalog\\Cron\\FrontendActionsFlush method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-catalog/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Catalog\\Cron\\FrontendActionsFlush",
+            "job_name": "catalog_product_frontend_actions_flush",
+            "method": "execute",
+            "module": "Magento_Catalog",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::catalog_product_outdated_price_values_cleanup",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=catalog_product_outdated_price_values_cleanup instance=Magento\\Catalog\\Cron\\DeleteOutdatedPriceValues method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-catalog/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Catalog\\Cron\\DeleteOutdatedPriceValues",
+            "job_name": "catalog_product_outdated_price_values_cleanup",
+            "method": "execute",
+            "module": "Magento_Catalog",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::catalogrule_apply_all",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=catalogrule_apply_all instance=Magento\\CatalogRule\\Cron\\DailyCatalogUpdate method=execute schedule=0 1 * * *",
+                    "source_file": "vendor/magento/module-catalog-rule/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\CatalogRule\\Cron\\DailyCatalogUpdate",
+            "job_name": "catalogrule_apply_all",
+            "method": "execute",
+            "module": "Magento_CatalogRule",
+            "schedule": "0 1 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::clean_cron_schedule",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=clean_cron_schedule instance=Magento\\Cron\\Cron\\CleanOldJobs method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-cron/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Cron\\Cron\\CleanOldJobs",
+            "job_name": "clean_cron_schedule",
+            "method": "execute",
+            "module": "Magento_Cron",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::consumers_runner",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=consumers_runner instance=Magento\\MessageQueue\\Model\\Cron\\ConsumersRunner method=run schedule=* * * * *",
+                    "source_file": "vendor/magento/module-message-queue/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "consumers",
+            "instance": "Magento\\MessageQueue\\Model\\Cron\\ConsumersRunner",
+            "job_name": "consumers_runner",
+            "method": "run",
+            "module": "Magento_MessageQueue",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "crontab/default/jobs/currency_rates_update/schedule/cron_expr",
+            "cron_id": "cron::currency_rates_update",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=currency_rates_update instance=Magento\\Directory\\Model\\Observer method=scheduledUpdateCurrencyRates schedule=",
+                    "source_file": "vendor/magento/module-directory/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Directory\\Model\\Observer",
+            "job_name": "currency_rates_update",
+            "method": "scheduledUpdateCurrencyRates",
+            "module": "Magento_Directory",
+            "schedule": ""
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::expired_tokens_cleanup",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=expired_tokens_cleanup instance=Magento\\Integration\\Cron\\CleanExpiredTokens method=execute schedule=0 * * * *",
+                    "source_file": "vendor/magento/module-integration/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Integration\\Cron\\CleanExpiredTokens",
+            "job_name": "expired_tokens_cleanup",
+            "method": "execute",
+            "module": "Magento_Integration",
+            "schedule": "0 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::import_data_cleanup",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=import_data_cleanup instance=Magento\\ImportExport\\Cron\\ImportDataTableCleanup method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-import-export/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\ImportExport\\Cron\\ImportDataTableCleanup",
+            "job_name": "import_data_cleanup",
+            "method": "execute",
+            "module": "Magento_ImportExport",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::indexer_clean_all_changelogs",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=indexer_clean_all_changelogs instance=Magento\\Indexer\\Cron\\ClearChangelog method=execute schedule=0 * * * *",
+                    "source_file": "vendor/magento/module-indexer/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "index",
+            "instance": "Magento\\Indexer\\Cron\\ClearChangelog",
+            "job_name": "indexer_clean_all_changelogs",
+            "method": "execute",
+            "module": "Magento_Indexer",
+            "schedule": "0 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::indexer_reindex_all_invalid",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=indexer_reindex_all_invalid instance=Magento\\Indexer\\Cron\\ReindexAllInvalid method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-indexer/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "index",
+            "instance": "Magento\\Indexer\\Cron\\ReindexAllInvalid",
+            "job_name": "indexer_reindex_all_invalid",
+            "method": "execute",
+            "module": "Magento_Indexer",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::indexer_update_all_views",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=indexer_update_all_views instance=Magento\\Indexer\\Cron\\UpdateMview method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-indexer/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "index",
+            "instance": "Magento\\Indexer\\Cron\\UpdateMview",
+            "job_name": "indexer_update_all_views",
+            "method": "execute",
+            "module": "Magento_Indexer",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::inventory_cleanup_reservations",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=inventory_cleanup_reservations instance=Magento\\InventoryReservations\\Cron\\CleanupReservations method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-inventory-reservations/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\InventoryReservations\\Cron\\CleanupReservations",
+            "job_name": "inventory_cleanup_reservations",
+            "method": "execute",
+            "module": "Magento_InventoryReservations",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::inventory_in_store_pickup_sales_send_order_notified_emails",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=inventory_in_store_pickup_sales_send_order_notified_emails instance=Magento\\InventoryInStorePickupSales\\Model\\NotifyOrdersAreReadyForPickupEmailSender method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-inventory-in-store-pickup-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\InventoryInStorePickupSales\\Model\\NotifyOrdersAreReadyForPickupEmailSender",
+            "job_name": "inventory_in_store_pickup_sales_send_order_notified_emails",
+            "method": "execute",
+            "module": "Magento_InventoryInStorePickupSales",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::magento_newrelicreporting_cron",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=magento_newrelicreporting_cron instance=Magento\\NewRelicReporting\\Model\\Cron method=runCron schedule=*/2 * * * *",
+                    "source_file": "vendor/magento/module-new-relic-reporting/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\NewRelicReporting\\Model\\Cron",
+            "job_name": "magento_newrelicreporting_cron",
+            "method": "runCron",
+            "module": "Magento_NewRelicReporting",
+            "schedule": "*/2 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::messagequeue_clean_outdated_locks",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=messagequeue_clean_outdated_locks instance=Magento\\Framework\\MessageQueue\\Lock\\WriterInterface method=releaseOutdatedLocks schedule=0 * * * *",
+                    "source_file": "vendor/magento/module-message-queue/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Framework\\MessageQueue\\Lock\\WriterInterface",
+            "job_name": "messagequeue_clean_outdated_locks",
+            "method": "releaseOutdatedLocks",
+            "module": "Magento_Framework",
+            "schedule": "0 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::mysqlmq_clean_messages",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=mysqlmq_clean_messages instance=Magento\\MysqlMq\\Model\\Observer method=cleanupMessages schedule=30 6,15 * * *",
+                    "source_file": "vendor/magento/module-mysql-mq/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\MysqlMq\\Model\\Observer",
+            "job_name": "mysqlmq_clean_messages",
+            "method": "cleanupMessages",
+            "module": "Magento_MysqlMq",
+            "schedule": "30 6,15 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::newsletter_send_all",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=newsletter_send_all instance=Magento\\Newsletter\\Model\\Observer method=scheduledSend schedule=*/5 * * * *",
+                    "source_file": "vendor/magento/module-newsletter/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Newsletter\\Model\\Observer",
+            "job_name": "newsletter_send_all",
+            "method": "scheduledSend",
+            "module": "Magento_Newsletter",
+            "schedule": "*/5 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::outdated_authentication_failures_cleanup",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=outdated_authentication_failures_cleanup instance=Magento\\Integration\\Cron\\CleanExpiredAuthenticationFailures method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-integration/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Integration\\Cron\\CleanExpiredAuthenticationFailures",
+            "job_name": "outdated_authentication_failures_cleanup",
+            "method": "execute",
+            "module": "Magento_Integration",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::paypal_fetch_settlement_reports",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=paypal_fetch_settlement_reports instance=Magento\\Paypal\\Cron\\FetchReports method=execute schedule=",
+                    "source_file": "vendor/magento/module-paypal/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Paypal\\Cron\\FetchReports",
+            "job_name": "paypal_fetch_settlement_reports",
+            "method": "execute",
+            "module": "Magento_Paypal",
+            "schedule": ""
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::persistent_clear_expired",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=persistent_clear_expired instance=Magento\\Persistent\\Observer\\ClearExpiredCronJobObserver method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-persistent/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Persistent\\Observer\\ClearExpiredCronJobObserver",
+            "job_name": "persistent_clear_expired",
+            "method": "execute",
+            "module": "Magento_Persistent",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "crontab/default/jobs/catalog_product_alert/schedule/cron_expr",
+            "cron_id": "cron::product_alert",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=product_alert instance=Magento\\ProductAlert\\Model\\Observer method=process schedule=",
+                    "source_file": "vendor/magento/module-product-alert/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\ProductAlert\\Model\\Observer",
+            "job_name": "product_alert",
+            "method": "process",
+            "module": "Magento_ProductAlert",
+            "schedule": ""
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_clean_orders",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_clean_orders instance=Magento\\Sales\\Model\\CronJob\\CleanExpiredOrders method=execute schedule=0 * * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Sales\\Model\\CronJob\\CleanExpiredOrders",
+            "job_name": "sales_clean_orders",
+            "method": "execute",
+            "module": "Magento_Sales",
+            "schedule": "0 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_clean_quotes",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_clean_quotes instance=Magento\\Sales\\Cron\\CleanExpiredQuotes method=execute schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Sales\\Cron\\CleanExpiredQuotes",
+            "job_name": "sales_clean_quotes",
+            "method": "execute",
+            "module": "Magento_Sales",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_grid_order_async_insert",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_grid_order_async_insert instance=SalesOrderIndexGridAsyncInsertCron method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "SalesOrderIndexGridAsyncInsertCron",
+            "job_name": "sales_grid_order_async_insert",
+            "method": "execute",
+            "module": "unknown",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_grid_order_creditmemo_async_insert",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_grid_order_creditmemo_async_insert instance=SalesCreditmemoIndexGridAsyncInsertCron method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "SalesCreditmemoIndexGridAsyncInsertCron",
+            "job_name": "sales_grid_order_creditmemo_async_insert",
+            "method": "execute",
+            "module": "unknown",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_grid_order_invoice_async_insert",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_grid_order_invoice_async_insert instance=SalesInvoiceIndexGridAsyncInsertCron method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "SalesInvoiceIndexGridAsyncInsertCron",
+            "job_name": "sales_grid_order_invoice_async_insert",
+            "method": "execute",
+            "module": "unknown",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_grid_order_shipment_async_insert",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_grid_order_shipment_async_insert instance=SalesShipmentIndexGridAsyncInsertCron method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "SalesShipmentIndexGridAsyncInsertCron",
+            "job_name": "sales_grid_order_shipment_async_insert",
+            "method": "execute",
+            "module": "unknown",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_send_order_creditmemo_emails",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_send_order_creditmemo_emails instance=SalesCreditmemoSendEmailsCron method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "SalesCreditmemoSendEmailsCron",
+            "job_name": "sales_send_order_creditmemo_emails",
+            "method": "execute",
+            "module": "unknown",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_send_order_emails",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_send_order_emails instance=SalesOrderSendEmailsCron method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "SalesOrderSendEmailsCron",
+            "job_name": "sales_send_order_emails",
+            "method": "execute",
+            "module": "unknown",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_send_order_invoice_emails",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_send_order_invoice_emails instance=SalesInvoiceSendEmailsCron method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "SalesInvoiceSendEmailsCron",
+            "job_name": "sales_send_order_invoice_emails",
+            "method": "execute",
+            "module": "unknown",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sales_send_order_shipment_emails",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sales_send_order_shipment_emails instance=SalesShipmentSendEmailsCron method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-sales/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "SalesShipmentSendEmailsCron",
+            "job_name": "sales_send_order_shipment_emails",
+            "method": "execute",
+            "module": "unknown",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::security_clean_admin_expired_sessions",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=security_clean_admin_expired_sessions instance=Magento\\Security\\Model\\AdminSessionsManager method=cleanExpiredSessions schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-security/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Security\\Model\\AdminSessionsManager",
+            "job_name": "security_clean_admin_expired_sessions",
+            "method": "cleanExpiredSessions",
+            "module": "Magento_Security",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::security_clean_password_reset_request_event_records",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=security_clean_password_reset_request_event_records instance=Magento\\Security\\Model\\SecurityManager method=cleanExpiredRecords schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-security/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Security\\Model\\SecurityManager",
+            "job_name": "security_clean_password_reset_request_event_records",
+            "method": "cleanExpiredRecords",
+            "module": "Magento_Security",
+            "schedule": "0 0 * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::security_deactivate_expired_users",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=security_deactivate_expired_users instance=Magento\\Security\\Model\\UserExpirationManager method=deactivateExpiredUsers schedule=0 * * * *",
+                    "source_file": "vendor/magento/module-security/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Security\\Model\\UserExpirationManager",
+            "job_name": "security_deactivate_expired_users",
+            "method": "deactivateExpiredUsers",
+            "module": "Magento_Security",
+            "schedule": "0 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sitemap_generate",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sitemap_generate instance=Magento\\Sitemap\\Model\\Observer method=scheduledGenerateSitemaps schedule=",
+                    "source_file": "vendor/magento/module-sitemap/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Sitemap\\Model\\Observer",
+            "job_name": "sitemap_generate",
+            "method": "scheduledGenerateSitemaps",
+            "module": "Magento_Sitemap",
+            "schedule": ""
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::submit_payment_services_order_production_feed",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=submit_payment_services_order_production_feed instance=Magento\\PaymentServicesSaaSExport\\Cron\\OrderProductionSubmitFeed method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-payment-services-saas-export/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "payment_services_data_export",
+            "instance": "Magento\\PaymentServicesSaaSExport\\Cron\\OrderProductionSubmitFeed",
+            "job_name": "submit_payment_services_order_production_feed",
+            "method": "execute",
+            "module": "Magento_PaymentServicesSaaSExport",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::submit_payment_services_order_sandbox_feed",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=submit_payment_services_order_sandbox_feed instance=Magento\\PaymentServicesSaaSExport\\Cron\\OrderSandboxSubmitFeed method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-payment-services-saas-export/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "payment_services_data_export",
+            "instance": "Magento\\PaymentServicesSaaSExport\\Cron\\OrderSandboxSubmitFeed",
+            "job_name": "submit_payment_services_order_sandbox_feed",
+            "method": "execute",
+            "module": "Magento_PaymentServicesSaaSExport",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::submit_payment_services_order_status_production_feed",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=submit_payment_services_order_status_production_feed instance=Magento\\PaymentServicesSaaSExport\\Cron\\OrderStatusSubmitProductionFeed method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-payment-services-saas-export/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "payment_services_data_export",
+            "instance": "Magento\\PaymentServicesSaaSExport\\Cron\\OrderStatusSubmitProductionFeed",
+            "job_name": "submit_payment_services_order_status_production_feed",
+            "method": "execute",
+            "module": "Magento_PaymentServicesSaaSExport",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::submit_payment_services_order_status_sandbox_feed",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=submit_payment_services_order_status_sandbox_feed instance=Magento\\PaymentServicesSaaSExport\\Cron\\OrderStatusSubmitSandboxFeed method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-payment-services-saas-export/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "payment_services_data_export",
+            "instance": "Magento\\PaymentServicesSaaSExport\\Cron\\OrderStatusSubmitSandboxFeed",
+            "job_name": "submit_payment_services_order_status_sandbox_feed",
+            "method": "execute",
+            "module": "Magento_PaymentServicesSaaSExport",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::submit_payment_services_store_production_feed",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=submit_payment_services_store_production_feed instance=Magento\\PaymentServicesSaaSExport\\Cron\\StoreSubmitProductionFeed method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-payment-services-saas-export/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "payment_services_data_export",
+            "instance": "Magento\\PaymentServicesSaaSExport\\Cron\\StoreSubmitProductionFeed",
+            "job_name": "submit_payment_services_store_production_feed",
+            "method": "execute",
+            "module": "Magento_PaymentServicesSaaSExport",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::submit_payment_services_store_sandbox_feed",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=submit_payment_services_store_sandbox_feed instance=Magento\\PaymentServicesSaaSExport\\Cron\\StoreSubmitSandboxFeed method=execute schedule=* * * * *",
+                    "source_file": "vendor/magento/module-payment-services-saas-export/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "payment_services_data_export",
+            "instance": "Magento\\PaymentServicesSaaSExport\\Cron\\StoreSubmitSandboxFeed",
+            "job_name": "submit_payment_services_store_sandbox_feed",
+            "method": "execute",
+            "module": "Magento_PaymentServicesSaaSExport",
+            "schedule": "* * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::sync_order_payment_status",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=sync_order_payment_status instance=Magento\\PaymentServicesPaypal\\Cron\\SyncOrderPaymentStatus method=execute schedule=*/10 * * * *",
+                    "source_file": "vendor/magento/module-payment-services-paypal/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "payment_services_order_sync",
+            "instance": "Magento\\PaymentServicesPaypal\\Cron\\SyncOrderPaymentStatus",
+            "job_name": "sync_order_payment_status",
+            "method": "execute",
+            "module": "Magento_PaymentServicesPaypal",
+            "schedule": "*/10 * * * *"
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::system_backup",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=system_backup instance=Magento\\Backup\\Cron\\SystemBackup method=execute schedule=",
+                    "source_file": "vendor/magento/module-backup/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Backup\\Cron\\SystemBackup",
+            "job_name": "system_backup",
+            "method": "execute",
+            "module": "Magento_Backup",
+            "schedule": ""
+        },
+        {
+            "config_path": "",
+            "cron_id": "cron::visitor_clean",
+            "declared_by": "unknown",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "cron job=visitor_clean instance=Magento\\Customer\\Model\\Visitor method=clean schedule=0 0 * * *",
+                    "source_file": "vendor/magento/module-customer/etc/crontab.xml",
+                    "type": "xml"
+                }
+            ],
+            "group": "default",
+            "instance": "Magento\\Customer\\Model\\Visitor",
+            "job_name": "visitor_clean",
+            "method": "clean",
+            "module": "Magento_Customer",
+            "schedule": "0 0 * * *"
+        }
+    ],
+    "generated_at": "2026-02-27T17:29:08+00:00",
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "scope": [
+        "vendor/magento"
+    ],
+    "summary": {
+        "by_group": {
+            "consumers": 1,
+            "default": 51,
+            "index": 3,
+            "payment_services_data_export": 6,
+            "payment_services_order_sync": 1
+        },
+        "by_module": {
+            "unknown": 62
+        },
+        "total_cron_jobs": 62
+    }
+}

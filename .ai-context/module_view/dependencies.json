@@ -1,0 +1,175 @@
+{
+    "\\$schema": "schemas/dependencies.schema.json",
+    "analysis_integrity_score": 1,
+    "coupling_metrics": {
+        "code": {
+            "avg_instability": 0,
+            "modules": [
+                {
+                    "afferent_coupling": 0,
+                    "efferent_coupling": 0,
+                    "instability": null,
+                    "module": "Magento_Framework"
+                },
+                {
+                    "afferent_coupling": 0,
+                    "efferent_coupling": 0,
+                    "instability": null,
+                    "module": "Magento_SomeModule"
+                },
+                {
+                    "afferent_coupling": 0,
+                    "efferent_coupling": 0,
+                    "instability": null,
+                    "module": "Magento_Store"
+                }
+            ]
+        },
+        "composite": {
+            "avg_instability": 0.333,
+            "modules": [
+                {
+                    "afferent_coupling": 0,
+                    "efferent_coupling": 2,
+                    "instability": 1,
+                    "module": "Magento_SomeModule"
+                },
+                {
+                    "afferent_coupling": 1,
+                    "efferent_coupling": 0,
+                    "instability": 0,
+                    "module": "Magento_Framework"
+                },
+                {
+                    "afferent_coupling": 1,
+                    "efferent_coupling": 0,
+                    "instability": 0,
+                    "module": "Magento_Store"
+                }
+            ]
+        },
+        "runtime": {
+            "avg_instability": 0.333,
+            "modules": [
+                {
+                    "afferent_coupling": 0,
+                    "efferent_coupling": 2,
+                    "instability": 1,
+                    "module": "Magento_SomeModule"
+                },
+                {
+                    "afferent_coupling": 1,
+                    "efferent_coupling": 0,
+                    "instability": 0,
+                    "module": "Magento_Framework"
+                },
+                {
+                    "afferent_coupling": 1,
+                    "efferent_coupling": 0,
+                    "instability": 0,
+                    "module": "Magento_Store"
+                }
+            ]
+        },
+        "structural": {
+            "avg_instability": 0,
+            "modules": [
+                {
+                    "afferent_coupling": 0,
+                    "efferent_coupling": 0,
+                    "instability": null,
+                    "module": "Magento_Framework"
+                },
+                {
+                    "afferent_coupling": 0,
+                    "efferent_coupling": 0,
+                    "instability": null,
+                    "module": "Magento_SomeModule"
+                },
+                {
+                    "afferent_coupling": 0,
+                    "efferent_coupling": 0,
+                    "instability": null,
+                    "module": "Magento_Store"
+                }
+            ]
+        }
+    },
+    "degraded": false,
+    "edges": [
+        {
+            "edge_type": "di_preference",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "preference for=Magento\\Framework\\App\\CacheInterface type=Magento\\Framework\\App\\Cache\\Proxy",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Test/Unit/Module/Di/_files/app/code/Magento/SomeModule/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "from": {
+                "id": "Magento_SomeModule",
+                "kind": "module"
+            },
+            "to": {
+                "id": "Magento_Framework",
+                "kind": "module"
+            },
+            "weight": 1
+        },
+        {
+            "edge_type": "di_virtual_type",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "virtualType name=custom_cache_instance type=Magento\\Framework\\App\\Cache",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Test/Unit/Module/Di/_files/app/code/Magento/SomeModule/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "from": {
+                "id": "Magento_SomeModule",
+                "kind": "module"
+            },
+            "to": {
+                "id": "Magento_Framework",
+                "kind": "module"
+            },
+            "weight": 1
+        },
+        {
+            "edge_type": "di_preference",
+            "evidence": [
+                {
+                    "confidence": 1,
+                    "notes": "preference for=Magento\\Store\\Model\\Config\\InvalidatorInterface type=Magento\\Store\\Model\\Config\\Invalidator\\Proxy",
+                    "source_file": "vendor/magento/magento2-base/setup/src/Magento/Setup/Test/Unit/Module/Di/_files/app/code/Magento/SomeModule/etc/di.xml",
+                    "type": "xml"
+                }
+            ],
+            "from": {
+                "id": "Magento_SomeModule",
+                "kind": "module"
+            },
+            "to": {
+                "id": "Magento_Store",
+                "kind": "module"
+            },
+            "weight": 1
+        }
+    ],
+    "generated_at": "2026-02-27T17:28:56+00:00",
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "scope": [
+        "vendor/magento"
+    ],
+    "summary": {
+        "avg_instability": 0.333,
+        "edge_type_counts": {
+            "di_preference": 2,
+            "di_virtual_type": 1
+        },
+        "total_edges": 3,
+        "total_modules_analyzed": 3
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "\\$schema": "schemas/git_churn_hotspots.schema.json",
+    "churn_window_days": 365,
+    "generated_at": "2026-02-27T17:30:29+00:00",
+    "hotspots": [],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "scope": [
+        "vendor/magento"
+    ],
+    "total_files_analyzed": 0
+}

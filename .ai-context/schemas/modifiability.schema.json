@@ -1,0 +1,47 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "\\$schema": "schemas/modifiability.schema.schema.json",
+    "description": "Per-module modifiability risk score from coupling, churn, plugin density, deviations.",
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "properties": {
+        "modules": {
+            "items": {
+                "properties": {
+                    "churn_score": {
+                        "type": "number"
+                    },
+                    "coupling_score": {
+                        "type": "number"
+                    },
+                    "deviation_count": {
+                        "type": "integer"
+                    },
+                    "modifiability_risk_score": {
+                        "type": "number"
+                    },
+                    "module": {
+                        "type": "string"
+                    },
+                    "plugin_density": {
+                        "type": "number"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "summary": {
+            "type": "object"
+        }
+    },
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "required": [
+        "modules",
+        "summary"
+    ],
+    "scope": [
+        "vendor/magento"
+    ],
+    "title": "Modifiability Risk",
+    "type": "object"
+}

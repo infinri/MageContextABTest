@@ -1,0 +1,44 @@
+{
+    "\\$schema": "schemas/crontab_messagequeue_lock_writerinterface.schema.json",
+    "affected_modules": [
+        "unknown"
+    ],
+    "canonical_entry": {
+        "cron_id": "cron::messagequeue_clean_outdated_locks",
+        "group": "default",
+        "type": "cron"
+    },
+    "dependency_slice": [],
+    "entry_point": {
+        "class": "Magento\\Framework\\MessageQueue\\Lock\\WriterInterface",
+        "method": "execute",
+        "module": "unknown",
+        "step_kind": "scheduled_task",
+        "type": "cron"
+    },
+    "execution_chain": {
+        "complexity": [],
+        "di_resolution_chain": [],
+        "observer_triggers": [],
+        "plugin_stack": []
+    },
+    "generated_at": "2026-02-27T17:30:45+00:00",
+    "module_refs": [],
+    "qa_concerns": [],
+    "repo_commit": "b693633ba5220b8a91e884d7d0498f93f27b7f0d",
+    "risk": {
+        "affected_module_count": 1,
+        "level": "low",
+        "observer_count": 0,
+        "plugin_depth": 0,
+        "reasons": [
+            "1 architectural debt item(s) in affected modules"
+        ],
+        "score": 0.05
+    },
+    "scenario": "crontab.messagequeue.lock.writerinterface",
+    "scenario_id": "3f1ee9701deac3a4f915990f78c09b9ea1c50503",
+    "scope": [
+        "vendor/magento"
+    ]
+}
