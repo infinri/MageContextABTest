@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- VIP Validator interface binding -->
+    <preference for="Custom\CouponValidation\Api\VipValidatorInterface"
+                type="Custom\CouponValidation\Model\VipValidator"/>
+
+    <!-- Custom logger virtual type -->
+    <virtualType name="Custom\CouponValidation\Logger\VirtualHandler"
+                 type="Magento\Framework\Logger\Handler\Base">
+        <arguments>
+            <argument name="fileName" xsi:type="string">/var/log/custom_coupon_validation.log</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="Custom\CouponValidation\Logger\VirtualLogger"
+                 type="Monolog\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">coupon_validation</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="system" xsi:type="object">Custom\CouponValidation\Logger\VirtualHandler</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <!-- Inject virtual logger into plugin and validator -->
+    <type name="Custom\CouponValidation\Plugin\CouponApplyValidationPlugin">
+        <arguments>
+            <argument name="logger" xsi:type="object">Custom\CouponValidation\Logger\VirtualLogger</argument>
+        </arguments>
+    </type>
+
+    <type name="Custom\CouponValidation\Model\VipValidator">
+        <arguments>
+            <argument name="logger" xsi:type="object">Custom\CouponValidation\Logger\VirtualLogger</argument>
+        </arguments>
+    </type>
+
+    <!-- Plugin declaration -->
+    <type name="Magento\Quote\Api\CouponManagementInterface">
+        <plugin name="custom_coupon_validation_plugin"
+                type="Custom\CouponValidation\Plugin\CouponApplyValidationPlugin"
+                sortOrder="10"/>
+    </type>
+
+</config>
