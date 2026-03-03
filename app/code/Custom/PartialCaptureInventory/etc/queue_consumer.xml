@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+    <consumer name="custom.partialcapture.reconciliation.consumer"
+              queue="custom.partialcapture.reconciliation.queue"
+              handler="Custom\PartialCaptureInventory\Model\Consumer\ReconciliationHandler::process"
+              consumerInstance="Magento\Framework\MessageQueue\Consumer"
+              connection="amqp"
+              maxMessages="1000"/>
+</config>

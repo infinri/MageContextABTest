@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="custom_partial_capture_reconciliation" resource="default" engine="innodb"
+           comment="Partial Capture Inventory Reconciliation Records">
+        <column xsi:type="int" name="entity_id" unsigned="true" nullable="false" identity="true"
+                comment="Entity ID"/>
+        <column xsi:type="int" name="invoice_id" unsigned="true" nullable="false"
+                comment="Sales Invoice Entity ID"/>
+        <column xsi:type="int" name="order_item_id" unsigned="true" nullable="false"
+                comment="Sales Order Item ID"/>
+        <column xsi:type="int" name="order_id" unsigned="true" nullable="false"
+                comment="Sales Order Entity ID"/>
+        <column xsi:type="varchar" name="sku" nullable="false" length="64"
+                comment="Product SKU"/>
+        <column xsi:type="decimal" name="qty_captured" scale="4" precision="12" unsigned="false"
+                nullable="false" default="0" comment="Quantity Captured in This Invoice"/>
+        <column xsi:type="int" name="stock_id" unsigned="true" nullable="false" default="1"
+                comment="MSI Stock ID Resolved from Order Website"/>
+        <column xsi:type="varchar" name="status" nullable="false" length="20" default="pending"
+                comment="Reconciliation Status: pending, reconciled, released, failed"/>
+        <column xsi:type="int" name="attempts" unsigned="true" nullable="false" default="0"
+                comment="Processing Attempt Counter"/>
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false"
+                default="CURRENT_TIMESTAMP" comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false"
+                default="CURRENT_TIMESTAMP" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <constraint xsi:type="unique" referenceId="UNQ_PCI_INVOICE_ORDER_ITEM">
+            <column name="invoice_id"/>
+            <column name="order_item_id"/>
+        </constraint>
+        <index referenceId="IDX_PCI_ORDER_ID" indexType="btree">
+            <column name="order_id"/>
+        </index>
+        <index referenceId="IDX_PCI_INVOICE_ID" indexType="btree">
+            <column name="invoice_id"/>
+        </index>
+        <index referenceId="IDX_PCI_SKU" indexType="btree">
+            <column name="sku"/>
+        </index>
+        <index referenceId="IDX_PCI_STATUS" indexType="btree">
+            <column name="status"/>
+        </index>
+    </table>
+</schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="custom_partial_capture" translate="label" sortOrder="900"
+                 showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Partial Capture Inventory</label>
+            <tab>sales</tab>
+            <resource>Magento_Sales::config_sales</resource>
+            <group id="general" translate="label" sortOrder="10"
+                   showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Partial Capture Reconciliation</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>When enabled, invoice creation triggers async inventory reconciliation.</comment>
+                </field>
+                <field id="max_retries" translate="label comment" type="text" sortOrder="20"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Max Processing Retries</label>
+                    <validate>validate-digits validate-greater-than-zero</validate>
+                    <comment>Number of processing attempts before marking a record as failed. Default: 3.</comment>
+                </field>
+                <field id="eligible_order_states" translate="label comment" type="text" sortOrder="30"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Eligible Order States</label>
+                    <comment>Comma-separated list of order states eligible for reconciliation. Default: processing.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

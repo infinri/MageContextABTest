@@ -1,0 +1,17 @@
+type Query {
+    partialCaptureReconciliation(order_id: Int!): [PartialCaptureReconciliationRecord!]!
+    @resolver(class: "Custom\\PartialCaptureInventory\\Model\\Resolver\\PartialCaptureInventoryStatus")
+    @doc(description: "Get partial capture reconciliation records by order ID")
+}
+
+type PartialCaptureReconciliationRecord @doc(description: "Partial capture reconciliation record") {
+    invoice_id: Int! @doc(description: "Sales invoice entity ID")
+    order_item_id: Int! @doc(description: "Sales order item ID")
+    order_id: Int! @doc(description: "Sales order entity ID")
+    sku: String! @doc(description: "Product SKU")
+    qty_captured: Float! @doc(description: "Quantity captured in this invoice")
+    stock_id: Int! @doc(description: "MSI stock ID")
+    status: String! @doc(description: "Reconciliation status: pending, reconciled, released, failed")
+    created_at: String! @doc(description: "Record creation timestamp")
+    updated_at: String! @doc(description: "Record last update timestamp")
+}

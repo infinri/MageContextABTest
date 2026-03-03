@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <custom_partial_capture>
+            <general>
+                <enabled>1</enabled>
+                <max_retries>3</max_retries>
+                <eligible_order_states>processing</eligible_order_states>
+            </general>
+        </custom_partial_capture>
+    </default>
+</config>

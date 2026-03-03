@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <!-- Dead-letter exchange: receives messages that exhaust retries -->
+    <exchange name="custom.partialcapture.reconciliation.dlx" type="topic" connection="amqp">
+        <binding id="custom.partialcapture.reconciliation.dlq.binding"
+                 topic="custom.partialcapture.reconciliation.process"
+                 destinationType="queue"
+                 destination="custom.partialcapture.reconciliation.dlq"/>
+    </exchange>
+    <!-- Primary exchange with DLX routing on the main queue -->
+    <exchange name="custom.partialcapture.reconciliation.exchange" type="topic" connection="amqp">
+        <binding id="custom.partialcapture.reconciliation.binding"
+                 topic="custom.partialcapture.reconciliation.process"
+                 destinationType="queue"
+                 destination="custom.partialcapture.reconciliation.queue">
+            <arguments>
+                <!-- Route rejected/expired messages to dead-letter exchange -->
+                <argument name="x-dead-letter-exchange" xsi:type="string">custom.partialcapture.reconciliation.dlx</argument>
+                <!-- Retry up to 3 times before dead-lettering -->
+                <argument name="x-delivery-limit" xsi:type="number">3</argument>
+                <!-- Per-message TTL for retry delay: 30 seconds -->
+                <argument name="x-message-ttl" xsi:type="number">30000</argument>
+            </arguments>
+        </binding>
+    </exchange>
+</config>
